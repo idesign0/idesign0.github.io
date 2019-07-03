@@ -1,0 +1,8 @@
+controllerdesign.psd filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+.3dm filter=lfs diff=lfs merge=lfs -text
+.stl filter=lfs diff=lfs merge=lfs -text
+.dxf filter=lfs diff=lfs merge=lfs -text
+.dwg filter=lfs diff=lfs merge=lfs -text
+.f3d filter=lfs diff=lfs merge=lfs -text
+.v3d filter=lfs diff=lfs merge=lfs -text

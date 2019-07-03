@@ -1,0 +1,34 @@
+# 15. Mechanical design
+
+For 2-Axis movement, we needed the gears driving the board in the same vertical axis.  
+The below image was our first sketch in making that.
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/week15ss4.png" alt="machinedesign" width="600px">
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/1.jpeg" alt="machinedesign" width="600px">
+
+But since the individual axis were open, the system was not stable.  
+So for the second attempt, we connected the system at top so both would give stability to the other.  
+Also, for the twisting, we added ball socket joints at the upper nodes.
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/2.jpeg" alt="machinedesign" width="600px">
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/5.jpg" alt="machinedesign" width="600px">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7K05UhHNDzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+We also changed the design of the base to make it more stable. This was the new design
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/week15ss1.png" alt="machinedesign" width="600px">
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/week15ss2.png" alt="machinedesign" width="600px">
+
+These are the laser cut parts for this updated base.
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/week15ss3.png" alt="machinedesign" width="600px">
+
+This is how it turned out to be.
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/6.jpeg" alt="molding" width="600px">
+
+<img src="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-thakker/raw/master/docs/images/week15/7.jpeg" alt="molding" width="600px">

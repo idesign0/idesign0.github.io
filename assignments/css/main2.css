@@ -1,0 +1,195 @@
+body, html{
+	height: 100% !important;
+}
+body {
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	letter-spacing: .05em;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #222;
+	position: relative;
+	background: #f6f6f6;
+}
+
+::selection {
+	background: #000;
+	color: #fff;
+}
+::-moz-selection {
+	background: #000;
+	color: #fff;
+}
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+.nav{
+background-color: #dbdbdb;
+}
+
+.nav h1{
+padding: 25px 50px;
+}
+
+.page{
+	margin: 0px auto;
+	width: 1200px;
+}
+
+.info{
+	background-color: #e9e9e9;
+	padding: 20px;
+}	
+
+.info h3{
+padding-left: 50px;	
+text-align: left;
+text-decoration: none;
+background-color: #e9e9e9;
+}
+
+.info h3 a {
+color: #000;	
+text-align: left;
+display: block;
+}
+
+.topic h2{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align:center; 
+}
+
+h3{
+text-align: center;
+background-color: #ededed;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+h2
+{
+	background-color: #dbdbdb;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+p{
+	background-color: #fafafa;
+}
+
+.description h2{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align:center; 
+}
+.project h2{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align:center; 
+}
+.resources h2{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align:center; 
+}
+.risks h2{
+	padding-top: 5px; 
+	padding-bottom: 5px;
+	text-align:center; 
+}
+
+p{
+padding: 50px 100px;
+}
+.end{
+padding: 25px 100px 50px 100px;
+}
+
+.est{
+padding: 25px 100px 50px 100px;
+}
+
+.im{
+	margin: 0 auto;
+	width: 800px;
+
+}
+
+.list{
+	text-decoration: none;
+	margin: 12px 100px;
+
+}
+.list u{
+	text-decoration: none;
+	margin: 50px 100px;
+
+}
+
+
+
+.learn{
+	text-decoration: none;
+	margin: 12px 100px;
+
+}
+.learn u{
+	text-decoration: none;
+	margin: 50px 100px;
+}
+
+.exp{
+	padding: 50px 0px;
+}
+
+
+#footer{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 999;
+}
+#footer.fixed{
+	position: fixed;
+}
+#footer.has-border{
+	border-top: 1px solid #F1F1F1; 
+}
+.footer-links{
+	font-family: 'Oswald', sans-serif;
+	font-size: 11px;
+	line-height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.footer-links a{
+	text-decoration: none;
+}
+.footer-links a:hover{
+	text-decoration: underline;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
