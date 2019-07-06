@@ -1105,8 +1105,13 @@ main  .header-brand-main{
       justify-content: space-between;
       align-items: center;
       align-content: center;
+      padding-top: 20px;
         }
+        main{
+          padding-top: 90px;
+          height: calc(100vh - 10px);
 
+        }
     main .index-banner{
       width: 100%;
       height: calc(100vh/2 - 250px) !important;
@@ -1117,6 +1122,7 @@ main  .header-brand-main{
       flex-flow: column wrap;
       justify-content:space-around;
       align-content: center;
+
     }
     main .wrap{
       width: 60%;
