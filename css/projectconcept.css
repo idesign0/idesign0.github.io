@@ -1019,7 +1019,7 @@ main  .header-brand-main{
   text-transform: uppercase;
   text-align: center;
   vertical-align:bottom ;
-  display: table-cell;
+  display:none;
   padding-bottom:20px;
   margin-top:10px;
 
