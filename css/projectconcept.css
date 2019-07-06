@@ -47,6 +47,23 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+ nav .heads-brand{
+   display: flex;
+   flex-flow: row  ;
+   justify-content: space-evenly;
+   align-content: center;
+
+ }
+.heads-brand{
+  width: 15%;
+
+}
+
+
+.header-brand-blog{
+  border-left: 1.5px solid #111;
+  width: 45%;
+}
 #header.fixed{
     position: fixed;
 }
@@ -1024,6 +1041,15 @@ main  .header-brand-main{
   margin-top:10px;
 
 }
+.header-brand-blog{
+  font-family:: 'Poppins', sans-serif;
+  color: #111;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500 ;
+  text-transform: uppercase;
+  display: none;
+}
 .main-menu-blog{
     display: none;
     margin-bottom: 0;
@@ -1080,11 +1106,19 @@ main  .header-brand-main{
 
     }
     #header nav{
-        padding: 15px 100PX;
+        padding: 15px 100px;
     }
 
 
-
+    .header-brand-blog{
+      font-family:: 'Poppins', sans-serif;
+      color: #111;
+      font-weight: 400;
+      font-size: 20px;
+      font-weight: 500 ;
+      text-transform: uppercase;
+      display: block;
+    }
 
   .index-links  .index-boxlink-rectangle{
     flex-basis: 47%;
@@ -1137,17 +1171,18 @@ main  .header-brand-main{
 
 
       .wrap-blog{
-        width: 1000px !important;
+        width: 840px !important;
       }
 
       .cases-links{
         flex-flow: row wrap !important;
+        justify-content: space-around;
       }
 
       .cases-links div{
-        width :240px !important;
-        height :240px !important;
-        margin: 10px 10px 0 0 !important;
+        width :200px !important;
+        height :200px !important;
+        margin: 5px 5px !important;
         display: table;
 
         background-color: #FFF;
@@ -1279,9 +1314,6 @@ footer .footer-h3{
 
 /* cases*/
 
-.wrap-blog h1{
-  text-align: center;
-}
 
 .wrap-blog{
   width: 100%;
@@ -1294,7 +1326,7 @@ flex-flow: column wrap;
 align-content: center;
 }
 .cases-links div{
-  margin: 14px auto;
+  margin: 7px auto;
   width:95%;
   height: 100px;
   background-color: #FFF;
