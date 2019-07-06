@@ -50,20 +50,22 @@ body{
  nav .heads-brand{
    display: flex;
    flex-flow: row  ;
-   justify-content: space-evenly;
+   justify-content: space-between;
    align-content: center;
 
  }
 .heads-brand{
-  width: 15%;
+  width: 100%;
 
 }
-
-
+.header-brand{
+  width: 30%;
+}
 .header-brand-blog{
   border-left: 1.5px solid #111;
-  width: 45%;
+  width: 20%;
 }
+
 #header.fixed{
     position: fixed;
 }
@@ -1048,7 +1050,7 @@ main  .header-brand-main{
   font-size: 20px;
   font-weight: 500 ;
   text-transform: uppercase;
-  display: none;
+  display: block;
 }
 .main-menu-blog{
     display: none;
@@ -1190,8 +1192,15 @@ main  .header-brand-main{
         border: 2px solid rgba(0, 0, 0,0.2) !important;
 
       }
+      .heads-brand{
+        width: 20% !important;
+justify-content: space-evenly !important;
+      }
 
-
+  .header-brand-blog{
+    border-left: 1.5px solid #111;
+    width: 40% !important;
+  }
   }
 
 /* index*/
