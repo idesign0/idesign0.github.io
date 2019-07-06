@@ -1193,18 +1193,7 @@ main  .header-brand-main{
 
       }
 
-      .headerin{
-        font-family:: 'Poppins', sans-serif;
-        color: #111;
-        font-weight: 400;
-        font-size: 20px;
-        font-weight: 500 ;
-        text-transform: uppercase;
-        display: block;
-      }
-      .headerin{
-justify-content: space-evenly !important;
-      }
+
 
       .heads-brand{
         width: 20% !important;
@@ -1231,15 +1220,7 @@ main .index-banner{
   margin: 0 auto;
   /* box-shadow: 5px 5px 5px #111; */
 }
-.headerin{
-  font-family:: 'Poppins', sans-serif;
-  color: #111;
-  font-weight: 400;
-  font-size: 20px;
-  font-weight: 500 ;
-  text-transform: uppercase;
-  display: block;
-}
+
 
 main .index-banner h3{
   font-family:: 'Poppins', sans-serif;
