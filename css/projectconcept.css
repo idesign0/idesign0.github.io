@@ -1248,8 +1248,8 @@ main .index-banner h4{
 
 /* margin */
 footer{
-  width: calc(100% - 30px);
-  margin: 20px 15px;
+  width:100%;
+  margin: 20px auto;
   overflow: hidden;
 }
 footer ul {
