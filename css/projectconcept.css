@@ -1192,6 +1192,20 @@ main  .header-brand-main{
         border: 2px solid rgba(0, 0, 0,0.2) !important;
 
       }
+
+      .headerin{
+        font-family:: 'Poppins', sans-serif;
+        color: #111;
+        font-weight: 400;
+        font-size: 20px;
+        font-weight: 500 ;
+        text-transform: uppercase;
+        display: block;
+      }
+      .headerin{
+justify-content: space-evenly !important;
+      }
+
       .heads-brand{
         width: 20% !important;
 justify-content: space-evenly !important;
@@ -1216,6 +1230,15 @@ main .index-banner{
   display: table;
   margin: 0 auto;
   /* box-shadow: 5px 5px 5px #111; */
+}
+.headerin{
+  font-family:: 'Poppins', sans-serif;
+  color: #111;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500 ;
+  text-transform: uppercase;
+  display: block;
 }
 
 main .index-banner h3{
