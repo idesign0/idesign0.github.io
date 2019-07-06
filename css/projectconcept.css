@@ -1111,7 +1111,7 @@ main  .header-brand-main{
 
     main{
       padding-top: 90px;
-      height: calc(100vh - 10px);
+      margin-bottom: 100px !important;
 
     }
     main .index-banner{
@@ -1138,6 +1138,10 @@ main  .header-brand-main{
 
       .wrap-blog{
         width: 1000px !important;
+      }
+
+      .cases-links{
+        flex-flow: row wrap !important;
       }
 
       .cases-links div{
@@ -1274,6 +1278,10 @@ footer .footer-h3{
 
 
 /* cases*/
+
+.wrap-blog h1{
+  text-align: center;
+}
 
 .wrap-blog{
   width: 100%;
