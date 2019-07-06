@@ -1282,12 +1282,12 @@ footer .footer-h3{
 
 .cases-links {
 display: flex;
-flex-flow: row wrap;
+flex-flow: column wrap;
 align-content: center;
 }
 .cases-links div{
   margin: 14px auto;
-  width : 40%;
+  width:95%;
   height: 100px;
   background-color: #FFF;
   box-shadow: 2px 2px 15px #d2d3d2;
