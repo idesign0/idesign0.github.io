@@ -23,7 +23,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: .05em;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.5;
     color: #222;
     position: relative;
@@ -1096,8 +1096,6 @@ right: 50px;
 .week2p{
     padding: 20px;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.8px;
 }
 .week2p div{
     margin-left: 25px;
@@ -1110,7 +1108,6 @@ right: 50px;
     padding-top: 20px;
     text-align: left;
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
 }
 .logoh .logo{
     width:20px;
@@ -1128,9 +1125,7 @@ right: 50px;
 /* About */
 
 .wrapper{
-  font-family: 'Lato', sans-serif;
-  line-height: calc(18*1.618)px;
-  font-size: 16px;
+    font-family: 'Sarabun', sans-serif;
 }
 
 .wrapper h1{
@@ -1175,9 +1170,7 @@ header nav h1{
 }
 .paragraph{
     flex: 0 0 40%;
-    font-family: 'Lato', sans-serif;
-    line-height: calc(18*1.618)px;
-    font-size: 16px;
+    font-family: 'Sarabun', sans-serif;
     text-align:justify;
 }
 .firstletter{
