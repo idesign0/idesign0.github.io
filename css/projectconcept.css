@@ -1163,8 +1163,8 @@ main  .header-brand-main{
 
     }
     main .index-banner{
-      width: 100%;
-      height: calc(100vh/2 - 250px) !important;
+        width: 100%;
+        height: calc(100vh/2 - 250px);
       /* box-shadow: 5px 5px 5px #111; */
     }
     main  .icon{
@@ -1253,10 +1253,9 @@ justify-content: space-evenly !important;
 
 /* index*/
 
-
 main .index-banner{
   width:50%;
-  height: calc(100vh - 595px);
+  height: calc(500 - 595px);
   background-image:url('../images/blog/icons/16.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -1336,27 +1335,35 @@ main .index-banner h4{
   text-transform: uppercase;
   text-overflow:hidden;
   display: table-cell;
+  text-align: center;
   vertical-align: middle;
-
-
 }
 
+.index-links div a p{
+  margin: 0;
+}
+
+@media only screen and (max-width : 790px){
+
+  .index-links div a p{
+    font-size: 20px;
+  }
+
+}
 
 
 /* margin */
 footer{
-  width:95%;
-  margin: 20px auto;
-  overflow: hidden;
-}
-footer ul {
-  margin-bottom: 30px;
+  width:100%;
+  background-color: #fff;
+  box-shadow: 0px -1px 8px #111;
+  align-items: center;
 }
 footer ul li a{
   font-size: 15px;
   font-family:'Poppins', sans-serif;
   text-decoration: none;
-  color: #fff;
+  color: #111;
    text-transform: uppercase;
    display: block;
    line-height: 30px;
@@ -1366,10 +1373,57 @@ footer .footer-h3{
   color: #fff;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 60px 0px 25px;
 }
 
+  .footer-content{
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    margin: auto auto;
+  }
 
+.main-menu-blog-footer-tabs{
+  list-style: none;
+  text-align: left;
+  flex-basis: 40%;
+}
+
+.main-menu-blog-footer-sm{
+  list-style: none;
+  flex-basis: 40%;
+  display: flex;
+  flex-flow:row;
+  justify-content:space-evenly;
+}
+
+.main-menu-blog-footer-sm ul{
+  list-style: none;
+}
+
+.main-menu-blog-footer-sm img{
+  width: 34px;
+}
+
+@media only screen and (max-width : 790px){
+  .footer-content{
+    width: 100%;
+  }
+
+  .main-menu-blog-footer-tabs{
+    flex-basis: 40%;
+  }
+
+  .main-menu-blog-footer-sm{
+    flex-basis: 30%;
+    flex-flow:column;
+    }
+  .main-menu-blog-footer-sm a{
+      margin: 10px;
+      }
+
+}
 /* cases*/
 
 
