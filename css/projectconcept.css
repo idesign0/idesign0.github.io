@@ -52,18 +52,10 @@ body{
    flex-flow: row  ;
    justify-content: space-between;
    align-content: center;
-
  }
-.heads-brand{
-  width: 100%;
-
+.heads-brand .header-brand{
+    margin-right: 10px;
 }
-.header-brand{
-  width: 30%;
-}
-.header-brand-blog{
-  border-left: 1.5px solid #111;
-  width: 20%;
 }
 
 
@@ -293,9 +285,6 @@ h6 { font-size: 14px; line-height: 18px; }
 }
 .text-light .bottom-line:after{
     background: #fff;
-}
-p{
-    color: #666;
 }
 .text-light p{
     color: #fff;
@@ -1063,6 +1052,8 @@ main  .header-brand-main{
   font-weight: 500 ;
   text-transform: uppercase;
   display: block;
+  border-left: 1.5px solid #111;
+  padding-left: 10px;
 }
 .main-menu-blog{
     display: none;
@@ -1123,17 +1114,6 @@ main  .header-brand-main{
         padding: 15px 100px;
     }
 
-
-    .header-brand-blog{
-      font-family:: 'Poppins', sans-serif;
-      color: #111;
-      font-weight: 400;
-      font-size: 20px;
-      font-weight: 500 ;
-      text-transform: uppercase;
-      display: block;
-    }
-
   .index-links  .index-boxlink-rectangle{
     flex-basis: 47%;
     display: table;
@@ -1143,7 +1123,6 @@ main  .header-brand-main{
     display: table;
 
     }
-
     .index-links div p{
       line-height: 150px !important;
     }
@@ -1154,20 +1133,18 @@ main  .header-brand-main{
       align-items: center;
       align-content: center;
       padding-top: 20px;
-        }
+    }
 
-
+  /*------------ assignments-----------*/
     main{
       padding-top: 90px;
       margin-bottom: 100px !important;
 
     }
     main .index-banner{
-        width: 100%;
-        height: calc(100vh/2 - 250px);
-      /* box-shadow: 5px 5px 5px #111; */
+      width: 100% ;
     }
-    main  .icon{
+    main .icon{
       display: flex;
       flex-flow: column wrap;
       justify-content:space-around;
@@ -1179,79 +1156,83 @@ main  .header-brand-main{
       margin: 0 auto;
     }
 
-    .main-menu-blog{
-        display: inline-block;
-    }
 
-
-      .wrap-blog{
-        width: 840px !important;
+      main .wrap-blog{
+        width: 840px;
       }
 
-      .cases-links{
-        flex-flow: row wrap !important;
+      main .cases-links{
+        flex-flow: row wrap;
         justify-content: space-around;
       }
 
-       .extend1{
-         height :200px !important;
-
-       width : 410px !important;
+      .cases-links .extend1{
+         height :200px;
+         width : 410px;
       }
 
-      .extend2{
+      .cases-links .extend2{
 
-        width : 410px !important;
-
-        height :200px !important;
-
-      }
-      .blog-links{
-        width :200px !important;
-        height :200px !important;
-        margin: 5px 5px !important;
-        display: table;
-
-        background-color: #FFF;
-        box-shadow: 2px 2px 10px #d2d3d2 !important;
-        border: 2px solid rgba(0, 0, 0,0.2) !important;
+        width : 410px;
+        height :200px;
 
       }
+
       .cases-links  .normal{
-        width :200px !important;
-        height :200px !important;
-        margin: 5px 5px !important;
+        width :200px;
+        height :200px ;
         display: table;
-
         background-color: #FFF;
-        box-shadow: 2px 2px 10px #d2d3d2 !important;
-        border: 2px solid rgba(0, 0, 0,0.2) !important;
-
+        box-shadow: 2px 2px 10px #d2d3d2 ;
+        border: 2px solid rgba(0, 0, 0,0.2);
       }
 
-       .cases-links div p{
-         padding: 10px ;
+       .cases-links a p{
          line-height: 25px;
+         font-weight:250;
+         font-size: 14px;
+         color: #4A4A4A;
+         text-transform: uppercase;
+         margin: auto 0;
        }
 
-      .heads-brand{
-        width: 20% !important;
-justify-content: space-evenly !important;
+      nav .heads-brand{
+        width: fit-content;
+        justify-content: space-evenly;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
       }
 
-  .header-brand-blog{
-    border-left: 1.5px solid #111;
-    width: 40% !important;
-  }
 
   .header-brand-contact{
     border-left: 1.5px solid #111;
-    width:45% !important;
-    text-align: right!important;
+    width:45% ;
+    text-align: right;
   }
   }
 
+@media only screen and (max-width :790px) {
+  main .index-banner{
+    height: calc(100vh/2 - 250px);
+  }
+  nav .heads-brand{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row;
+    padding: 10px;
+  }
+    .cases-links  a p{
+      font-size: 18px;
+      line-height: 24px;
+      color: #4A4A4A;
+      margin: auto 0;
+  }
+
+}
 /* index*/
+
 
 main .index-banner{
   width:50%;
@@ -1288,7 +1269,7 @@ main{
 
 }
 
-main .index-banner{
+main .banner{
   width: 100%;
   height: 150px;
 
@@ -1329,14 +1310,15 @@ main .index-banner h4{
 
 .index-links div a{
   color: #111;
-  font-weight:590;
-  font-size: 14px;
+  font-weight:500;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   text-overflow:hidden;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  }
 }
 
 .index-links div a p{
@@ -1378,8 +1360,9 @@ footer .footer-h3{
   .footer-content{
     width: 50%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    font-weight: bold;
+    flex-flow: row ;
+    justify-content: space-around;
     align-items:center;
     margin: auto auto;
   }
@@ -1416,7 +1399,7 @@ footer .footer-h3{
   }
 
   .main-menu-blog-footer-sm{
-    flex-basis: 30%;
+    flex-basis: 10%;
     flex-flow:column;
     }
   .main-menu-blog-footer-sm a{
@@ -1447,7 +1430,7 @@ align-content: center;
   display: table;
 }
 .cases-links div a{
-  font-weight:590;
+  font-weight:500;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
