@@ -1120,11 +1120,13 @@ main  .header-brand-main{
     }
   .index-links  .index-boxlink-square{
     flex-basis: 30%;
-    display: table;
 
     }
     .index-links div p{
       line-height: 200px;
+    }
+    .index-boxlink-square a p{
+      margin: auto 0;
     }
     .index-links{
       display: flex;
@@ -1137,9 +1139,8 @@ main  .header-brand-main{
 
   /*------------ assignments-----------*/
     main{
-      padding-top: 90px;
+      padding-top: 100px;
       margin-bottom: 100px !important;
-
     }
     main .index-banner{
       width: 100% ;
