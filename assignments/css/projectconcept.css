@@ -1185,6 +1185,7 @@ nav h1{
   }
   .listp ul{
     margin-bottom: 50px;
+    padding-left:15px; 
   }
   .week2p h2{
     margin-top: 10px;
