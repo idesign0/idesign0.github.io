@@ -865,7 +865,7 @@ table th{
     text-align: center;
     font-size: 18px;
     height: 40px;
-    left: 10px;
+    padding: 5px;
 }
 table td {
     border: 1px solid #000;
@@ -874,7 +874,8 @@ table td {
     text-align: center;
     font-size: 16px;
     height: 40px;
-    left: 10px;
+    padding: 5px;
+
 }
 
 
@@ -903,7 +904,7 @@ tr:nth-child(even) {
     border: 1px solid #000;
     width: fit-content;
     margin: 15px 0px;
-    padding: 15px !important;
+    padding: 15px ;
     text-transform: uppercase;
 }
 .process{
@@ -999,15 +1000,12 @@ right: 50px;
     font-size: 16px;
     letter-spacing: 0.8px;
 }
+
 .week2p p{
-    padding-top: 20px;
-    text-align: justify;
-}
-.week2p p{
-    padding-top: 20px;
-    text-justify:inter-word;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify:inter-character;
 }
 .logoh .logo{
     width:20px;
@@ -1094,4 +1092,94 @@ nav h1{
 .link{
     font-weight: bold;
     text-decoration: #000;
+}
+/*Week 1 mobile settings*/
+@media only screen and (max-width :790px) {
+
+  /* MENU */
+
+  #header nav{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      padding: 0 0;
+  }
+
+  #header nav .fab-work{
+    display: none;
+  }
+  header nav h1{
+   display: none;
+  }
+  .main-menu{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  .main-menu li{
+    margin: 0 auto;
+  }
+
+  .main-menu > li > a{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .main-menu > li > ul{
+      top: 120%;
+      left: -60px;
+      min-width: 200px;
+  }
+
+  .projectconcept {
+      width: 100%;
+      margin: 60px auto 0px;
+  }
+
+  .week2p{
+    width: 100%;
+  }
+  .uniq{
+    width: 90%;
+  }
+  .uniq h1 {
+      margin: 15px 0px;
+      font-size: 18px;
+      line-height: 26px;
+  }
+  .projectconcept h1 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 15px 0;
+  }
+  .projectconcept img{
+      width: 100%;
+      border:black 1px solid;
+  }
+  table th{
+      font-size: 18px;
+      height: 60px;
+  }
+  table td {
+      font-size: 14px;
+      text-justify:inter-word;
+      height: 40px;
+      padding: 5px;
+  }
+  .step {
+    width: fit-content;
+    margin: 10px 0px;
+    padding: 5px !important;
+  }
+  .week2p p{
+      font-size: 18px;
+      line-height: 28px;
+  }
+  .week2p div p{
+      font-size: 10px;
+  }
+  .week2p ul{
+    padding:1px;
+  }
 }
