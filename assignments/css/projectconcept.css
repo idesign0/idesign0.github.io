@@ -1040,15 +1040,17 @@ right: 50px;
 .list ul{
     padding-left:20px;
 }
-.listp{
-    background-color: #FFFFE0;
-    width: fit-content;
+
+.listp ul{
+    font-weight: bold ;
     font-family: 'Lato', sans-serif;
     font-weight: bold ;
-    border: #000 solid 0.5px;
-    padding: 0 30px;
+    padding-left: 15px;
 }
-
+.listp .assignment_list{
+    font-size:24px;
+    color: #111;
+}
 .listp ul{
   margin: auto;
   font-size: 14px;
