@@ -986,7 +986,9 @@ right: 50px;
 .week2p h2{
     text-transform: uppercase;
     color:var(--h2-color);
-    padding: 15px 0px;
+    line-height: 40px;
+    border-bottom: 1px solid #111;
+    width: fit-content;
 }
 .week2 img{
     width: 100%;
@@ -1039,20 +1041,17 @@ right: 50px;
     padding-left:20px;
 }
 
-.listp ul{
-    font-weight: bold ;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold ;
-    padding-left: 15px;
-}
 .listp .assignment_list{
     font-size:24px;
     color: #111;
 }
 .listp ul{
-  margin: auto;
+  font-weight: bold ;
+  font-family: 'Lato', sans-serif;
+  padding-left: 15px;
+  margin-bottom: 50px;
   font-size: 14px;
-  line-height: 50px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
@@ -1180,10 +1179,16 @@ nav h1{
   .week2p div p{
       font-size: 10px;
   }
-  .week2p ul{
-    padding:1px;
-  }
+
   a b{
     font-weight: normal;
+  }
+  .listp ul{
+    margin-bottom: 50px;
+  }
+  .week2p h2{
+    margin-top: 10px;
+    line-height: 50px;
+    width: 80%;
   }
 }
