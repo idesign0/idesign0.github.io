@@ -822,22 +822,24 @@ text-transform: uppercase;
 }
 
 .projectconcept h1 {
-    margin: 25px 0px;
-    font-size: 25px;
+    margin-top: 105px;
+    margin-bottom: 50px;
+    font-size: 50px;
     width: fit-content;
-    line-height: 40px;
-    font-weight: bold;
+    background-color: #fed8b1;
+    line-height: 65px;
     text-transform: uppercase;
     border-bottom: 1px solid #111;
 }
 .uniq h1 {
-    margin: 25px 0px;
-    font-size: 25px;
-    width: fit-content;
-    line-height: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: 1px solid #111;
+  margin-top: 105px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  width: fit-content;
+  background-color: #fed8b1;
+  line-height: 65px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #111;
 }
 .projectconcept img{
     width: 80%;
@@ -903,7 +905,7 @@ tr:nth-child(even) {
     font-weight: bold;
     border: 1px solid #000;
     width: fit-content;
-    margin: 15px 0px;
+    margin: 30px 0px;
     padding: 15px ;
     text-transform: uppercase;
 }
@@ -1143,14 +1145,20 @@ nav h1{
     width: 90%;
   }
   .uniq h1 {
-      margin: 15px 0px;
-      font-size: 18px;
-      line-height: 26px;
+      margin-top: 75px;
+      margin-bottom: 25px;
+      font-size: 25px;
+      width: fit-content;
+      background-color: #fed8b1;
+      line-height: 35px;
+      font-weight: normal;
   }
   .projectconcept h1 {
-    font-size: 18px;
-    line-height: 26px;
-    margin: 15px 0;
+      margin-top: 75px;
+      margin-bottom: 25px;
+      font-size: 25px;
+      width: fit-content;
+      line-height: 35px;
   }
   .projectconcept img{
       width: 100%;
@@ -1168,7 +1176,7 @@ nav h1{
   }
   .step {
     width: fit-content;
-    margin: 10px 0px;
+    margin: 15px 0px;
     line-height: 20px !important;
     padding: 5px !important;
   }
@@ -1185,7 +1193,7 @@ nav h1{
   }
   .listp ul{
     margin-bottom: 50px;
-    padding-left:15px; 
+    padding-left:15px;
   }
   .week2p h2{
     margin-top: 10px;
