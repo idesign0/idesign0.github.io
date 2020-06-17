@@ -1194,11 +1194,10 @@ nav h1{
   }
   .step {
     width: fit-content;
-    margin: 15px 0px;
+    margin: 40px 0px 25px;
     line-height: 20px !important;
     padding: 5px !important;
-    font-size: 10px !important;
-
+    font-size: 15px !important;
   }
   .week2p p{
       font-size: 18px;
