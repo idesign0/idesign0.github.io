@@ -203,8 +203,8 @@
          When you are working on projects, you want to make sure your last work which is absolutely fine and no need for changes in the short term basis, should be safe from any possible unwanted changes, We can do it by making a new branch.<br /><br />
         Below content is from <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging" target="_blank"><b>Git Book</b></a>.
       </p>
-
       <div>
+
         <p class="step">
           Commits
         </p>
@@ -221,6 +221,7 @@
           As I mention above if you don't want to create any changes in the <a><b>master branch</b></a> (which is stable version) for now you can create a <a><b>new Branch</b></a> that will handle new versions of working directories for a <b><a>temporary basis</b></a> and then you can <a><b>merge</b></a> it into your master branch. here
           new branch <a><b>"iss53"</b></a> is a new branch and initially, it will be on the same commit with the master branch.<br /><br />
           <a>For making new branch in git And get directly checkout on that use this command :</a>
+        </p>
 <pre>
 <code>
 <a><b>git checkout -b iss53</b></a> // iss3 is only name of branch here.
@@ -232,7 +233,6 @@
 // so you can see here first command is eliminating two steps.
 </code>
 </pre>
-        </p>
         <img src="images/week2/gitrepo/manage/2.png" alt="">
 
         <p class="step">
@@ -251,6 +251,7 @@
           You can make multiple branches in git it may help you to store the different changes of different sections, from my knowledge if you are working on some <a><b>web development</b></a>, then you may want to do your <a><b>header</b></a> work
           on different branch and your <a><b>footer</b></a> work on different branch to have good working medium without any commits confusion.<br />
           <br /><a>here <b>Hotfix</b> is new branch(Second one.)</a> . Here current branch is master(Know from the arrows).
+        </p>
         <pre>
 <code>
 git branch Hotfix
@@ -265,12 +266,17 @@ git branch Hotfix
         <p>
           After doing necessarychanges on the new branches , you may want to include all the changes on master branch it can be done by <a><b>merging</b></a>. merging will include all the new commits to master branch.<br />
           You can do it by two steps :
-          <li>
-            First checkout to master brach if you are in different branch
-          </li>
-          <li>
-            Second use git merge command ( you can use directly git merge command if you are in master branch)
-          </li><br />
+        </p>
+        <div class="listp">
+          <ul>
+              <li>
+                First checkout to master brach if you are in different branch
+              </li>
+              <li>
+                Second use git merge command ( you can use directly git merge command if you are in master branch)
+              </li>
+          </ul>
+        </div>
         <pre>
 <code>
 git checkout master // if you are on new branch
@@ -297,19 +303,16 @@ git branch -d hotix
           Merging the <a><b>iss53</b></a> branch too.
         </p>
         <img src="images/week2/gitrepo/manage/8.png" alt="">
-      </div><br />
+      <br />
       <p>there are many things to learn in git but it need some visual explanation also so i am linking one real time tutorial for git branching it will help to understad the concept of branching. Best practice is to make test git repo and do all
         experiment on that<br /><br />
-        <li>
-          Link
-        </li>
-        <a href="https://learngitbranching.js.org/"> learning Git Branching</a>
+        <a href="https://learngitbranching.js.org/">Click here</a> to know more about git branching !
       </p>
       <h3 id="wd" style="padding-top: 100px; margin-top: -100px;"></h3>
       <h1>Basics of Web development</h1>
 
-      In web-development we are introduced to markdown language, its mark-up our web page fonts like HTML do but it is way easier to learn and operate. It helps beginners to learn web development. There are some other things we learn in
-      web-development.<br><br>
+      <p>In web-development we are introduced to markdown language, its mark-up our web page fonts like HTML do but it is way easier to learn and operate. It helps beginners to learn web development. There are some other things we learn in
+      web-development.</p>
 
       Click below know more<br><br>
       <div class="listp">
@@ -611,7 +614,7 @@ things which will be displayed in web
 
 
       </p>
-
+    </div>
     </div>
 
   </div>

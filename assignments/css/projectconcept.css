@@ -1197,13 +1197,12 @@ nav h1{
     margin: 15px 0px;
     line-height: 20px !important;
     padding: 5px !important;
+    font-size: 10px !important;
+
   }
   .week2p p{
       font-size: 18px;
       line-height: 28px;
-  }
-  .week2p div p{
-      font-size: 10px;
   }
 
   a b{
