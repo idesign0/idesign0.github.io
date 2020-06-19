@@ -268,23 +268,18 @@ git branch Hotfix
           After doing necessarychanges on the new branches , you may want to include all the changes on master branch it can be done by <a><b>merging</b></a>. merging will include all the new commits to master branch.<br />
           You can do it by two steps :
         </p>
-        <div class="listp">
-          <ul>
-              <li>
-                First checkout to master brach if you are in different branch
-              </li>
-              <li>
-                Second use git merge command ( you can use directly git merge command if you are in master branch)
-              </li>
-          </ul>
-        </div>
+
         <pre>
 <code>
-git checkout master // if you are on new branch
-git merge hotfix // to merge with hotfix
+<a><b>First</b></a> checkout to master brach if you are in different branch
+
+<a><b>Second</b></a> use git merge command ( you can use directly git merge command if you are in master branch)
+
+git <a><b>checkout</b></a> master // if you are on new branch
+git <a><b>merge</b></a> hotfix // to merge with hotfix
 
 // You can delet the branch if it no longer needed use
-git branch -d hotix
+git <a><b>branch -d</b></a> hotix
 </code>
 </pre>
         </p>
