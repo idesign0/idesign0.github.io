@@ -304,6 +304,165 @@ git <a><b>branch -d</b></a> hotix
         experiment on that<br /><br />
         <a href="https://learngitbranching.js.org/">Click here</a> to know more about git branching !
       </p>
+
+      <h3 id="gitlab" style="padding-top: 100px; margin-top: -100px;"></h3>
+      <h1>Git lab</h1>
+        <p>
+          GitLab is an open-source code repository and collaborative development platform. GitLab offers a location for online code storage and collaborative development of massive software projects. The repository includes version control to
+          enable hosting different development chains and versions, allowing users to inspect previous code and roll back to it in the event of unforeseen problems.<br /><br />
+
+        To get in git-lab Follow this step: <br /><br />
+        </p>
+      <div class="listp">
+        <div>
+          <ul>
+            <li>You should get one mail about git registration confirmation.</li>
+            <li>Open link, one confirmation message will show up.</li>
+            <li>For password you have to click forget password and type your password.</li>
+            <li>And then Just login in with new password!</li>
+          </ul>
+        </div>
+      </div>
+      <h1>Cloning the repository</h1>
+
+      <p>
+        In git-lab you may get one default template.
+        To make your local repository you have to clone it to folder where you want to make your local repository.
+      </p>
+      <pre>
+1) Make one folder named fablab<br>
+2) Open git-bash in it<br>
+3) And then type <a><b>**</b></a> “git clone ‘link’.</pre>
+
+      <img src="images/week2/gitrepo/1.jpg">
+    </div><br>
+      <p>
+        After getting in Git-lab you have to get link your local repository with a new git lab account. (SSH KEY generation)
+      <h1>SSH key</h1>
+
+      <p>
+      <a><b>SSH (Secure Socket Shell)</b></a> is a network protocol that provides administrators with a secure way to access a remote computer. <a><b>This step is to link your computer to the server</b></a>.<br><br>
+
+      When working with a Git-lab repository, you'll often need to <a><b>identify yourself</b></a> to Git-lab using your username and password. An SSH key is an alternate way to identify yourself that doesn't require you to enter your username and password
+      every time.<br><br>
+      SSH keys come in pairs, a public key that gets shared with services like Git-lab, and a private key that is stored only on your computer. If the keys match, you're granted access.<br><br>
+      The cryptography behind SSH keys ensures that no one can reverse engineer your private key from the public one. <a href="https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys">click here</a> for Details.
+      </p>
+
+      <div>
+        <p class="step">
+          Generate ssh key
+        </p>
+
+        <p>Generate SSH key by opening Git Bash and type/paste :)
+        <pre>
+ssh-keygen -t rsa -C your.email@example.com
+then enter.</pre>
+        <pre>
+<a><b>**</b></a> Enter File in which to save  the key (directory) : <a><b>Press</b></a> Enter.</pre>
+        <img src="images/week2/sshkey/1.png">
+        <p class="step">
+          Copy SSH Key
+        </p>
+        <pre>
+<a><b>**</b></a> if overwrite option comes <a><b>Enter</b></a> : y</pre>
+        <pre>
+then Type :
+cat ~/.ssh/id_rsa.pub</pre>
+        <pre>
+copy key given below <a><b>**</b></a> The key fingerprint is :</pre>
+        <img src="images/week2/sshkey/2.png">
+        <p class="step">
+        Git lab settings : SSH Key
+        </p>
+        <p>Now <a><b>Paste</b></a> the link inside the box of <a><b>Key</b></a> and click <a><b>Add key</b></a>.</p>
+        <img src="images/week2/sshkey/3.png">
+        <p class="step">
+          SSH is set !
+        </p>
+        <p>
+        Now you are linked with the <a><b>remote repository</b></a> of git lab with <a><b>Secure shell !</b></a>
+        </p>
+        <img src="images/week2/sshkey/4.png">
+
+      <h1>Three trees of GIT</h1>
+      <p>
+        Three trees of GIT: <a><b>head, index, working directory</b></a>.<br /><br />
+  Three trees of GIT is something Necessary to learn a thing when you are using <a><b>GIT LAB</b></a> or <a><b>github</b></a>. You should be familiar with the head, index, working directory.
+  <br /><br />
+  These are the list of important commands you should use to use GitLab. There are many commands but these will be used when you make changes to your local repository.
+      </p>
+      <pre>
+
+<a><b>git clone /path/to/repository</b></a>
+
+- Check out a repository
+(Create a working copy of a local repository)
+
+<a><b>git config --global user.name "Sam Smith"<br>git config --global user.email sam@example.com</b></a>
+
+- For telling Git who you are
+
+<a><b>Git init</b></a>
+
+- Initialize git
+
+<a><b>git status</b></a>
+
+- Status (to List the files you've changed and those you still need to add or commit)
+
+<a><b>git add .</b></a>
+
+- Add files (Add one or more files to staging (index)
+
+<a><b>git commit -m "Commit message"</b></a>
+
+- Commit (Commit changes to head (but not yet to the remote repository)
+
+<a><b>git push origin maste</b>r</a>
+
+- Push (Send changes to the master branch of your remote repository)
+
+</pre>
+      <div>
+
+        <p class="step">Git init</p>
+        <p> <a><b>.git</b></a> may visibal here or may not. but using ' <a><b>git init</b></a> ' . git init will help us to add local repository </p>
+        <img src="images/week2/gitrepo/gitbranching/1.png"><br><br>
+        <p class="step">Adding File</p>
+        <p>
+          Adding new file to local repository. if you know about <a href="https://code.tutsplus.com/tutorials/what-are-the-three-trees-in-git--cms-28188" target="_blank"><b>Three trees of git</b></a>, then you will know this file added to your <a><b>working directory</b></a>.
+        </p>
+        <img src="images/week2/gitrepo/gitbranching/3.png"><br><br>
+
+        <p class="step">Git status</p>
+        <p>After adding file status will tell that new file is added to working directory byt not added to <a><b>INDEX</b></a>. If message is highlighted in red color then it means changes are not ready for commit yet.</p>
+        <img src="images/week2/gitrepo/gitbranching/4.png"><br><br>
+
+        <p class="step">Git add</p>
+        <p>To make changes ready for commit we need to add these changes to <a><b>Index</b></a>. Git add will make These changes to "<a><b>Ready for commit</b></a>" and we can say now that changes are "<a><b>Staged</b></a>".</p>
+        <img src="images/week2/gitrepo/gitbranching/5.png"><br><br>
+
+        <p class="step">Recheck: git status</p>
+        <p>directories are now are in green. it means changes are "<a><b>Staged</b></a>" and ready to commit.</p>
+        <img src="images/week2/gitrepo/gitbranching/6.png"><br><br>
+
+        <p class="step">Git commit</p>
+        <p>Now all the imformation previous changes will be added to <a><b>local repository</b></a>.</p>
+        <img src="images/week2/gitrepo/gitbranching/7.png"><br><br />
+
+        <p class="step">Git push </p>
+        <p>
+          Before git push local repository will be <a><b>One commit or serval commits</b></a> ahead of Remote repository. This command will update the <a><b>remote repository</b></a>.
+        </p>
+        <p>
+          git push will upload your changes in local repository to remote repository. In my case it will be uploaded in the git-lab repository. since this local repository is for demostration purpose it has no remote repo. here is the link of my Fablab remote repository.
+          <a href="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-prakashbhaipatel" target="_blanks"><b>Click !</b></a>
+        </p>
+        <img src="images/week2/gitrepo/gitbranching/8.png"><br><br>
+        
+      </div><br>
+      <p>
       <h3 id="wd" style="padding-top: 100px; margin-top: -100px;"></h3>
       <h1>Basics of Web development</h1>
 
@@ -322,136 +481,6 @@ git <a><b>branch -d</b></a> hotix
       </div>
 
 
-
-      <h3 id="gitlab" style="padding-top: 100px; margin-top: -100px;"></h3>
-      <h3>3) Git lab <i class="fa fa-gitlab" aria-hidden="true"></i></h3>
-      <div class="logodata">
-        <img class="logo" src="images/week2/logo/gitlab.png">
-        <p>
-          GitLab is an open source code repository and collaborative development platform. GitLab offers a location for online code storage and collaborative development of massive software projects. The repository includes version control to
-          enable hosting different development chains and versions, allowing users to inspect previous code and roll back to it in the event of unforeseen problems.
-        </p>
-      </div>
-      <br><br>
-      So, I what I learned is,<br><br>
-      <div class="listp">
-        <div>
-          <ul>
-            <li> What is git lab and what it does? (as mentioned above)</li>
-            <li>How can I use it for my web-development? (! important)</li>
-            <li>What are the main features of git(git-lab)?</li>
-            <li>Remember git and git lab are not identically same, but they work on same principal.</li>
-            <li>Git take care of our project’s history, hence take care of our repository aka files of our project.</li>
-          </ul>
-        </div>
-      </div><br />
-      <h5>How to get in git-lab!</h5><br />
-      <h5>Follow this step:</h5><br />
-      <div class="listp">
-        <div>
-          <ul>
-            <li>You should get one mail about git registration confirmation.</li>
-            <li>Open link, one confirmation message will show up.</li>
-            <li>For password you have to click forget password and type your password.</li>
-            <li>And then Just login in with new password!</li>
-          </ul>
-        </div>
-      </div>
-      <p>
-        After getting in Git-lab you have to get link your local repository with new git lab account. (SSH KEY generation)
-      <h5>So, let’s do it,</h5>
-      <h3>First, we will generate SSH key.</h3>
-
-      <h4>What is SSH key?</h4>
-      <b>SSH (Secure Socket Shell)</b>, is a network protocol that provides administrators with a secure way to access a remote computer. This step is to link your computer to the server.<br><br>
-      When working with a Git-lab repository, you'll often need to identify yourself to Git-lab> using your username and password. An SSH key is an alternate way to identify yourself that doesn't require you to enter your username and password
-      every time.<br><br>
-      SSH keys come in pairs, a public key that gets shared with services like Git-lab, and a private key that is stored only on your computer. If the keys match, you're granted access.<br><br>
-      The cryptography behind SSH keys ensures that no one can reverse engineer your private key from the public one. <a href="https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys">click here</a> for Details.
-      </p>
-
-      <div>
-
-        <img src="images/week2/sshkey/1.png">
-        <p>Generate SSH key by opening up Git Bash and typing:<br>ssh-keygen -t rsa -C your.email@example.com</p>
-
-        <img src="images/week2/sshkey/2.png">
-        <p>The type:<br>cat ~/.ssh/id_rsa.pub</p>
-
-        <img src="images/week2/sshkey/3.png">
-        <p>Now the Git link needs to be linked to the system. Copy the link</p>
-
-        <img src="images/week2/sshkey/4.png">
-        <p>Now paste it to settings > SSH keys – keys</p>
-        <p>Now you are linked with the remote repository of git lab (Yay!)</p>
-
-        <h4>Cloning the repository</h4>
-
-        In git-lab you may get one default template.<br>
-
-        To make your local repository you have to clone it to folder where you want to make your local repo.<br>
-
-        Let’s do it,<br><br>
-
-        1) Make one folder named fablab<br>2) Open git-bash in it<br>3) Type “git clone ‘link’ “<br>
-        <p>• you will get link from your git-lab page</p>
-        <img src="images/week2/gitrepo/1.jpg">
-      </div><br>
-
-      <h4>git branching</h4>
-      git branching is something <b>Necessary to learn</b> thing when you are using <b>GIT LAB</b> or <b>GIT HUB</b>. you should be familiar with the <b><a href="https://code.tutsplus.com/tutorials/what-are-the-three-trees-in-git--cms-28188">head,
-          index, working directory</a></b>.<br><br>
-      These are the list of important commands you should use to use gitlab. There are many commands but these will be use when you make changes to your local repository.<br><br>
-      <pre>
-								<div>
-										<ul>
-<li>git config --global user.name "Sam Smith"<br>git config --global user.email sam@example.com</li> - For telling Git who you are
-<li>Git init</li> - Create a new local repository
-<li>git clone /path/to/repository</li> - Check out a repository (Create a working copy of a local repository)
-<li>git clone username@host:/path/to/repository</li> - Check out a repository (For a remote server)
-<li>git status</li> - Status (to List the files you've changed and those you still need to add or commit)
-<li>git add *</li> - Add files (Add one or more files to staging (index)
-<li>git commit -m "Commit message"</li> - Commit (Commit changes to head (but not yet to the remote repository)
-<li>git push origin master</li> - Push (Send changes to the master branch of your remote repository)
-</ul>
-</div>
-</pre>
-      <div>
-
-        <p class="step">1) Git init</p>
-        <p> <a><b>.git</b></a> may visibal here or may not. but using ' <a><b>git init</b></a> ' . git init will help us to add local repository </p>
-        <img src="images/week2/gitrepo/gitbranching/1.png"><br><br>
-        <p class="step">2) Adding File</p>
-        <p>
-          Adding new file to local repository,
-        </p>
-        <img src="images/week2/gitrepo/gitbranching/3.png"><br><br>
-
-        <p class="step">3) Git status</p>
-        <p>Changing status of repository</p>
-        <img src="images/week2/gitrepo/gitbranching/4.png"><br><br>
-
-        <p class="step">4) Git add</p>
-        <p>TGit add will add file to working directory.</p>
-        <img src="images/week2/gitrepo/gitbranching/5.png"><br><br>
-
-        <p class="step">5) Recheck: git status</p>
-        <p>Rechecking git status, green means file is added</p>
-        <img src="images/week2/gitrepo/gitbranching/6.png"><br><br>
-
-        <p class="step">6) Git commit</p>
-        <p>to Commit the changes. it will generate new version of your local repository</p>
-        <img src="images/week2/gitrepo/gitbranching/7.png"><br><br />
-
-        <p class="step">7) Git push </p>
-        <img src="images/week2/gitrepo/gitbranching/8.png"><br><br>
-        <p>
-          git push will upload your reo to remote repository. In my case it will be uploaded in the git-lab repository. since this local repositoryis for demostration purpose it has no remote repo. here is the link of my Fablab remote repository.
-          <a href="https://gitlab.fabcloud.org/academany/fabacademy/2019/labs/cept/students/dhruv-prakashbhaipatel" target="_blanks"><b>Click !</b></a>
-        </p>
-      </div><br>
-      <p>
-      <h3 id="md" style="padding-top: 100px; margin-top: -100px;"></h3>
       <h4>And now main thing!</h4>
       <h5>How to make website?</h5><br>
       <div class="listp">
@@ -462,7 +491,7 @@ git <a><b>branch -d</b></a> hotix
           </ul>
         </div>
       </div>
-
+      <h3 id="md" style="padding-top: 100px; margin-top: -100px;"></h3>
       <h3>Markdown coding</h3>
       <div class="logodata">
         <img class="logo" src="images/week2/logo/md.png">
