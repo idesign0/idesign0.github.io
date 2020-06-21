@@ -1170,6 +1170,10 @@ footer .footer-h3{
 }
 
 @media only screen and (max-width : 790px){
+  footer{
+    height: 45%;
+  }
+
   .footer-content{
     width: 100%;
   }
