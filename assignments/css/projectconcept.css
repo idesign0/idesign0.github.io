@@ -858,6 +858,7 @@ pre {
 .projectconcept img{
     width: 80%;
     border:black 1px solid;
+    margin: 10px 0;
 }
 
 .paragraph{
@@ -1111,6 +1112,82 @@ nav h1{
     font-weight: bold;
     text-decoration: #000;
 }
+
+/*footer*/
+footer{
+  width:100%;
+  height: 40%;
+  background-color: #fff;
+  box-shadow: 0px -1px 8px #111;
+  align-items: center;
+}
+footer ul li a{
+  font-size: 15px;
+  font-family:'Poppins', sans-serif;
+  text-decoration: none;
+  color: #111;
+   text-transform: uppercase;
+   display: block;
+   line-height: 30px;
+}
+footer .footer-h3{
+  font-family:'Poppins', sans-serif;
+  color: #fff;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+  .footer-content{
+    width: 50%;
+    display: flex;
+    font-weight: bold;
+    flex-flow: row ;
+    justify-content: space-around;
+    align-items:center;
+    margin: auto auto;
+  }
+
+.main-menu-blog-footer-tabs{
+  list-style: none;
+  text-align: left;
+  flex-basis: 40%;
+}
+
+.main-menu-blog-footer-sm{
+  list-style: none;
+  flex-basis: 20%;
+  display: flex;
+  flex-flow:row;
+  justify-content:space-evenly;
+}
+
+.main-menu-blog-footer-sm ul{
+  list-style: none;
+}
+
+.main-menu-blog-footer-sm img{
+  width: 34px;
+}
+
+@media only screen and (max-width : 790px){
+  .footer-content{
+    width: 100%;
+  }
+
+  .main-menu-blog-footer-tabs{
+    flex-basis: 40%;
+  }
+
+  .main-menu-blog-footer-sm{
+    flex-basis: 10%;
+    flex-flow:column;
+    }
+  .main-menu-blog-footer-sm a{
+      margin: 10px;
+      }
+
+}
+
 /*Week 1 mobile settings*/
 @media only screen and (max-width :790px) {
 
