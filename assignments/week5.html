@@ -46,7 +46,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -58,7 +59,7 @@
 <body>
 
   <!-- HEADER -->
-  <header id="header">
+  <header id="header" style="padding-top: 100px; margin-top: -100px;">
     <!-- MOBILE MENU ICON -->
     <a href="#" class="mob-menu"><i class="fa fa-bars"></i></a>
     <!-- MENU -->
@@ -67,8 +68,8 @@
 
       <ul class="main-menu">
         <li><a href="..\index">Home</a></li>
-        <li>
-          <a href="..\assignments">Fab work</a>
+        <li class="fab-work">
+          <a href="#">Fab work</a>
           <ul>
             <li><a href="#">Week 1 to 5</a>
               <ul>
@@ -113,7 +114,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="project-work">
           <a href="#">project</a>
           <ul>
             <li><a href="..\project">Final Project proposal</a></li>
@@ -129,7 +130,7 @@
     </nav>
   </header>
   <!-- /HEADER -->
-  <div class="layout">
+  <!-- <div class="layout">
     <div class="anchors" id="listj">
       <ul>
         <li><a href="#header">Top</a></li>
@@ -152,34 +153,31 @@
         </li>
       </ul>
     </div>
+ -->
 
-
-    <div class="week2">
+    <div class="projectconcept">
 
       <div class="week2p">
-        <h2>Week 5 : Assignment</h2>
-        <div class="listp">
-          <div>
-            <ul>
+        <h2>Week 5 : Assignment</h2><br />
+        <div class="listp">            <ul>
               <li>make an in-circuit programmer by milling the PCB,
                 program it, then optionally try other PCB processes
                 ATtiny45</li>
             </ul>
-          </div>
-        </div><br><br>
-        In week 5 we are introduced to electronics Production. we are asked to make our own fab-isb board. for that we need to learn how to design our own circuit board, we are introduced to printed circuit board (<a
-          href="https://en.wikipedia.org/wiki/Printed_circuit_board"><b>PCB</b></a>)
+        </div>
+        <p>
+          In week 5 we are introduced to electronics Production. we are asked to make our FabISP board. for that we need to learn how to design our circuit board, we are introduced to the printed circuit board (<a
+            href="https://en.wikipedia.org/wiki/Printed_circuit_board" target="_blank"><b>PCB</b></a>).
+        </p>
 
-        <h3>Printed circuit board</h3>
+        <h1>Printed circuit board</h1>
 
         <p>
-          printed circuit board is basically fiber glass board coated with <b>copper</b> traces( paths on the pcb board which connects different components of circuit board like power, resistor, diodes).Copper traces are essential part in design of
-          pcb, you may have seen in circuit board every traces or copper wire are arranges in nice manner, it is important because length of copper wire controls time delay of communication.
-          <br><br><a href="https://www.youtube.com/watch?v=H9pGbLJknDk"><b>Click Here!</b></a> for more information<br><br>
+          The printed circuit board is basically a fiberglass board coated with <a><b>copper</b></a> traces <a><b>( paths on the PCB board which connects different components of circuit board like power, resistor, diodes )</b></a>. Copper traces are an essential part in the design of PCB, you may have seen in circuit board every traces or copper wire are arranged in a nice manner, it is important because the length of copper wire controls time delay of communication.
+          <br><br><a href="https://www.youtube.com/watch?v=H9pGbLJknDk" target="_blank"><b>Click Here!</b></a> for more information.<br><br>
 
-          PCB can be characterized in different layers:
+          <p class="step">PCB can be characterized by different layers:</h3>
         <div class="listp">
-          <div>
             <ul>
               <li>SINGLE-SIDED PCB</li>
               <li>DOUBLE SIDED PCB</li>
@@ -187,33 +185,32 @@
               <li>Rigid PCB</li>
               <li>Flex PCB</li>
               <li>Rigid-Flex PCB</li>
-
             </ul>
-          </div>
-        </div><br><br>
-        <h4>Single Sided pcb</h4>
-        in Single Sided pcb copper layer is coated only one side, in this type of boards components and joints are connected only one one sides. Single-sided printed circuit boards are easily designed and quickly manufactured. They serve as the
-        most cost effective platform in the industry.<br>
+        </div>
+        <p class="step">Single Sided pcb</p>
+        <p>
+          In Single-Sided PCB copper layer is coated only one side, in this type of board components and joints are connected only one side. Single-sided printed circuit boards are easily designed and quickly manufactured. They serve as the
+          most cost-effective platform in the industry.
+        </p>
 
         <div>
           <img src="images/week5/pcb/1.png">
-        </div><br><br>
-        Benefits of Single Sided PCBs.<br><br>
+        </div>
+        <p class="step">
+          Benefits of Single Sided PCBs.
+        </p>
         <div class="listp">
-
-          <div>
             <ul>
               <li>Lower cost, especially for high volume orders</li>
               <li>Lower probability of manufacturing issues</li>
               <li>Popular, common, and easily understood by most PCB manufacturers</li>
             </ul>
-          </div>
         </div>
 
-        <br><br>
-        <h4>Double sided pcb</h4>
-        in Double sided pcb copper layer is coated on both sides allowing connections on both side of boards.Double Sided PCBs (also known as Double-Sided Plated Thru or DSPT) circuits are the gateway to higher technology applications. They allow
-        for closer (and perhaps more) routing traces by alternating between a top and bottom layer using vias. Today, double sided printed circuit board technology is perhaps the most popular type of PCB in the industry.<br>
+        <p class="step">Double sided pcb</p>
+        <p>
+          In Double-sided PCB copper layer is coated on both sides allowing connections on both sides of boards. Double-Sided PCBs (also known as Double-Sided Plated Thru or DSPT) circuits are the gateway to higher technology applications. They allow for a closer (and perhaps more) routing traces by alternating between a top and bottom layer using vias. Today, double-sided printed circuit board technology is perhaps the most popular type of PCB in the industry.  
+        </p>
         <div>
           <img src="images/week5/pcb/2.png">
         </div><br><br>
