@@ -1490,16 +1490,6 @@ tr:nth-child(even) {
   text-justify: inter-word;
 }
 
-.logoh .logo {
-  width: 20px;
-  height: 20px;
-}
-
-.logoh {
-  display: flex;
-  flex-flow: row;
-}
-
 .week2p .code {
   align-items: center;
 }
@@ -1635,6 +1625,32 @@ footer .footer-h3 {
 .main-menu-blog-footer-sm img {
   width: 34px;
 }
+
+/*------------ week 5 -----------*/
+
+.resource .compo{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.resource .compo .compo-images{
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.compo p{
+  width: 30%;
+  flex-basis: 40%;
+}
+
+.resource .compo .compo-images img{
+  width: 40%;
+  border: none;
+}
+
 
 @media only screen and (max-width:800) {
   .wrapper {
