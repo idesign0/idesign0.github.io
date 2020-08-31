@@ -1629,6 +1629,7 @@ footer .footer-h3 {
 /*------------ week 5 -----------*/
 
 .resource .compo{
+  width: 100%;
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
@@ -1648,6 +1649,32 @@ footer .footer-h3 {
 
 .resource .compo .compo-images img{
   width: 40%;
+  border: none;
+}
+
+/*------------ week 6 -----------*/
+
+.print .print-compo{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.print .print-compo .print-compo-images{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.print-compo p{
+  width: 50%;
+  flex-basis: 40%;
+}
+
+.print .print-compo .print-compo-images img{
+  width: 100%;
   border: none;
 }
 
