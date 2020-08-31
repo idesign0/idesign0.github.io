@@ -118,7 +118,7 @@
           <ul>
             <li><a href="project">Final Project proposal</a></li>
             <li><a href="projectd">Project development</a></li>
-<li><a href="finalproject">Final Project</a></li>
+            <li><a href="finalproject">Final Project</a></li>
 
 
           </ul>
@@ -333,49 +333,49 @@
             A = solid which is going tp subtract<br><br>
             B = solid witch will be use to subtract
 
-            <p class="step">STEP 13 : generate a rendom surface</p>
-            <img src="images/week6/3dprinting/13.gif" alt="">
-            <p>Make a curve on <a><b>Rhino</b></a> with <a><b>curve</b></a> command.</p>
-            and extrude it with <a><b>extrudecrv</b></a> command.
+          <p class="step">STEP 13 : generate a rendom surface</p>
+          <img src="images/week6/3dprinting/13.gif" alt="">
+          <p>Make a curve on <a><b>Rhino</b></a> with <a><b>curve</b></a> command.</p>
+          and extrude it with <a><b>extrudecrv</b></a> command.
 
 
-            <p class="step">STEP 14 : Surface morph</p>
-            <img src="images/week6/3dprinting/14.jpg" alt="">
-            <p> add surface morph tool, it will help us to aling the pattern to the surface</p>
+          <p class="step">STEP 14 : Surface morph</p>
+          <img src="images/week6/3dprinting/14.jpg" alt="">
+          <p> add surface morph tool, it will help us to aling the pattern to the surface</p>
 
-            <p class="step">STEP 15 :</p>
-            <img src="images/week6/3dprinting/15a.png" alt="">
-            <img src="images/week6/3dprinting/15.jpg" alt="">
-            <p>
-              <a><b>CONNECT :</b></a>
-              SDiff to Geometry (G)<br>
-              SDiff > BOX > REFERENCE (R)<br><br>
-              <a><b>RE-PARAMETERIZE</b></a> the surface, it will convert whole surface into unit dimensions, means curves maximum dimension is 1 and minimum is 0.
-              <br><br>
-              Here longitudinal dimension is <a><b>U</b></a> parameter and transverse direction will be <a><b>V</b></a>.<br><br>
-              <a><b>W</b></a> will be amount of thickness you want to give on pattern. you can change U, V, W by <a><b>Number slider</b></a>. For U and V keep maximum value 1. Otherwise pattern will go outside the surface and it wont be pattern.
+          <p class="step">STEP 15 :</p>
+          <img src="images/week6/3dprinting/15a.png" alt="">
+          <img src="images/week6/3dprinting/15.jpg" alt="">
+          <p>
+            <a><b>CONNECT :</b></a>
+            SDiff to Geometry (G)<br>
+            SDiff > BOX > REFERENCE (R)<br><br>
+            <a><b>RE-PARAMETERIZE</b></a> the surface, it will convert whole surface into unit dimensions, means curves maximum dimension is 1 and minimum is 0.
+            <br><br>
+            Here longitudinal dimension is <a><b>U</b></a> parameter and transverse direction will be <a><b>V</b></a>.<br><br>
+            <a><b>W</b></a> will be amount of thickness you want to give on pattern. you can change U, V, W by <a><b>Number slider</b></a>. For U and V keep maximum value 1. Otherwise pattern will go outside the surface and it wont be pattern.
 
-            </p>
-            <img src="images/week6/3dprinting/15a.jpg" alt="">
-            <p>It is how it looks in END.</p>
-            <p class="step">STEP 16 : Exporting model as STL</p>
-            <img src="images/week6/3dprinting/15b.jpg" alt="">
-            <P>.STL is used for FDM type of printers. in which 3d model is converted into layers and mesh which are used by slicer tool.</P>
-            <img src="images/week6/3dprinting/15c.jpg" alt="">
-            <p>There are two options for Export in .stl<br><br>
-              <a><b>Binary</b></a> and <a><b>ASCII</b></a> , in binary you cant modified the 3d geometry after generating into .stl in ASCII you can do modification and it is human readable</p>
-            i chose BINARY for now.
-            <h3>Slicer softwere : cura</h3>
-            <p class="step">STEP 16 : Imported model in CURA</p>
-            <img src="images/week6/3dprinting/16.png" alt="">
-            <p>It is first time i was going to use any 3D slicer softwere. we have two 3d printers <a><b>Ultimaker 2+</b></a> and <a><b>Flashforge Dreamer</b></a>. i chose to use Ultimaker first.</p>
-            <img src="images/week6/3dprinting/16a.png" alt="">
-            <p>On default settings and size print time was way too long, as expected<br><br> i do some changes to minimize it. i want to understand th settings so i started reading about cura's user manual. <a
-                href="https://ultimaker.com/download/170/Cura_User-Manual_v1.0.pdf"><b>Click here</b></a> to Read</p>.
-            <img src="images/week6/3dprinting/17.gif" alt="">
-            <p>I was successful to reduce the time to 4 : 00, but at a cost of quality and strength.</p>
-            <p>To reduce the time i changes following settings</p>
-            <pre>
+          </p>
+          <img src="images/week6/3dprinting/15a.jpg" alt="">
+          <p>It is how it looks in END.</p>
+          <p class="step">STEP 16 : Exporting model as STL</p>
+          <img src="images/week6/3dprinting/15b.jpg" alt="">
+          <P>.STL is used for FDM type of printers. in which 3d model is converted into layers and mesh which are used by slicer tool.</P>
+          <img src="images/week6/3dprinting/15c.jpg" alt="">
+          <p>There are two options for Export in .stl<br><br>
+            <a><b>Binary</b></a> and <a><b>ASCII</b></a> , in binary you cant modified the 3d geometry after generating into .stl in ASCII you can do modification and it is human readable</p>
+          i chose BINARY for now.
+          <h3>Slicer softwere : cura</h3>
+          <p class="step">STEP 16 : Imported model in CURA</p>
+          <img src="images/week6/3dprinting/16.png" alt="">
+          <p>It is first time i was going to use any 3D slicer softwere. we have two 3d printers <a><b>Ultimaker 2+</b></a> and <a><b>Flashforge Dreamer</b></a>. i chose to use Ultimaker first.</p>
+          <img src="images/week6/3dprinting/16a.png" alt="">
+          <p>On default settings and size print time was way too long, as expected<br><br> i do some changes to minimize it. i want to understand th settings so i started reading about cura's user manual. <a
+              href="https://ultimaker.com/download/170/Cura_User-Manual_v1.0.pdf"><b>Click here</b></a> to Read</p>.
+          <img src="images/week6/3dprinting/17.gif" alt="">
+          <p>I was successful to reduce the time to 4 : 00, but at a cost of quality and strength.</p>
+          <p>To reduce the time i changes following settings</p>
+          <pre>
 <code>
 
 <a><b>Material : PLA</b></a>
@@ -419,42 +419,42 @@ Build plate adhesion : Raft : for giving support at Build plat, to make the mode
 
 </code>
 </pre>
-            <h3>Ultimaker</h3>
-            <img src="images/week6/3dprinting/18.jpg" alt="">
-            <p class="step"> STEP 17 : STARTED PRINTING</p>
-            <img src="images/week6/3dprinting/19.jpg" alt="">
-            <p></p>
+          <h3>Ultimaker</h3>
+          <img src="images/week6/3dprinting/18.jpg" alt="">
+          <p class="step"> STEP 17 : STARTED PRINTING</p>
+          <img src="images/week6/3dprinting/19.jpg" alt="">
+          <p></p>
 
-            <p class="step"> STEP 18 : FINAL OUTUT</p>
-            <img src="images/week6/3dprinting/20.jpg" alt="">
-            <p>It came out good but not the way i <a><b>expected</b></a>. Since i have to reduced the time and doing it first time(properly) i mad the structure weaker and <a><b>Adding</b></a> more, 3d printer stopped material drawing 90 % of job ,
-              so i have to take out uncompleted print</p>
+          <p class="step"> STEP 18 : FINAL OUTUT</p>
+          <img src="images/week6/3dprinting/20.jpg" alt="">
+          <p>It came out good but not the way i <a><b>expected</b></a>. Since i have to reduced the time and doing it first time(properly) i mad the structure weaker and <a><b>Adding</b></a> more, 3d printer stopped material drawing 90 % of job ,
+            so i have to take out uncompleted print</p>
 
-            <p class="step"> STEP 19 : BREAKING APART SUPPORTS</p>
-            <img src="images/week6/3dprinting/21.jpg" alt="">
-            <img src="images/week6/3dprinting/22.jpg" alt="">
-            <p>AND I <a><b>BREAK IT !</b></a> :/</p><br><br>
-            <h3>conclusion :</h3>
-            <p>I try to find which mistakes i have done in settings parameters :<br><br>
-              <div class="listp">
-                <div>
-                  <ul>
-                    <li> Layer height - can be low for this types of thin designs</li>
-                    <li>Infill - it is important factor, i put infill 15% (only 15% of inside will be poured with material), it is not appropriate for this thin complex bodies.</li>
-                    <li> Orientation of the design - the way i put my design it took more time to print</li>
-                    <li>Speed - i kept Print speed high. it <a><b>Decreases the quality</b></a> and thats why surface was ruff.
-            </p>
-            <li> Wall thickness - I Wall thickness low which should be more to better overlaps of design </li>
-            <li> Supports - I put wrong types of supports in my designs , i found out when i removing it , <a><b>Grid supports</b></a> are not so good for these types of designs ( Complex voronoi). line supports are preferable</li>
-            <li>Supports location - Where i put support is more important, if i put supports on body itself it will stress body itself and try to break it if body is thin.</li>
-            </ul>
-        </div>
-      </div>
-      </p>
-      <h4>Second Time :</h4>
-      <a>I change some settings and tried one more time. changed settings are shown in <a><b>red</b></a>
-        I also learned some basic , "<a>Always give your model first priority, think about its strength and quality first. after setting up required value find ways to reduce time</a>"<br><br>
-        <pre>
+          <p class="step"> STEP 19 : BREAKING APART SUPPORTS</p>
+          <img src="images/week6/3dprinting/21.jpg" alt="">
+          <img src="images/week6/3dprinting/22.jpg" alt="">
+          <p>AND I <a><b>BREAK IT !</b></a> :/</p><br><br>
+          <h3>conclusion :</h3>
+          <p>I try to find which mistakes i have done in settings parameters :<br><br>
+          <div class="listp">
+            <div>
+              <ul>
+                <li> Layer height - can be low for this types of thin designs</li>
+                <li>Infill - it is important factor, i put infill 15% (only 15% of inside will be poured with material), it is not appropriate for this thin complex bodies.</li>
+                <li> Orientation of the design - the way i put my design it took more time to print</li>
+                <li>Speed - i kept Print speed high. it <a><b>Decreases the quality</b></a> and thats why surface was ruff.
+                  </p>
+                <li> Wall thickness - I Wall thickness low which should be more to better overlaps of design </li>
+                <li> Supports - I put wrong types of supports in my designs , i found out when i removing it , <a><b>Grid supports</b></a> are not so good for these types of designs ( Complex voronoi). line supports are preferable</li>
+                <li>Supports location - Where i put support is more important, if i put supports on body itself it will stress body itself and try to break it if body is thin.</li>
+              </ul>
+            </div>
+          </div>
+          </p>
+          <h4>Second Time :</h4>
+          <a>I change some settings and tried one more time. changed settings are shown in <a><b>red</b></a>
+            I also learned some basic , "<a>Always give your model first priority, think about its strength and quality first. after setting up required value find ways to reduce time</a>"<br><br>
+            <pre>
 <code>
 
 <a><b>Material : PLA</b></a>
@@ -491,203 +491,224 @@ Build plate adhesion : <a><b>Brim</b></a>
 Brim width : <a><b>6 mm</b></a> : its a width between initial layer and outermost brim count
 </code>
 </pre>
-        </p>
-        <p class="step"> STEP 20 : Second file</p>
-        <img src="images/week6/3dprinting/23.jpg" alt="">
-        <p>I change the orientation and settings , hopefully time was the same</p>
-        <p class="step"> STEP 21 : Ultimaker</p>
-        <img src="images/week6/3dprinting/24.jpg" alt="">
-        <img src="images/week6/3dprinting/25.jpg" alt="">
-        <p>Here are the supports and the brim</p>
+            </p>
+            <p class="step"> STEP 20 : Second file</p>
+            <img src="images/week6/3dprinting/23.jpg" alt="">
+            <p>I change the orientation and settings , hopefully time was the same</p>
+            <p class="step"> STEP 21 : Ultimaker</p>
+            <img src="images/week6/3dprinting/24.jpg" alt="">
+            <img src="images/week6/3dprinting/25.jpg" alt="">
+            <p>Here are the supports and the brim</p>
 
-        <p class="step"> STEP 22 : Final Output</p>
-        <p><a>It came out good but not the best in terms of quality, i managed to give some strength to model but quite fail to give good physical appearance for now, i have to smooth it. 3d printing is not just plug and play for sure, many things
-            should be in consideration , in second model i found two layers are not printed well because of overhangs, but still model has Good strength and flexible also !</a></p>
-        <img src="images/week6/3dprinting/26.jpg" alt="">
-        <img src="images/week6/3dprinting/27.jpg" alt="">
-        <img src="images/week6/3dprinting/28.jpg" alt=""><br><br>
-        <a>This designed is not complete yet , i am going to do some iterations for now, experiment with design and come with Final <a><b>OUTPUT</b></a> in Ultimaker. since i found printer also need some maintanance i moved to our second printer flashforge</h4>
-        <h3>Flashforge</h3>
-        <p>i was also printing my model with flashforge, so i can have design limitation of both the printers, in flashforge i can go upto overhangs of <a><b>70 degrees</b></a>. i came to this conclusion by doing some limitation test on the flashforge as part of our <a><b>group work</b></a>. below are some pictures of overhang limitation test it prints fine upto 70 degree and i think it can go straight to 80-85 degree</p>
-        <img src="images/week6/3dprinting/25a.jpg">
-        <img src="images/week6/3dprinting/25c.jpg">
+            <p class="step"> STEP 22 : Final Output</p>
+            <p><a>It came out good but not the best in terms of quality, i managed to give some strength to model but quite fail to give good physical appearance for now, i have to smooth it. 3d printing is not just plug and play for sure, many
+                things
+                should be in consideration , in second model i found two layers are not printed well because of overhangs, but still model has Good strength and flexible also !</a></p>
+            <img src="images/week6/3dprinting/26.jpg" alt="">
+            <img src="images/week6/3dprinting/27.jpg" alt="">
+            <img src="images/week6/3dprinting/28.jpg" alt=""><br><br>
+            <a>This designed is not complete yet , i am going to do some iterations for now, experiment with design and come with Final <a><b>OUTPUT</b></a> in Ultimaker. since i found printer also need some maintanance i moved to our second printer
+              flashforge</h4>
+              <h3>Flashforge</h3>
+              <p>i was also printing my model with flashforge, so i can have design limitation of both the printers, in flashforge i can go upto overhangs of <a><b>70 degrees</b></a>. i came to this conclusion by doing some limitation test on the
+                flashforge as part of our <a><b>group work</b></a>. below are some pictures of overhang limitation test it prints fine upto 70 degree and i think it can go straight to 80-85 degree</p>
+              <img src="images/week6/3dprinting/25a.jpg">
+              <img src="images/week6/3dprinting/25c.jpg">
 
-        <p>But i didn't want to make so easy for flashforge to print my model, so i decided to print model without supports. I took one sample of my design and tried different <a>Orientation</a>, <a>Speed</a>, <a>Temperature</a> to make perfect
-          G-codes for design. i was using <a href="http://www.flashforge.com/flashprint/"><b>flashprint</b></a> softwere for generating <a><b>.gx</b></a> file.</p>
+              <p>But i didn't want to make so easy for flashforge to print my model, so i decided to print model without supports. I took one sample of my design and tried different <a>Orientation</a>, <a>Speed</a>, <a>Temperature</a> to make perfect
+                G-codes for design. i was using <a href="http://www.flashforge.com/flashprint/"><b>flashprint</b></a> softwere for generating <a><b>.gx</b></a> file.</p>
 
-        <p class="step"> STEP 23 : first orientation</p>
-        <img src="images/week6/3dprinting/28a.jpg" alt="">
+              <p class="step"> STEP 23 : first orientation</p>
+              <img src="images/week6/3dprinting/28a.jpg" alt="">
 
-        <p>i was quite sure most of overhang will work fine, but <a><b>Want</b></a> to know which part remains week comparatively, so i can give manual supports there.</p>
+              <p>i was quite sure most of overhang will work fine, but <a><b>Want</b></a> to know which part remains week comparatively, so i can give manual supports there.</p>
 
-        <p class="step"> STEP 24 : in flashforge </p>
-        <img src="images/week6/3dprinting/28b.jpg" alt="">
+              <p class="step"> STEP 24 : in flashforge </p>
+              <img src="images/week6/3dprinting/28b.jpg" alt="">
 
-        <p class="step"> STEP 25 : Output</p>
-        <img src="images/week6/3dprinting/28c.jpg" alt="">
+              <p class="step"> STEP 25 : Output</p>
+              <img src="images/week6/3dprinting/28c.jpg" alt="">
 
-        <p>Results are really <a><b>good</b></a> and i was sure i can print this model in this orientation without supports, only <a><b>Critic</b></a> side is that end overhang which can be managed on post processing.</p>
+              <p>Results are really <a><b>good</b></a> and i was sure i can print this model in this orientation without supports, only <a><b>Critic</b></a> side is that end overhang which can be managed on post processing.</p>
 
-        <p class="step"> STEP 26 : Different orientation</p>
-        <img src="images/week6/3dprinting/28c1.jpg" alt="">
-        <img src="images/week6/3dprinting/28c2.jpg" alt="">
+              <p class="step"> STEP 26 : Different orientation</p>
+              <img src="images/week6/3dprinting/28c1.jpg" alt="">
+              <img src="images/week6/3dprinting/28c2.jpg" alt="">
 
 
-        <p>i tried with different orientation this time, time was <a><b>30 minutes</b></a> less, but there was a problem , <a><b>Raft</b></a> was not sticking to print bed, so increased the bed temperature( up to <a><b>60 degree</b></a>) and nozzle
-          temperature( up to<a><b> 210 degree</b></a>) also.</p>
-          <p class="step"> Very strong Raft</p>
-          <p>one thing i dont like in print is very <a><b>strong raft</b></a>. yes ! raft or brim is necessary in support of model, but this was a headache, it bonds so strong with my model that it tear of my very first layer of it, to resolve it i
-            opened expert mode in <a>preference</a> and change Z offset to 0.4 mm . Hope it help.</p>
-        <p class="step"> STEP 27 : Output</p>
-        <p> I think increasing temperature was mistake. Due to that i found retraction problems on output material was not solidifying as quickly as it should be. in bridge side material got separated little bit, it supposed to be clean as per
-          overhang test (<a>Reason can be <a><b>Low print area</b></a> and <a><b>Temperature factor</b></a>. i have to try second time with low speed and suggested temperature. this orientation reduces 39 minutes of my sample , so it will definitely
-            banefit me in full model</p>
-            <img src="images/week6/3dprinting/28g.jpg" alt="">
+              <p>i tried with different orientation this time, time was <a><b>30 minutes</b></a> less, but there was a problem , <a><b>Raft</b></a> was not sticking to print bed, so increased the bed temperature( up to <a><b>60 degree</b></a>) and
+                nozzle
+                temperature( up to<a><b> 210 degree</b></a>) also.</p>
+              <p class="step"> Very strong Raft</p>
+              <p>one thing i dont like in print is very <a><b>strong raft</b></a>. yes ! raft or brim is necessary in support of model, but this was a headache, it bonds so strong with my model that it tear of my very first layer of it, to resolve it
+                i
+                opened expert mode in <a>preference</a> and change Z offset to 0.4 mm . Hope it help.</p>
+              <p class="step"> STEP 27 : Output</p>
+              <p> I think increasing temperature was mistake. Due to that i found retraction problems on output material was not solidifying as quickly as it should be. in bridge side material got separated little bit, it supposed to be clean as per
+                overhang test (<a>Reason can be <a><b>Low print area</b></a> and <a><b>Temperature factor</b></a>. i have to try second time with low speed and suggested temperature. this orientation reduces 39 minutes of my sample , so it will
+                  definitely
+                  banefit me in full model</p>
+              <img src="images/week6/3dprinting/28g.jpg" alt="">
+              <p>
+                none of above parameteer help me here. i had same retraction issues there, so i went for the first orientation.
+              </p>
+              <p class="step">
+                final 3d print model
+              </p>
+              <p>
+                After Knowing my first orientation will be good for my final design , i went for full scale model. on full scale model since i know which will be critical positions for supports i went for the <a><b>Manual supports</b></a> in
+                model.<br /><br />
+                <a>I gave the supports two sides, At the curves and at long bridges at the corner.</a>
+                <p class="step">
+                  At corners
+                </p>
+                <img src="images/week6/3dprinting/28h.jpg" alt="">
+                <p class="step">
+                  At bridges
+                </p>
+                <img src="images/week6/3dprinting/28i.jpg" alt="">
+                <p class="step">
+                  Printing
+                </p>
+
+              </p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WyoYJkjXI7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p class="step">
+                Final Images
+              </p>
+              <p>
+                I <a><b>Love</b></a> this picture. I never though without suports it will be possible. all credits goes to printer.
+              </p>
+              <img src="images/week6/3dprinting/28m.jpg" alt="">
+
+
+              <img src="images/week6/3dprinting/28j.jpg" alt="">
+              <img src="images/week6/3dprinting/28k.jpg" alt="">
+              <img src="images/week6/3dprinting/28l.jpg" alt="">
+
+        </div>
+        <h3 id="3dscanning"></h3><br><br><br><br>
+        <h3>scanning</h3>
+        <h4>what is 3D scanning ?</h4>
+        3D Laser Scanning is a non-contact, non-destructive technology that digitally captures the shape of physical objects using a line of laser light. 3D laser scanners create “point clouds” of data from the surface of an object. In other words,
+        3D
+        laser scanning is a way to capture a physical object’s exact size and shape into the computer world as a digital 3-dimensional representation.
+
+        <h3>Types of 3d scanning</h3>
+        <h4>Photogrammetry</h4>
+        Stemming from photography, photogrammetry is an incredibly useful technology in various fields. The technology takes multiple images, taken at different positions, and triangulates points in these images to figure out the location of them in
+        a
+        three-dimensional space. For example, land surveyors utilize this technology when making maps. When dealing with inaccessible places, such as mountains, the surveyors are able to use photogrammetry to perform their measurements. Many modern
+        technologies use photogrammetry, the major determiner in precision relies on the caliber of the images. If images are poor, there will be holes in the mesh. The more images that you can produce, the greater the accuracy of your scan will be.
+
+        <h4>Structured Light</h4>
+        The technology here is created by casting geometric patterns onto an object while simultaneously taking images with a camera. When doing so, the camera logs the deviation of the image. Based on this displacement of the pattern, locations of
+        all
+        existing points are able to be determined. Numerous scans have to be conducted from different positions and then combined until the mesh can be 100% complete. Computer programs automatically combine all of the scans to form this complete
+        mesh.
+        The results formed using structured light 3D scanners are extremely precise, and the technology is available in both portable and stationary scanners.
+
+        <h4>Time of Flight (TOF)</h4>
+        Slightly more scientifically oriented are Time of Flight (TOF) 3D scanners. These scanners measure how long it takes for a laser or infrared beam to be reflected back to the scanner, with the main component in the scanner being speed of
+        light.
+        Although the scanners contain highly accurate sensors, the precision of these devices is relatively low, ranging in centimeters. This is primarily a result of how the speed of light is affected by various factors, such as temperature and
+        humidity. Hence the technology is primarily used in measuring large items like buildings. The technology requires multiple scans to be conducted in order to form a complete mesh, just as with other 3D scanning technologies. The majority of
+        devices using Time of Flight can be found in portable scanners.
+
+        <h4>Laser Scanning (Triangulation)</h4>
+        Perhaps the most accurate 3D scanning technology is that of laser scanning, also known to as triangulation. Similar to structured light and photogrammetry scanners, laser scanning uses the same base principle of geometry to find a point’s
+        location in space. By casting a laser beam upon the object being scanned, a camera is able to record where the beam and object intersect. Knowing both the angles of the laser beam and camera makes it possible to know the precise location of
+        the
+        laser dot that is hitting the object. The accuracy of laser scanners is exceptional, ranging in mere micrometers. The only downside to the scanners is the fact that they can only range in just a few meters and the technology is typically not
+        found in portable scanning devices.
+
+        <h4>Contact</h4>
+        With a self-describing name, contact printers physically touch a resting object. The scanning process can be fairly timing, and the process is very sensitive to movements and vibrations during scanning. Contact scanners are primarily used in
+        quality control due to the potential alterations that they cause to objects being scanned. The technology is not used in conservation of objects as a result of this.
+
+        <br><br>
+        This content is from <a><b>3D Scanning services</b></a> website.
+
+        <p class="step"> Start with kinect</p>
+        <p>I started with kinect to scan the 3D objects and convert it into Cad Design. I <a href="https://www.microsoft.com/en-in/download/details.aspx?id=40278"><b>Downloaded</b></a> kinect sdk 1.8.</p>
+
+        <img src="images/week6/3dprinting/33.jpg" alt=""><br /><br />
+        <h3>Skanet softwere</h3>
+        <p class="step"> STEP 1 : Scanning with Skanet Softwere</p>
+        <p>Scanning with Skanet softwere , by using the kinect we have to <a><b>Rotate the object</b></a>. i chose <a><b>Body</b></a> because i was going to scan a my friends body</p>
+        <img src="images/week6/3dprinting/34.jpg" alt="">
+        <p class="step"> STEP 2 : Rotating object</p>
+        <p>In this image <a><b>Green area</b></a> shows the area which are scanned and <a><b>red dots</b></a> shows parts which are remained to cover.</p>
+
+        <img src="images/week6/3dprinting/35.jpg" alt="">
+        <p class="step"> STEP 3 : Reconstruct</p>
+        <p><a><b>Reconstruct</b></a> will help you to regenerate the surface by scanning recorded video.</p>
+
+        <img src="images/week6/3dprinting/35a.jpg" alt="">
+        <p class="step"> STEP 4 : Post-processing</p>
+        <p><a><b>Post processing :</b></a> Clearing the holes, Colorizing the model and making model watertight.</p>
+
+        <img src="images/week6/3dprinting/36.jpg" alt="">
+        <p class="step"> STEP 5 : Final</p>
+
+        <img src="images/week6/3dprinting/37.jpg" alt=""><br /><br />
+        <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/f26c69700a524c8eb8286b550ee7002a/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true"
+            webkitallowfullscreen="true"></iframe>
+
+          <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+            <a href="https://sketchfab.com/3d-models/dhruv-patel-3d-f26c69700a524c8eb8286b550ee7002a?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dhruv Patel 3d</a>
+            by <a href="https://sketchfab.com/dhruvpatel2991998?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">dhruvpatel2991998</a>
+            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+          </p>
+        </div>
+        <p class="step">
+          our watchman uncle ready to get scanned
+        </p><br />
+        <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/88240e3c52494d2a88c425a521d1251b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true"
+            webkitallowfullscreen="true"></iframe>
+
+          <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+            <a href="https://sketchfab.com/3d-models/new-skanect-model-88240e3c52494d2a88c425a521d1251b?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">New Skanect Model</a>
+            by <a href="https://sketchfab.com/dhruvpatel2991998?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">dhruvpatel2991998</a>
+            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+          </p>
+
+          <h3>About original files</h3>
           <p>
-            none of above parameteer help me here. i had same retraction issues there, so i went for the first orientation.
+            Unfortunetly we had some misunderstanding about the <a><b>Skanet softwere</b></a> that we cant download original files from the softwere, so we though we cant get original files from skanect, but it was Half truth , we could just export
+            it in stl format after necessesary editing if needed. So i have to <a><b>Rescan</b></a> Maharshi and exported <a><b>.Stl</b></a> file. one can download file from silde bar.
           </p>
-        <p class="step">
-          final 3d print model
-        </p>
+        </div>
+        <h3>Group work</h3>
         <p>
-          After Knowing my first orientation will be good for my final design , i went for full scale model. on full scale model since i know which will be critical positions for supports i went for the <a><b>Manual supports</b></a> in model.<br /><br />
-          <a>I gave the supports two sides, At the curves and at long bridges at the corner.</a>
-          <p class="step">
-            At corners
-          </p>
-          <img src="images/week6/3dprinting/28h.jpg" alt="">
-          <p class="step">
-            At bridges
-          </p>
-          <img src="images/week6/3dprinting/28i.jpg" alt="">
-          <p class="step">
-            Printing
-          </p>
+          The assignment was to test the design rules for our 3d Printer. The printer that the lab owns is an Ultimaker 2+. There are different kinds of test that are done to check the ability of the printer before it fails. Each on of us took up
+          different tests and I was assigned the <a><b>overhang test</b></a>. i test angles to 20 degree to 70 degrees on flashforge and found out < it is reallygood in maters of overhang , you can see above in my design i went upto the <a><b>85 90
+              degree</b></a> without any supports and i can go straight to 0 or 180 degree for <a><b>average</b></a> 15 cm distance. <a><b>These are my observations</b></a>. below are some images of overhang and other test which described on
+            website.<br /><br /> <a href="http://fabacademy.org/2019/labs/cept/3dscanningprinting" target="_blank"><b>click here</b></a> to visit group website.</p>
+        <h3>Overhang test</h3>
 
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WyoYJkjXI7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p class="step">
-          Final Images
-        </p>
+        <img src="images/week6/3dprinting/25a.jpg" alt="">
+        <img src="images/week6/3dprinting/25b.jpg" alt="">
+        <img src="images/week6/3dprinting/25c.jpg" alt=""><br /><br />
+        <h3>Other tests</h3>
+        <img src="images/week6/3dprinting/25d.jpg" alt="">
+
+
+        <h3>Conclusion</h3>
         <p>
-          I <a><b>Love</b></a> this picture. I never though without suports it will be possible. all credits goes to printer.
+          This week was very exciting and one of my favourite week, i always wanted to work with 3d printer and 3d scanning was kind of bonus. thought i took some big steps in excitement i wanted to make something that is not so common is making or
+          some patterns that can check how far 3d printer goes, i start by Voronoi designs and then realized it was too much (For ultimaker specially) , i learn to 3d print in parts or have some test print first, it helps to Decide settings for 3d
+          printing and by that we can have different experience of parameters. 3d scanning was also very cool , it is cutting of technology we can also make something by only scanning it is some futuristic idea.
         </p>
-        <img src="images/week6/3dprinting/28m.jpg" alt="">
+      </div>
 
 
-          <img src="images/week6/3dprinting/28j.jpg" alt="">
-          <img src="images/week6/3dprinting/28k.jpg" alt="">
-          <img src="images/week6/3dprinting/28l.jpg" alt="">
+
+
+
+
 
     </div>
-    <h3 id="3dscanning"></h3><br><br><br><br>
-    <h3>scanning</h3>
-    <h4>what is 3D scanning ?</h4>
-    3D Laser Scanning is a non-contact, non-destructive technology that digitally captures the shape of physical objects using a line of laser light. 3D laser scanners create “point clouds” of data from the surface of an object. In other words, 3D
-    laser scanning is a way to capture a physical object’s exact size and shape into the computer world as a digital 3-dimensional representation.
-
-    <h3>Types of 3d scanning</h3>
-    <h4>Photogrammetry</h4>
-    Stemming from photography, photogrammetry is an incredibly useful technology in various fields. The technology takes multiple images, taken at different positions, and triangulates points in these images to figure out the location of them in a
-    three-dimensional space. For example, land surveyors utilize this technology when making maps. When dealing with inaccessible places, such as mountains, the surveyors are able to use photogrammetry to perform their measurements. Many modern
-    technologies use photogrammetry, the major determiner in precision relies on the caliber of the images. If images are poor, there will be holes in the mesh. The more images that you can produce, the greater the accuracy of your scan will be.
-
-    <h4>Structured Light</h4>
-    The technology here is created by casting geometric patterns onto an object while simultaneously taking images with a camera. When doing so, the camera logs the deviation of the image. Based on this displacement of the pattern, locations of all
-    existing points are able to be determined. Numerous scans have to be conducted from different positions and then combined until the mesh can be 100% complete. Computer programs automatically combine all of the scans to form this complete mesh.
-    The results formed using structured light 3D scanners are extremely precise, and the technology is available in both portable and stationary scanners.
-
-    <h4>Time of Flight (TOF)</h4>
-    Slightly more scientifically oriented are Time of Flight (TOF) 3D scanners. These scanners measure how long it takes for a laser or infrared beam to be reflected back to the scanner, with the main component in the scanner being speed of light.
-    Although the scanners contain highly accurate sensors, the precision of these devices is relatively low, ranging in centimeters. This is primarily a result of how the speed of light is affected by various factors, such as temperature and
-    humidity. Hence the technology is primarily used in measuring large items like buildings. The technology requires multiple scans to be conducted in order to form a complete mesh, just as with other 3D scanning technologies. The majority of
-    devices using Time of Flight can be found in portable scanners.
-
-    <h4>Laser Scanning (Triangulation)</h4>
-    Perhaps the most accurate 3D scanning technology is that of laser scanning, also known to as triangulation. Similar to structured light and photogrammetry scanners, laser scanning uses the same base principle of geometry to find a point’s
-    location in space. By casting a laser beam upon the object being scanned, a camera is able to record where the beam and object intersect. Knowing both the angles of the laser beam and camera makes it possible to know the precise location of the
-    laser dot that is hitting the object. The accuracy of laser scanners is exceptional, ranging in mere micrometers. The only downside to the scanners is the fact that they can only range in just a few meters and the technology is typically not
-    found in portable scanning devices.
-
-    <h4>Contact</h4>
-    With a self-describing name, contact printers physically touch a resting object. The scanning process can be fairly timing, and the process is very sensitive to movements and vibrations during scanning. Contact scanners are primarily used in
-    quality control due to the potential alterations that they cause to objects being scanned. The technology is not used in conservation of objects as a result of this.
-
-    <br><br>
-    This content is from <a><b>3D Scanning services</b></a> website.
-
-    <p class="step"> Start with kinect</p>
-    <p>I started with kinect to scan the 3D objects and convert it into Cad Design. I <a href="https://www.microsoft.com/en-in/download/details.aspx?id=40278"><b>Downloaded</b></a> kinect sdk 1.8.</p>
-
-    <img src="images/week6/3dprinting/33.jpg" alt=""><br /><br />
-    <h3>Skanet softwere</h3>
-    <p class="step"> STEP 1 : Scanning with Skanet Softwere</p>
-    <p>Scanning with Skanet softwere , by using the kinect we have to <a><b>Rotate the object</b></a>. i chose <a><b>Body</b></a> because i was going to scan a my friends body</p>
-    <img src="images/week6/3dprinting/34.jpg" alt="">
-    <p class="step"> STEP 2 : Rotating object</p>
-    <p>In this image <a><b>Green area</b></a> shows the area which are scanned and <a><b>red dots</b></a> shows parts which are remained to cover.</p>
-
-    <img src="images/week6/3dprinting/35.jpg" alt="">
-    <p class="step"> STEP 3 : Reconstruct</p>
-    <p><a><b>Reconstruct</b></a> will help you to regenerate the surface by scanning recorded video.</p>
-
-    <img src="images/week6/3dprinting/35a.jpg" alt="">
-    <p class="step"> STEP 4 : Post-processing</p>
-    <p><a><b>Post processing :</b></a> Clearing the holes, Colorizing the model and making model watertight.</p>
-
-    <img src="images/week6/3dprinting/36.jpg" alt="">
-    <p class="step"> STEP 5 : Final</p>
-
-    <img src="images/week6/3dprinting/37.jpg" alt=""><br /><br />
-    <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/f26c69700a524c8eb8286b550ee7002a/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/3d-models/dhruv-patel-3d-f26c69700a524c8eb8286b550ee7002a?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dhruv Patel 3d</a>
-    by <a href="https://sketchfab.com/dhruvpatel2991998?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">dhruvpatel2991998</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
-<p class="step">
-our watchman uncle ready to get scanned
-</p><br />
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/88240e3c52494d2a88c425a521d1251b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/3d-models/new-skanect-model-88240e3c52494d2a88c425a521d1251b?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">New Skanect Model</a>
-    by <a href="https://sketchfab.com/dhruvpatel2991998?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">dhruvpatel2991998</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-
-<h3>About original files</h3>
-<p>
-  Unfortunetly we had some misunderstanding about the <a><b>Skanet softwere</b></a> that we cant download original files from the softwere, so we though we cant get original files from skanect, but it was Half truth , we could just export it in stl format after necessesary editing if needed. So i have to <a><b>Rescan</b></a> Maharshi and exported <a><b>.Stl</b></a> file. one can download file from silde bar.
-</p>
-</div>
-<h3>Group work</h3>
-<p>
-  The assignment was to test the design rules for our 3d Printer. The printer that the lab owns is an Ultimaker 2+. There are different kinds of test that are done to check the ability of the printer before it fails. Each on of us took up different tests and I was assigned the <a><b>overhang test</b></a>. i test angles to 20 degree to 70 degrees on flashforge and found out < it is reallygood in maters of overhang , you can see above in my design i went upto the <a><b>85 90 degree</b></a> without any supports and i can go straight to 0 or 180 degree for <a><b>average</b></a> 15 cm distance. <a><b>These are my observations</b></a>. below are some images of overhang and other test which described on website.<br /><br /> <a href="http://fabacademy.org/2019/labs/cept/3dscanningprinting" target="_blank" ><b>click here</b></a> to visit group website.</p>
-  <h3>Overhang test</h3>
-
-  <img src="images/week6/3dprinting/25a.jpg" alt="">
-  <img src="images/week6/3dprinting/25b.jpg" alt="">
-  <img src="images/week6/3dprinting/25c.jpg" alt=""><br /><br />
-  <h3>Other tests</h3>
-  <img src="images/week6/3dprinting/25d.jpg" alt="">
-
-
-<h3>Conclusion</h3>
-<p>
-  This week was very exciting and one of my favourite week, i always wanted to work with 3d printer and 3d scanning was kind of bonus. thought i took some big steps in excitement i wanted to make something that is not so common is making or some patterns that can check how far 3d printer goes, i start by Voronoi designs and then realized it was too much (For ultimaker specially) , i learn to 3d print in parts or have some test print first, it helps to Decide settings for 3d printing and by that we can have different experience of parameters. 3d scanning was also very cool , it is cutting of technology we can also make something by only scanning it is some futuristic idea.
-</p>
-    </div>
-
-
-
-
-
-
-
-  </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
   <script src="jquery.localscroll.js" type="text/javascript"></script>
@@ -699,7 +720,10 @@ our watchman uncle ready to get scanned
       });
     });
   </script>
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd" property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span
+    xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd"
+    property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+    International License</a>.
   <br /><br /><br /><br />
 </body>
 
