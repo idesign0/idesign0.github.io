@@ -1687,6 +1687,14 @@ footer .footer-h3 {
     margin: 15px 0px 0px;
   }
 
+  .print .print-compo{
+    flex-flow: column;
+  }
+
+  .print-compo p{
+    margin: 15px 0px 0px;
+  }
+
   }
 
 @media only screen and (max-width:800) {
