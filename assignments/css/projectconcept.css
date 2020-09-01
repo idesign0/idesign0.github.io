@@ -1678,6 +1678,32 @@ footer .footer-h3 {
   border: none;
 }
 
+/*------------ week 7 -----------*/
+
+.circuit .circuit-compo{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.circuit .circuit-compo .circuit-compo-images{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.circuit-compo p{
+  width: 50%;
+  flex-basis: 40%;
+}
+
+.circuit .circuit-compo .circuit-compo-images img{
+  width: 100%;
+  border: none;
+}
+
 @media only screen and (max-width:800px) {
   .resource .compo{
     flex-flow: column;
@@ -1692,6 +1718,14 @@ footer .footer-h3 {
   }
 
   .print-compo p{
+    margin: 15px 0px 0px;
+  }
+
+  .circuit .circuit-compo{
+    flex-flow: column;
+  }
+
+  .circuit-compo p{
     margin: 15px 0px 0px;
   }
 
