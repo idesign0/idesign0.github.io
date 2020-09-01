@@ -273,8 +273,11 @@
 
       <h3 id="3dprinting" style="padding-top: 100px; margin-top: -100px;"></h3>
       <h1> echo hello board</h1>
-      This week's assignment was to make <a><b>Echo hello board</b></a> with One led and push button. <a><b>Goal</b></a> is to controll the led blinking with the micro-controller and make communication with laptop or computer with the
-      micro-controller with the help of Push button.<br><br>
+      <p>
+
+This week's assignment was to make <a><b>Echo hello board</b></a> with One led and push button. The <a><b>goal</b></a> is to control the led blinking with the micro-controller and make communication with a laptop or computer with the micro-controller with the help of the Push-button.
+
+      </p>
       <div>
         <p class="step">Original Echo hello board.</p>
         <img src="images/week7/helloboard/helloftdi44.png" alt="">
@@ -373,12 +376,14 @@
         <img src="images/week7/process/5.png" alt="">
 
         <p class="step">Net tool</p>
-        <p>What <a><b>Net tool</b></a> do is, it gives connections between the components, its just like virtual wires which help us to visualize the circuit better and try to give a perfect explanation of how the components on the circuit board are connected.</p>
+        <p>What <a><b>Net tool</b></a> do is, it gives connections between the components, its just like virtual wires which help us to visualize the circuit better and try to give a perfect explanation of how the components on the circuit board are
+          connected.</p>
         <p>
-        <img src="images/week7/process/6.png" alt="">
+          <img src="images/week7/process/6.png" alt="">
 
         <p class="step">Name tool</p>
-        <p>You can connect the components by directly joining both the components with nets or by giving a specific name on each side of the net with the <a><b>Name tool</b></a>. These names help us to connect the components without making it complex.</p>
+        <p>You can connect the components by directly joining both the components with nets or by giving a specific name on each side of the net with the <a><b>Name tool</b></a>. These names help us to connect the components without making it
+          complex.</p>
         <img src="images/week7/process/7b.png" alt="">
         <img src="images/week7/process/7c1.png" alt="">
 
@@ -388,9 +393,10 @@
         <img src="images/week7/process/8.png" alt="">
 
         <p class="step">Complete Schematic</p>
-        <p>This is a complete schematic of my first design, I <a><b>Request</b></a> not to follow this schematic if you are, I made mistake on schematic since I had no information of where to put the Switch I put it on rest pin and its functionality will change It will reset the board instead of controlling the LED, I will redirect you to working schematic. as I was designing the first time I was not sure about these mistakes, so I kept on and mad one board.
+        <p>This is a complete schematic of my first design, I <a><b>Request</b></a> not to follow this schematic if you are, I made mistake on schematic since I had no information of where to put the Switch I put it on rest pin and its functionality
+          will change It will reset the board instead of controlling the LED, I will redirect you to working schematic. as I was designing the first time I was not sure about these mistakes, so I kept on and mad one board.
         <h1>Mistakes</h1>
-<pre>
+        <pre>
 <code>
 <li>I gave names improperly.</li>
 <li>I connected my switch with the reset pin of the microcontroller, It will not full-fill my objective here (it will not give a signal to pc instead it will reset my micro-controller, which is a good thing for big boards or different applications).</li></code>
@@ -399,9 +405,9 @@
         <img src="images/week7/process/7c.png" alt="">
 
 
-        <p class="step">STEP 10 : Generate board diagram </p>
+        <p class="step">Generate board diagram </p>
         <img src="images/week7/process/8a.png" alt="">
-        <p class="step">STEP 11 : Arranging components</p>
+        <p class="step">Arranging components</p>
         <img src="images/week7/process/11.gif" alt="">
         <p class="step">Ratsnet tool</p>
         <p>Arranging the components for the circuit, inboard diagram we arrange the components the way we want to see than real output.</p>
@@ -412,9 +418,10 @@
         <p>It generally checks the schematic of our electric design. It compares <a><b>Schematic</b></a> with the general rules of electric circuits.</p>
         <img src="images/week7/process/13.png" alt="">
         <p class="step">
-        Schematic errors
+          Schematic errors
         </p>
-        <p>I got some schematic errors, Error was for values, if you are simulating the circuit or giving the schematic to another person or if you are going to use it after some time, you got to put values there, I didn't because I was experimenting. for pulling out resistor and power capacitors I have given the values above. and I am going to use a 10k <a><b>Resistor</b></a> with <a><b>LED</b></a>.</p>
+        <p>I got some schematic errors, Error was for values, if you are simulating the circuit or giving the schematic to another person or if you are going to use it after some time, you got to put values there, I didn't because I was
+          experimenting. for pulling out resistor and power capacitors I have given the values above. and I am going to use a 10k <a><b>Resistor</b></a> with <a><b>LED</b></a>.</p>
         <img src="images/week7/process/13a.png" alt="">
 
         <p class="step">STEP 13 : Design rule check (DRC)(<a href="https://www.autodesk.com/products/eagle/blog/design-rule-check-pcb-layout-basics-3/"><b>link!</b></a>)</p>
@@ -422,7 +429,7 @@
         <img src="images/week7/process/13b.png" alt="">
 
         <p class="step">Settings in <a><b>Clearance</b></a>
-<pre>
+        <pre>
 <code>
 <li><a><b>Mil</b></a> - Mil is dimention for traces, it is 1000th(1/1000) of <a><b>Inch</b></a></li>
 <li><a><b>Wire</b></a> - It is representing the Copper wire traces</li>
@@ -430,7 +437,8 @@
 <li><a><b>Via</b></a> - Its through hole Diameter.</li></code>
 </pre>
         <p>
-          Below is the Clearance section. you can decide <a><b>How much</b></a> clearance you will need between these <a><b>Wire</b></a>, <a><b>Pads</b></a>, <a><b>Via</b></a>.. I gave the setting to <a><b>16 mill</b></a> because in tracing I am using <a><b>1/64(0.4mm) = 16 mil</b></a> tool so , in fab modules it can generate the toolpath.
+          Below is the Clearance section. you can decide <a><b>How much</b></a> clearance you will need between these <a><b>Wire</b></a>, <a><b>Pads</b></a>, <a><b>Via</b></a>.. I gave the setting to <a><b>16 mill</b></a> because in tracing I am
+          using <a><b>1/64(0.4mm) = 16 mil</b></a> tool so , in fab modules it can generate the toolpath.
         </p>
         <img src="images/week7/process/13c.png" alt="">
         <p class="step">
@@ -441,7 +449,8 @@
 
         <img src="images/week7/process/13d.png" alt="">
         <P class="step">STEP 14 : Autorouting</P>
-        <p><a><b>Auto-routing</b></a> is a tool that helps to generate the traces automatically by using mathematical functions. The autorouter is a useful tool that creates many routing variations for the current component placement. However, it is not a complete replacement for the manually routing method. It can help you in specific situations to augment your abilities, not replace them. (<a><b>link!</b></a>). Open the auto-routing path for generating traces automatically.</p>
+        <p><a><b>Auto-routing</b></a> is a tool that helps to generate the traces automatically by using mathematical functions. The autorouter is a useful tool that creates many routing variations for the current component placement. However, it is
+          not a complete replacement for the manually routing method. It can help you in specific situations to augment your abilities, not replace them. (<a><b>link!</b></a>). Open the auto-routing path for generating traces automatically.</p>
 
         <img src="images/week7/process/14b.png" alt="">
 
@@ -454,7 +463,7 @@
 <li><a><b>Number of threads</b></a> - how many threads of the CPU you want the autorouter to use? This surely will affect the time it takes to finish. <a href="https://www.quora.com/What-does-2-core-4-threads-mean-in-a-cpu-I-am-talking-about-this-cpu-ARK-Intel%C2%AE-Core%E2%84%A2-i5-520M-Processor-3M-Cache-2-40-GHz" target="_blank"><b>Click here</b></a> to know more.</li></code>
 </pre>
         <img src="images/week7/process/14.png" alt="">
-<pre>
+        <pre>
 <code>
 <li><a><b>Rounting grid</b></a> - How many attemps you want your computer to do on Auto routing I kept it <a><b>16</b></a>.</li></code>
 </pre>
@@ -472,7 +481,8 @@
         <p class="step">
           Error checks
         </p>
-        <p>On <a><b>Check</b></a> I had warnings of wire stud, Warning and errors are different things, when you get errors it <a><b>will</b></a> face some problems while PCB milling for sure, and when you get warnings it means you <a><b>might</b></a> face some issues while PCB milling, warnings have a relatively small weight, but it should be in consideration if you are new to PCB milling.
+        <p>On <a><b>Check</b></a> I had warnings of wire stud, Warning and errors are different things, when you get errors it <a><b>will</b></a> face some problems while PCB milling for sure, and when you get warnings it means you
+          <a><b>might</b></a> face some issues while PCB milling, warnings have a relatively small weight, but it should be in consideration if you are new to PCB milling.
         </p>
         <img src="images/week7/process/13e.png" alt="">
         <p class="step">Create border of circuit</p>
@@ -497,7 +507,8 @@
         <img src="images/week7/process/20a3.png" alt="">
 
         <p class="step">Final output</p>
-        <p>Every Trace and Border will be converted into White Color and the background will be converted into black. <a><b>Remember</b></a> To delete that Yellow rectangle border which comes Default. Otherwise your trace file and cut file dimensions will <a><b>increase</b></a>  after editing in photoshop.</p>
+        <p>Every Trace and Border will be converted into White Color and the background will be converted into black. <a><b>Remember</b></a> To delete that Yellow rectangle border which comes Default. Otherwise your trace file and cut file dimensions
+          will <a><b>increase</b></a> after editing in photoshop.</p>
         <img src="images/week7/process/21.png" alt="">
 
         <p class="step">Photoshop</p>
@@ -558,40 +569,43 @@
           Final Output
         </p>
         <p>
-          Accidently I touched the soldering iron on the button, That's why it looks weird.<br /><br /> This is The whole Procedure I explained, As I already mentioned on <a><b>top</b></a> I had a problem with the Schematic, I have to redesign the board, but the procedure is the same.
+          Accidently I touched the soldering iron on the button, That's why it looks weird.<br /><br /> This is The whole Procedure I explained, As I already mentioned on <a><b>top</b></a> I had a problem with the Schematic, I have to redesign the
+          board, but the procedure is the same.
         </p>
         <img src="images/week7/process/26.jpg" alt="">
 
 
         <a id="secondschematic"></a>
         <h1>Redesigning the Schematic</h1>
-        <p class="step">STEP 21 : schematic of new board</p>
-        <img src="images/week7/process/27a.png" alt="">
-
-        <img src="images/week7/process/27.png" alt=""><br><br><br>
+        <p class="step">schematic of new board</p>
         <p>
-          This is the new schematic of my <a><b>Echo hello board</b></a>. I made few changes here
+          This is the new schematic of my <a><b>Echo hello board</b></a>. I made a few changes here.
         </p>
         <pre>
 <code>
-<li><a><b>Switch Module</b></a></li> - switch is directly connected to power(<a><b>VCC</b></a>) and it is connected to <a><b>R3</b></a> and <a><b>R4</b></a> Pin swt will be low unless I will not press the switch.
-<li>R4 is connected to the microcontroller's pin which is named SWT(Switch) and R3 is connected to ground.</li>
+<li><a><b>Switch Module</b></a>- the switch is directly connected to power(<a><b>VCC</b></a>) and it is connected to <a><b>R3</b></a> and <a><b>R4</b></a> Pin swt will be low unless I will not press the switch.</li>
+<li>R4 is connected to the microcontroller's pin which is named SWT(Switch) and R3 is connected to the ground.</li>
 </code>
 </pre>
         <p>
-          You can download original schematic from link <a href="images/week7/process/schematic.sch" target="_blank" download><b>HERE</b></a> and Board from <a href="images/week7/process/schematic.sch" target="_blank" download><b>Here</b></a>.
+          You can download the original schematic from the link <a href="images/week7/process/schematic.sch" target="_blank" download><b>HERE</b></a> and Board from <a href="images/week7/process/schematic.sch" target="_blank"
+            download><b>Here</b></a>.
         </p>
 
+        <img src="images/week7/process/27a.png" alt="">
+
+        <img src="images/week7/process/27.png" alt=""><br><br><br>
 
         <img src="images/week7/process/28.png" alt="">
         <img src="images/week7/process/28a.png" alt="">
         <p class="step">
           You can download original Board diagram from link <a href="images/week7/process/schematic.brd" target="_blank" download><b>HERE</b></a>.
         </p>
-        <img src="images/week7/process/original3.png" alt="">
         <p>
           Download <a href="images/week7/process/helloechotraces.png" target="_blank" download><b>Trace file</b></a> and <a href="images/week7/process/helloechocut.png" target="_blank" download><b>Cut File</b></a>.
         </p>
+        <img src="images/week7/process/original3.png" alt="">
+
         <p class="step">
           On Milling machine
         </p>
@@ -600,7 +614,8 @@
           Output
         </p>
         <p>
-          traces are noy that fine, copper was sticking with Bit. but somehow after Sanding I start for soldering
+          traces are not that fine, copper was sticking with Bit. but somehow after Sanding, I start for soldering.
+
         </p>
         <img src="images/week7/process/31.jpg" alt="">
 
@@ -608,48 +623,42 @@
           Soldering Output
         </p>
         <img src="images/week7/process/32.jpg" alt=""><br /><br />
-        <h3>Programming Board</h3>
+        <h1>Programming Board</h1>
         <p>
-          I am going to program the <a><b>echo hello board</b></a>. there was a missing resister in echo hello in my design , I noticed it later , it was connected between vcc and reset pin , will not effect working anyway.
+          I am going to program the <a><b>echo hello board</b></a>. there was a missing resister in echo hello in my design, I noticed it later, it was connected between Vcc and reset pin, will not affect working anyway.
         </p>
         <p class="step">
           Arduino tiny core
         </p>
         <p>
-          you have to paste <a>"http://drazzy.com/package_drazzy.com_index.json"</a> on the additional board manager section
+          you have to paste <a><b>"http://drazzy.com/package_drazzy.com_index.json"</b></a> on the additional board manager section.
         </p>
         <img src="images/week7/process/34.png" alt=""><br /><br />
-        <h3>Controlling the blink of Led</h3>
+        <h1>Controlling the blink of Led</h1>
         <p>
-          For see the Micro controllers action on the LED I Decided to make one relation between Switch and the LED.<br /><br />
-          code with the Switch. Since I put the Switch to the the PA3(<a><b>Arduino pin 3</b></a>) and LED to the PA2(<a><b>Arduino pin 2</b></a>)
-          in general I have written a code which tell the microcontroller to controll the led blinking when I am pushing the button. <a href="images/week7/process/blinkcode.ino" target="_blank" download><b>Code link</b></a>. here I am giving power
-          throught the <a><b>FTDI</b></a>.<br />
 
-          <br />
-          I written the code to tell the microcontroller that if Switch pin is low then let led blink faster , and if switch pin is High then slow the blink rate of led , I am controlling the blink with <a><b>delay()</b></a> function.
+          To see the Microcontroller's action on the LED I Decided to make one relation between the Switch and the LED.<br /><br />
+
+          Code with the Switch. Since I put the Switch to the PA3(<a><b>Arduino pin 3</b></a>) and LED to the PA2(<a><b>Arduino pin 2</b></a>) in general I have written a code that tells the microcontroller to control the led blinking when I am pushing the button. <a href="images/week7/process/blinkcode.ino" target="_blank" download><b>Code link</b></a>. here I am giving power
+          throught the <a><b>FTDI</b></a>.<br /><br />
+          I wrote the code to tell the microcontroller that if the Switch pin is low then let led blink faster, and if the switch pin is High then slow the blink rate of led, I am controlling the blink with <a><b>delay()</b></a> function.
         </p>
         <img src="images/week7/process/44.png" alt=""><br /><br />
 
         <p class="step">
           Give this settings.
         </p>
-        <p>
-          <li>
-            Board : <a><b>Attiny24/44/84</b></a>
-          </li>
-          <li>
-            Chip : <a><b>Attiny44</b></a>
-          </li>
-          <li>
-            Clock : <a><b>8 Mhz</b></a> here I am taking 8 Mhz, because as a programmer I am going to use USBTinyisp.
-          </li>
-          <li>
-            Programmer : <a><b>USBTinyisp</b></a> , check <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#programming" target="_blank"><b>week 5</b></a> to know more about FABtinyisp.
-          </li> <br />
-          And then burn the bootloader.<br /><br /> Burning the bootloader will set the fuses to the Microcontroller , it will set the Clock rate on the input and output pin. it will also alow to upload program using the <a
-            href="https://www.ftdichip.com/Products/Cables/USBTTLSerial.htm" target="_blank"><b>FTDI - TTL convertor</b></a> you will not need programmer after burning the bootloader once. <a
-            href="https://www.engineersgarage.com/tutorials/bootloader-how-to-program-use-bootloader" target="_blank"><b>click here</b></a> to know more.
+        <pre>Board: <a><b>Attiny24/44/84</b></a></pre>
+        <pre>Chip: <a><b>Attiny44</b></a></pre>
+        <pre>Clock: <a><b>8 Mhz</b></a> here I am taking 8 Mhz because as a programmer I am going to use USBTinyisp.</pre>
+        <pre>Programmer : <a><b>USBTinyisp</b></a>, check <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#programming" target="_blank"><b>week 5</b></a> to know more about FABtinyisp.</pre>
+      <pre>Then burn the bootloader</pre>
+        <br /><br />
+
+
+Burning the bootloader will set the fuses to the Microcontroller, it will set the Clock rate on the input and output pin. it will also allow you to upload the program using the <a
+            href="https://www.ftdichip.com/Products/Cables/USBTTLSerial.htm" target="_blank"><b>FTDI - TTL converter </b></a> you will not need a programmer after burning the bootloader once. <a
+            href="https://www.engineersgarage.com/tutorials/bootloader-how-to-program-use-bootloader" target="_blank"><b>Click here</b></a> to know more.
           <bR /><br />
         </p>
 
@@ -659,21 +668,18 @@
         <p class="step">
           upload the sketch
         </p>
-        <p>
-
-          Then <a><b>Go to Sketch > upload using Programmer</b></a>
-        </p>
-
-
+        <pre>Then <a><b>Go to Sketch > upload using Programmer</b></a></pre>
         <img src="images/week7/process/45.png" alt="">
-        <br /><br /><br />
+<p class="step">
+Working PCB
+</p>
         <iframe width="640" height="360" src="https://www.youtube.com/embed/j-Gqf1l-R4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br /><br />
-        <h3>Group work</h3>
+        <h1>Group work</h1>
         <p>
-          In Electronic design , group work is to use the different test equipment in our lab to observe the operations of microcontroller in Circuit board.
+          In Electronic Design, group work is to use the different test equipment in our lab to observe the operations of microcontroller in the Circuit board.
           <br /><br />
-          we have
+          we have</p>
           <li>
             <a href="https://www.dhgate.com/product/lcd-digital-multimeter-ac-dc-ohm-volt-meter/95127247?recinfo=8,108,4#cppd-4-5|null:108:r0839112339" target="_blank"><b>Generic Chinese Multimeter</b></a>
           </li>
@@ -683,14 +689,12 @@
           <li>
             <a href="https://in.element14.com/gw-instek/gds-1152a-u/oscilloscope-2ch-150mhz-1gsps/dp/2063933" target="_blank"><b>Gwinstek GDS-1152A-U Oscilloscope</b></a>
           </li>
-          <br /> in group work there are not such more tasks which can be devided so we did it together , I get to learn <a><b>Oscilloscope</b></a> in group work , how can I use it to get perfect delay between the data transmission. we did that on
-          neils Bigbanging code. everything is written in detail in <a href="http://fabacademy.org/2019/labs/cept/electronicsdesign" target="_blank"><b>group web-site</b></a>.
+          <br />
+<p>in group work there are not much more tasks that can be divided so we did it together, I get to learn <a><b>Oscilloscope</b></a> in group work, how can I use it to get a perfect delay between the data transmission. we did that on Neils Bigbanging code. everything is written in detail in the <a href="http://fabacademy.org/2019/labs/cept/electronicsdesign" target="_blank"><b>group web-site</b></a>.
         </p>
-        <h3>Conclusion</h3>
+        <h1>Conclusion</h1>
         <p>
-          Electronics weeks are totally focused on learning new things and understanding vierd names though, Still I am getting used to it. <a>What I learn this week</a> is only way to learn electronics is to do it over and over again. Here
-          failure of the circuit is normal thing, It doesnt matter how many time you give to orient board diagram and design the schematic if led didnt blink or microcontroller got hot after plug in you probabily messed up something and you
-          are lucky if you got to know what is wrong with your circuit. :/ Still week was <a><b>Great</b></a>.
+          Electronics weeks are totally focused on learning new things and understanding weird names though, Still, I am getting used to it. What I learned this week is the only way to learn electronics is to do it over and over again. Here failure of the circuit is a normal thing, It doesn't matter how many time you give to orient the board diagram and design the schematic if the led didn't blink or the microcontroller got hot after plugin you probably messed up something and you are lucky if you got to know what is wrong with your circuit. Still, the week was <a><b>Great</b></a>.
         </p>
       </div>
     </div>
