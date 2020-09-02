@@ -1627,8 +1627,7 @@ footer .footer-h3 {
 }
 
 /*------------ week 5 -----------*/
-
-.resource .compo{
+.resource .compo {
   width: 100%;
   display: flex;
   flex-flow: row;
@@ -1636,25 +1635,24 @@ footer .footer-h3 {
   align-items: center;
 }
 
-.resource .compo .compo-images{
+.resource .compo .compo-images {
   flex-basis: 60%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.compo p{
+.compo p {
   width: 30%;
   flex-basis: 40%;
 }
 
-.resource .compo .compo-images img{
+.resource .compo .compo-images img {
   width: 40%;
   border: none;
 }
 
 /*------------ week 6 -----------*/
-
-.print .print-compo{
+.print .print-compo {
   width: 100%;
   display: flex;
   flex-flow: row;
@@ -1662,25 +1660,24 @@ footer .footer-h3 {
   align-items: center;
 }
 
-.print .print-compo .print-compo-images{
+.print .print-compo .print-compo-images {
   flex-basis: 50%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.print-compo p{
+.print-compo p {
   width: 50%;
   flex-basis: 40%;
 }
 
-.print .print-compo .print-compo-images img{
+.print .print-compo .print-compo-images img {
   width: 100%;
   border: none;
 }
 
 /*------------ week 7 -----------*/
-
-.circuit .circuit-compo{
+.circuit .circuit-compo {
   width: 100%;
   display: flex;
   flex-flow: row;
@@ -1688,48 +1685,47 @@ footer .footer-h3 {
   align-items: center;
 }
 
-.circuit .circuit-compo .circuit-compo-images{
+.circuit .circuit-compo .circuit-compo-images {
   flex-basis: 50%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.circuit-compo p{
+.circuit-compo p {
   width: 50%;
   flex-basis: 40%;
 }
 
-.circuit .circuit-compo .circuit-compo-images img{
+.circuit .circuit-compo .circuit-compo-images img {
   width: 100%;
   border: none;
 }
 
 @media only screen and (max-width:800px) {
-  .resource .compo{
+  .resource .compo {
     flex-flow: column;
   }
 
-  .compo p{
+  .compo p {
     margin: 15px 0px 0px;
   }
 
-  .print .print-compo{
+  .print .print-compo {
     flex-flow: column;
   }
 
-  .print-compo p{
+  .print-compo p {
     margin: 15px 0px 0px;
   }
 
-  .circuit .circuit-compo{
+  .circuit .circuit-compo {
     flex-flow: column;
   }
 
-  .circuit-compo p{
+  .circuit-compo p {
     margin: 15px 0px 0px;
   }
-
-  }
+}
 
 @media only screen and (max-width:800) {
   .wrapper {
