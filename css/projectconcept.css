@@ -1316,7 +1316,6 @@ main .index-banner h4{
 
 .index-links .index-boxlink-square{
   margin: 14px auto;
-  width:95%;
   height: 160px;
   background-color: #FFF;
   box-shadow: 2px 2px 15px #d2d3d2;
@@ -1326,7 +1325,6 @@ main .index-banner h4{
 }
 .index-boxlink-rectangle{
   margin: 14px auto ;
-  width:95% ;
   height: 175px;
   background-color: #fff;
   box-shadow: 2px 2px 15px #d2d3d2;
@@ -1358,11 +1356,13 @@ main .index-banner h4{
     font-size: 20px;
   }
   .index-links .index-boxlink-square{
+    width:95% ;
     height: 100px;
     margin: 10px auto;
 
   }
   .index-boxlink-rectangle{
+    width:95% ;
     height: 100px;
     margin: 10px auto;
 
@@ -1446,7 +1446,7 @@ footer .footer-h3{
   footer{
     height: 45%;
   }
-  
+
   .footer-content{
     width: 100%;
   }
