@@ -24,6 +24,7 @@
 
 
 
+
   <!-- Google Web fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
@@ -65,7 +66,6 @@
     <!-- MENU -->
 
     <nav>
-
       <ul class="main-menu">
         <li><a href="..\index">Home</a></li>
         <li class="fab-work">
@@ -114,7 +114,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="project-work">
           <a href="#">project</a>
           <ul>
             <li><a href="..\project">Final Project proposal</a></li>
@@ -130,260 +130,293 @@
     </nav>
   </header>
   <!-- /HEADER -->
-  <div class="layout">
+  <!-- <div class="layout">
     <div class="anchors" id="listj">
-      <!-- <ul>
+      <ul>
         <li><a href="#header">Top</a></li>
         <li><a href="#3dprinting">3D PRINTING</a></li>
         <li><a href="#3dscanning">3D SCANNING</a></li>
-      </ul> -->
+      </ul>
       <h3>Original files</h3>
       <ul>
         <li>
           <a href="images/week7/process/blinkcode.ino" target="_blank" download><b>Controlling BLink Code</b></a>
         </li>
       </ul>
-    </div>
+    </div> -->
 
 
-    <div class="week2">
+  <div class="projectconcept">
+    <div class="week2p">
+      <h2>Week 9 : Assignment</h2><br />
+      <div class="listp">
+        <ul>
+          <li> Study Datasheet of microcontroller</li>
+          <li> Program board with as many langauge as possible</li>
+        </ul>
+      </div>
+      <p>
+        This week we are going to learn about microcontrollers and embedded programming, our assignment was to understand the microcontroller by reading its <a href="http://academy.cba.mit.edu/classes/embedded_programming/doc8183.pdf"
+          target="_blank"><b>Datasheet</b></a>, to know different terms in micro controller and use them effectively in future to make own board in future as well. I want to start with very bottom , since I had some imformation about <a><b>Electrical
+            components</b></a> in <a target="_blank" href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#electronic"> <b>week 5</b></a>. I started with terms like integrated circuits and microcontrollers.</p>
+      <h1>Integrated circuit</h1>
+      <p>
+        An integrated circuit (IC), sometimes called a chip or microchip, is a semiconductor wafer on which thousands or millions of tiny resistors, capacitors, and transistors are fabricated. An IC can function as an amplifier, oscillator, timer,
+        counter, computer memory, or microprocessor. A particular IC is categorized as either linear (analog) or digital, depending on its intended application.
 
-      <div class="week2p">
-        <h2>Week 9 : Assignment</h2>
-        <div class="listp">
-          <div>
-            <ul>
-              <li> Study Datasheet of microcontroller</li>
-              <li> Program board with as many langauge as possible</li>
-            </ul>
-          </div>
-        </div><br><br>
-        <p>
-          this week we are going to learn about microcontrollers and embedded programming , our assignment was to understand the microcontroller by reading its <a href="http://academy.cba.mit.edu/classes/embedded_programming/doc8183.pdf"
-            target="_blank"><b>Datasheet</b></a>, to know different terms in micro controller and use them effectively in future to make own board in future as well. i want to start with very bottom , since i had some imformation about
-          <a><b>Electrical
-              components</b></a> in <a target="_blank" href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#electronic"> <b>week 5</b></a>. i started with the terms like integrated circuits and
-          microcontroller.
-        </p>
-        <h3>Integrated circuit</h3>
-        <p>
-
-
-          An integrated circuit (IC), sometimes called a chip or microchip, is a semiconductor wafer on which thousands or millions of tiny resistors, capacitors, and transistors are fabricated. An IC can function as an amplifier, oscillator, timer,
-          counter, computer memory, or microprocessor. A particular IC is categorized as either linear (analog) or digital, depending on its intended application.
-        </p>
         <br /><br />
-        <p>
-          There are two types of IC. <a><b>Linear IC</b></a> and <a><b>Digital IC</b></a>.<br /><br />
-          <a><b>Linear IC</b></a><br /><br />
 
-          Linear ICs have continuously variable output (theoretically capable of attaining an infinite number of states) that depends on the input signal level. As the term implies, the output signal level is a linear function of the input signal
-          level. Ideally, when the instantaneous output is graphed against the instantaneous input, the plot appears as a straight line. Linear ICs are used as audio-frequency (AF) and radio-frequency (RF) amplifiers. The operational amplifier(op
-          amp)
-          is a common device in these applications.
-        </p><br />
-        <a><b>Digital IC</b></a><br /><br />
+        There are two types of IC. <a><b>Linear IC</b></a> and <a><b>Digital IC</b></a>.
 
+        <br /><br />
+        <a><b>Linear IC</b></a>
+        <br /><br />
+
+        Linear ICs have continuously variable output (theoretically capable of attaining an infinite number of states) that depends on the input signal level. As the term implies, the output signal level is a linear function of the input signal
+        level. Ideally, when the instantaneous output is graphed against the instantaneous input, the plot appears as a straight line. Linear ICs are used as audio-frequency (AF) and radio-frequency (RF) amplifiers. The operational amplifier(op
+        amp)
+        is a common device in these applications.
+      </p><br />
+      <a><b>Digital IC</b></a><br /><br />
+      <p>
         Digital ICs operate at only a few defined levels or states, rather than over a continuous range of signal amplitudes. These devices are used in computers, computer networks, modems, and frequency counters. The fundamental building blocks of
         digital ICs are logic gates, which work with binary data, that is, signals that have only two different states, called low (logic 0) and high (logic 1).
-        </p>
-        <h3>What is microcontroller ?</h3>
-        <p>
-          It’s like a small computer on a single IC. It contains a processor core, ROM, RAM and I/O pins dedicated to perform various tasks. Microcontrollers are generally used in projects and applications that require direct control of user. As it
-          has
-          all the components needed in its single chip, it does not need any external circuits to do its task so microcontrollers are heavily used in embedded systems and major microcontroller manufacturing companies are making them to be used in
-          embedded market. A microcontroller can be called the heart of embedded system. Some examples of popular microcontrollers are 8051, AVR, PIC series of microcontrollers.
-        </p>
-        <img src="images/week9/7.jpg" alt="" />
-        <p>
-          Above is architecture of 8051 microcontroller. And you can see all the required components for a small project is present in a single chip.
-        </p>
 
-        <h4>Wiki definition </h4>
+      </p>
+
+      <h1>microcontroller</h1>
+      <p>
+        It’s like a small computer on a single IC. It contains a processor core, ROM, RAM, and I/O pins dedicated to performing various tasks. Microcontrollers are generally used in projects and applications that require direct control of users. As
+        it has all the components needed in its single chip, it does not need any external circuits to do its task so microcontrollers are heavily used in embedded systems and major microcontroller manufacturing companies are making them be used in
+        the embedded market. A microcontroller can be called the heart of the embedded system. Some examples of popular microcontrollers are 8051, AVR, PIC series of microcontrollers.
+      </p>
+
+        <p class="step">architecture of 8051 microcontroller</p>
         <p>
-          A Microcontroller (MCU for microcontroller unit, or UC for μ-controller) is a small computer on a single integrated circuit. In modern terminology, it is similar to, but less sophisticated than, a system on a chip (SoC); an SoC may include
-          a
-          microcontroller as one of its components. A microcontroller contains one or more CPUs (processor cores) along with memory and programmable input/output peripherals. Program memory in the form of ferroelectric RAM, NOR flash or OTP ROM is
-          also
-          often included on chip, as well as a small amount of RAM. Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general purpose applications consisting of various
-          discrete chips.
-          <br /> <br />
-          <h4>Memory types</h4><br />
-          <a><b>Ram</b></a><br /><br />
-          Random Access Memory (RAM) is a term commonly used to describe the memory within a computer. Unlike ROM, RAM is a volatile memory and requires power; if power is lost, all data is also lost.
-        </p><br />
-        <a><b>Flash nor</b></a><br /><br />
+          Below is the architecture of the 8051 microcontrollers. And you can see all the required components for a small project is present in a single chip.
+        </p>
+      <div>
+        <img src="images/week9/7.jpg" alt="" />
+      </div>
+
+
+      <p class="step">Wiki definition </p>
+      <p>
+        A Microcontroller (MCU for microcontroller unit, or UC for μ-controller) is a small computer on a single integrated circuit. In modern terminology, it is similar to but less sophisticated than, a system on a chip (SoC); an SoC may include a
+        microcontroller as one of its components. A microcontroller contains one or more CPUs (processor cores) along with memory and programmable input/output peripherals. Program memory in the form of ferroelectric RAM, NOR flash, or OTP ROM is
+        also often included on-chip, as well as a small amount of RAM. Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general-purpose applications consisting of various
+        discrete chips.
+      </p>
+      <p class="step">Memory types</p>
+      <a><b>RAM</b></a><br /><br />
+      <p>
+        Random Access Memory (RAM) is a term commonly used to describe the memory within a computer. Unlike ROM, RAM is a volatile memory and requires power; if power is lost, all data is also lost.
+      </p><br />
+      <a><b>Flash nor</b></a><br /><br />
+      <p>
         Flash memory is an electronic (solid-state) non-volatile computer storage medium that can be electrically erased and reprogrammed.
-        </p><br />
-        <a><b>OTP (One time programmable) ROM</b></a><br /><br />
-        A programmable read-only memory (PROM) is a form of digital memory where the setting of each bit is locked by a fuse or antifuse. It is one type of ROM (read-only memory). The data in them is permanent and cannot be changed. PROMs are used in
-        digital electronic devices to store permanent data, usually low level programs such as <a href="https://en.wikipedia.org/wiki/Firmware"><b>firmware</b></a> or <a href="https://en.wikipedia.org/wiki/Microcode"><b>microcode</b></a>.
+      </p><br />
+      <a><b>OTP (One time programmable) ROM</b></a><br /><br />
+      <p>
+        A programmable read-only memory (PROM) is a form of digital memory where the setting of each bit is locked by a fuse or anti-fuse. It is one type of ROM (read-only memory). The data in them is permanent and cannot be changed. PROMs are used
+        in digital electronic devices to store permanent data, usually low-level programs such as <a href="https://en.wikipedia.org/wiki/Firmware" target="_blank"><b>firmware</b></a> or <a href="https://en.wikipedia.org/wiki/Microcode"
+          target="_blank"><b>microcode</b></a>.
+
         <br /><br />
         The key difference from a standard ROM is that the data is written into a ROM during manufacture, while with a PROM the data is programmed into them after manufacture.
-        </p><br />
-        <h4>Difference between Integrated Circuit and microcontroller</h4>
+      </p>
+
+      <p class="step">Difference between Integrated Circuit and microcontroller</p>
+      <p>
+        The microcontroller is a register-based clock-driven integrated circuit that reads data from input, performs actions based on the instruction written in the memory, and displays the results at o/p. the biggest difference between a
+        microcontroller and a normal IC is that it can be programmed through software instructions to perform different tasks. while an IC for e.g, IC for not gate performs just one function (of inverting the signal) and needs to be assembled on a
+        breadboard or PCB board every time it is being used. It doesn't have any memory elements.
+      </p>
+      <h1>Microprocessor</h3>
         <p>
-          Microcontroller is a register based clock driven integrated circuit that read data from input, performs actions based on the instruction written in the memory and display the results at o/p.
-          the biggest difference between microcontroller and normal IC is that it can be programmed through software instructions to perform different tasks.
-          while an IC for e.g, IC for not gate performs just one function (of inverting the signal) and needs to be assembled on a bread board or PCB board everytime it is being used. It doesn't have any memory elements.
-        </p><br />
-        <h3>What is In Microprocessor ?</h3>
-        <p>
-          The Microprocessor is one type of simple electronic or computer devices which stores and process the data, not a desktop or computer hardware include one or few Integrated Circuits. It is similar to microcontroller, but does not have any
-          peripheral devices like RAM, ROM, etc. The task of microprocessors is dependent on exterior circuits of peripherals. But there are not work for the specific task, but they are needed where the task is tough and complicated like games,
-          software development, other applications that require high memory and also where I/O are not mentioned. The Microprocessor is called the heart of a computer system. For example, of the best Microprocessor are I3, Pentium, and I5 etc..
+          The Microprocessor is one type of simple electronic or computer device which stores and processes the data, not a desktop or computer hardware include one or a few Integrated Circuits. It is similar to a microcontroller but does not have
+          any peripheral devices like RAM, ROM, etc. The task of microprocessors is dependent on the exterior circuits of peripherals. But there are not work for the specific task, but they are needed where the task is tough and complicated like
+          games,
+          software development, other applications that require high memory, and also where I/O are not mentioned. The Microprocessor is called the heart of a computer system. For example, of the best Microprocessor are I3, Pentium, and I5, etc..
         </p>
-        <img src="images/week9/8.jpg" alt="" /><br />
+        <div>
+          <img src="images/week9/8.jpg" alt="" /><br />
+        </div>
         <p>
           <a href="https://www.tektrong.com/know-difference-microcontroller-microprocessor/"><b>source of Images</b></a>
+        <h1>Terms</h1>
+        <p>
+          <a><b>Bus (Computing)</b></a><br /><br />
+          In computer architecture, a bus (a contraction of the Latin omnibus) is a communication system that transfers data between components inside a computer, or between computers. This expression covers all related hardware components (wire,
+          optical fiber, etc.) and software, including communication protocols. <a href="https://en.wikipedia.org/wiki/Bus_(computing)#cite_note-1" target="_blank">Wiki</a>.
+
           <br /><br />
-          <h4>Terms</h4>
+          A microprocessor is a processing device of every computing device. It is like an artificial brain. It needs to communicate with the outer world. for example, It needs to communicate with Input devices to get data, it needs to communicate
+          with memory to process data according to instructions written in memory and finally it needs to communicate with output devices to display the output on O/P devices. To communicate with the external world, the Microprocessor makes use of
+          buses. There are different types of buses used in Microprocessor.<br /><br />
+
+          <a><b>Data bus</b></a><br /><br />
+          As name tells that it is used to transfer data within Microprocessor and Memory/Input or Output devices. It is bidirectional as Microprocessor requires to send or receive data. The data bus also works as address bus when multiplexed with
+          lower order address bus. Data bus is 8 Bits long. The word length of a processor depends on data bus, thats why Intel 8085 is called 8 bit Microprocessor because it have an 8 bit data bus.<br /><br />
+
+          <a><b>Address bus</b></a><br /><br />
+          An address bus is a computer bus architecture. It is used to transfer data between devices. The devices are identified by the hardware address of the physical memory (the physical address). The address is stored in the form of binary
+          numbers to enable the data bus to access memory storage.
+          <br /><br />
+          <a><b>Control Bus</b></a><br /><br />
+          The microprocessor uses a control bus to process data, that is what to do with the selected memory location. Some control signals are Read, Write and Opcode fetch, etc. Various operations are performed by microprocessors with the help of a
+          control bus. This is a dedicated bus because all timing signals are generated according to the control signal.
+          <br /><br />
+
+          <a><b>ALU (Arithmetic logic unit)</b></a><br /><br />
+          An arithmetic logic unit (ALU) is a combinational digital electronic circuit that performs arithmetic and bitwise operations on integer binary numbers. This is in contrast to a <a href="https://en.wikipedia.org/wiki/Floating-point_unit"
+            target="_blank"><b>floating-point unit (FPU)</b></a>, which operates on floating-point numbers. An ALU is a fundamental building block of many types of computing circuits, including the central processing unit (CPU) of computers, FPUs,
+          and graphics processing units (GPUs). A single CPU, FPU, or GPU may contain multiple ALUs. <a href="https://en.wikipedia.org/wiki/Arithmetic_logic_unit" target="_blank">Wiki</a>
+          <br /><br />
+          <a><b>Sorce</b></a>
+        <div class="listp">
+          <ul>
+            <li>
+              <a href="http://www.wikiforu.com/2012/08/microprocessor-address-bus-data-bus-control-bus">Wiki for you</a>
+            </li>
+          </ul>
+        </div>
+
+        </p>
+        <h1>Datasheet</h1>
+        <p class="step">Important topics in the Datasheet</p>
+        <div class="listp">
+          <ul>
+            <li>
+              features
+            </li>
+            <li>
+              Block diagram
+            </li>
+            <li>
+              Pin configuration
+            </li>
+            <li>
+              Post information
+            </li>
+            <li>
+              Graphical pinout
+            </li>
+            <li>
+              Memory
+            </li>
+            <li>
+              Power
+            </li>
+            <li>
+              Registry summary
+            </li>
+            <li>
+              Clock
+            </li>
+          </ul>
+        </div>
+
+
+
+          <p class="step">Features</p>
           <p>
-            <a>Bus (Computing)</a><br /><br />
-            In computer architecture, a bus (a contraction of the Latin omnibus) is a communication system that transfers data between components inside a computer, or between computers. This expression covers all related hardware components (wire,
-            optical fiber, etc.) and software, including communication protocols. <a href="https://en.wikipedia.org/wiki/Bus_(computing)#cite_note-1" target="_blank">Wiki</a><br /><br />
-            Microprocessor is processing device of every computing device. It is like an artificial brain. It needs to communicate with outer world. for example, It needs to communicate with Input devices to get data,it needs to communicate with
-            memory
-            to process data according to instructions written in memory and finally it needs to communicate with output devices to display the output on O/P devices. To communicate with external world, Microprocessor make use of buses. There are
-            different types of buses used in Microprocessor<br /><br />
-
-            <a>Data bus</a><br /><br />
-            As name tells that it is used to transfer data within Microprocessor and Memory/Input or Output devices. It is bidirectional as Microprocessor requires to send or receive data. The data bus also works as address bus when multiplexed with
-            lower order address bus. Data bus is 8 Bits long. The word length of a processor depends on data bus, thats why Intel 8085 is called 8 bit Microprocessor because it have an 8 bit data bus.<br /><br />
-            <a>Address bus</a><br /><br />
-            As name tells that it is used to transfer data within Microprocessor and Memory/Input or Output devices. It is bidirectional as Microprocessor requires to send or receive data. The data bus also works as address bus when multiplexed with
-            lower order address bus. Data bus is 8 Bits long. The word length of a processor depends on data bus, thats why Intel 8085 is called 8 bit Microprocessor because it have an 8 bit data bus.<br /><br />
-            <a>Control Bus</a><br /><br />
-            Microprocessor uses control bus to process data, that is what to do
-            with the selected memory location. Some control signals are Read, Write and Opcode fetch etc. Various operations are performed by microprocessor with the help of control bus. This is a dedicated bus, because all timing signals are
-            generated
-            according to control signal.<br /><br />
-          </p>
-
-          <a>Refrence</a>
-          <li>
-            <a href="http://www.wikiforu.com/2012/08/microprocessor-address-bus-data-bus-control-bus">Wiki for you</a>
-          </li>
-        </p>
-
-        <a>ALU (Arithmetic logic unit)</a><br /><br />
-        An arithmetic logic unit (ALU) is a combinational digital electronic circuit that performs arithmetic and bitwise operations on integer binary numbers. This is in contrast to a <a
-          href="https://en.wikipedia.org/wiki/Floating-point_unit"><b>floating-point unit (FPU)</b></a>, which operates on floating point numbers. An ALU is a fundamental building block of many types of computing circuits, including the central
-        processing unit (CPU) of computers, FPUs, and graphics processing units (GPUs). A single CPU, FPU or GPU may contain multiple ALUs. <a href="https://en.wikipedia.org/wiki/Arithmetic_logic_unit" target="_blank">Wiki</a>
-        </p>
-        </p>
-        <h3>Datasheet</h3>
-        <h4>Important topics in the Datasheet</h4>
-        <li>
-          features
-        </li>
-        <li>
-          Block diagram
-        </li>
-        <li>
-          Pin configuration
-        </li>
-        <li>
-          Post information
-        </li>
-        <li>
-          Graphical pinout
-        </li>
-        <li>
-          Memory
-        </li>
-        <li>
-          Power
-        </li>
-        <li>
-          Registry summary
-        </li>
-        <li>
-          Clock
-        </li>
-        <div>
-
-          <h3>Features</h3>
-          <img src="images/week9/1a.png" alt="" />
-          <p><br />
-            Page is explaining about <a><b>Key things</b></a> about micro controller, it is <a><b>8-bit microcontroller</b></a> means it can process 8 - bit of word size per second. An 8-bit controller works on 8-bits at a time hence suitable for low
-            power, less compute intensive application.
-            <br /><br /><a><b>Data types</b></a> matter in 8-bit. For example int var_1 allocates 2 bytes in AVR ( 8-bit micro) and char var_2 allocates 1 byte.<br /><br />Since i tell you it shows the processing ability of the microcontroller it
+            The page is explaining about <a><b>Key things</b></a> about microcontroller, it is <a><b>8-bit microcontroller</b></a> that means it can process 8 - a bit of word size per second. An 8-bit controller works on 8-bits at a time hence
+            suitable for low power, less compute-intensive application.
+            <br /><br /><a><b>Data types</b></a> matter in 8-bit. For example, int var_1 allocates 2 bytes in AVR ( 8-bit micro) and char var_2 allocates 1 byte.<br /><br />Since I tell you it shows the processing ability of the microcontroller it
             also
-            effects the <a><b>ALU (Arithmetic Control Unit)</b></a>. 8 bit microcontroller refers to the processing capability of ALU of a microcontroller. <br /><br />
+            effects the <a><b>ALU (Arithmetic Control Unit)</b></a>. An 8-bit microcontroller refers to the processing capability of ALU of a microcontroller.<br /><br />
           </p>
-          <h3>Architectural overview</h3>
-          <img src="images/week9/5.png" alt="" />
+          <img src="images/week9/1a.png" alt="" />
+
+          <p class="step">Architectural overview</p>
           <p>
             ATtiny44 has advance <a><b>RISC</b></a> architecture.<br /><br />
             Reduced instruction set computer, or RISC (/rɪsk/), is one whose instruction set architecture (ISA) allows it to have fewer cycles per instruction (CPI) than a <a
               href="https://en.wikipedia.org/wiki/Complex_instruction_set_computer"><b>complex instruction set computer (CISC)</b></a>. Various suggestions have been made regarding a precise definition of RISC, but the general concept is that such a
             computer has a small set of simple and general instructions, rather than a large set of complex and specialized instructions. <a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computer">Wiki</a>.
           </p>
-          <h3>Memory</h3>
-          <img src="images/week9/6.png" alt="" />
+          <img src="images/week9/5.png" alt="" />
+
+          <p class="step">Memory</p>
+          <p><a><b>Types of Memory in micro controller</b></a></p>
+          <div class="listp">
+            <ul>
+              <li>
+                In-system re programmable memory
+              </li>
+              <li>
+                EEPROM Data Memory
+              </li>
+              <li>
+
+                SRAM Data Memory
+
+              </li>
+
+              <li>
+                I/O Memory
+              </li>
+            </ul>
+          </div>
+          <div >
+            <img src="images/week9/6.png" alt="" />
+          </div>
+
+          <p><br />
+            <a><b>In system re-programmable memory (Flash and EEROM)</b></a><br /><br />
+            The ATtiny24A/44A/84A contains 2K/4K/8K byte On-chip In-System Reprogrammable Flash memory for program storage. The Flash memory has an endurance of at least 10,000 writes/erase cycles.
+            <br /><br />
+            <a>It means one can program the isp for 10,000 times approximately. after that microcontroller will not be sure to program. As I explained in the beginning flash memory no - volatile memory and it is the type of EEROM (electrically
+              erasable read-only memory) that has large storage space in comparison to EEROM. Though EERom has an advantage in programmable cycles, one can program <b>1,000,000 (cycles)</b> times in EEROM type memory.
+            </a>.
+
+            <br /><br /> flash memory differs in a way that <a><b>EEROM has only one transistor per bit</b></a>. but <a><b>flash</b></a> has 8 transistors per
+            bit so it is much faster in writing large data over A <a><b>EEROM</b></a> and used for store the firmware code and EEROM are used to track history and parameters.
+          </p><br />
           <p>
-            <h4>Types of Memory in micro controller</h4><br />
-            <li>
-              In-system re programmable memory
-            </li>
-            <li>
-              EEPROM Data Memory
-            </li>
-            <li>
+            <a><b>Static rendom Access memory</b></a><br /><br />
+            Static random-access memory (static RAM or SRAM) is a type of semiconductor memory that uses bistable latching circuitry (flip-flop) to store each bit. SRAM exhibits data remanence, but it is still volatile in the conventional sense
+            that
+            data is eventually lost when the memory is not powered.
 
-              SRAM Data Memory
+            The term static differentiates SRAM from DRAM (dynamic random-access memory) which must be periodically refreshed. SRAM is faster and more expensive than DRAM; it is typically used for CPU cache while DRAM is used for a computer's main
+            memory. <a href="https://en.wikipedia.org/wiki/Static_random-access_memory"><b>Wiki</b></a><br /><br />
+            <a><b>Dynamic rendom access memory</b></a><br /><br />
+            Dynamic random-access memory (DRAM) is a type of random-access semiconductor memory that stores each bit of data in a separate tiny capacitor within an integrated circuit. The capacitor can either be charged or discharged; these two
+            states are taken to represent the two values of a bit, conventionally called 0 and 1.
+            <br /><br />
+            <a>The electric charge on the capacitors slowly leaks off, so without intervention, the data on the chip would soon be lost. To prevent this, DRAM requires an external memory refresh circuit which periodically rewrites the data in the
+              capacitors, restoring them to their original charge.
 
-            </li>
-
-            <li>
-              I/O Memory
-            </li>
-
-            <p>
-              <a>In system re-programmable memory (Flash and EEROM)</a><br /><br />
-              The ATtiny24A/44A/84A contains 2K/4K/8K byte On-chip In-System Reprogrammable Flash
-              memory for program storage.The Flash memory has an endurance of at least 10,000 write/erase cycles.<br /><br /><a>It means one can program the isp for 10,000 time approximately. after that micro controller will not to be sure to
-                prorammed. As i explained in beginning flash memory no - volatile memory and it is the type of EEROM (electrically erasable read only memory) which has large storage space in comparison to EEROM. Though EERom has advantage in
-                programmable cycles , one can program <a><b>1,000,000 (cycles)</b></a> times in EEROM type memory</a><br /><br /> flash memory differs in a way that <a>EEROM has only one transistor per bit.</a> but <a>flash</a> has 8 transistors per
-              bit so it is much faster in writing large data over A<a>EEROM</a> and used for store the firmware code and EEROM is used to track historuy and parameters.
-            </p><br />
-            <p>
-              <a>Static rendom Access memory</a><br /><br />
-              Static random-access memory (static RAM or SRAM) is a type of semiconductor memory that uses bistable latching circuitry (flip-flop) to store each bit. SRAM exhibits data remanence, but it is still volatile in the conventional sense
-              that
-              data is eventually lost when the memory is not powered.
-
-              The term static differentiates SRAM from DRAM (dynamic random-access memory) which must be periodically refreshed. SRAM is faster and more expensive than DRAM; it is typically used for CPU cache while DRAM is used for a computer's main
-              memory. <a href="https://en.wikipedia.org/wiki/Static_random-access_memory"><b>Wiki</b></a><br /><br />
-              <a>Dynamic rendom access memory</a><br /><br />
-              Dynamic random-access memory (DRAM) is a type of random access semiconductor memory that stores each bit of data in a separate tiny capacitor within an integrated circuit. The capacitor can either be charged or discharged; these two
-              states are taken to represent the two values of a bit, conventionally called 0 and 1. <br /><br />
-              <a>The electric charge on the capacitors slowly leaks off, so without intervention the data on the chip would soon be lost. To prevent this, DRAM requires an external memory refresh circuit which periodically rewrites the data in the
-                capacitors, restoring them to their original charge.<br /><br /> This refresh process is the defining characteristic of dynamic random-access memory, in contrast to static random-access memory (SRAM) which does not require data to be
-                refreshed.</a> <br /><br />Unlike flash memory, DRAM is volatile memory (vs. non-volatile memory), since it loses its data quickly when power is removed. However, DRAM does exhibit limited data remanence.
-            </p><br />
-            <h3>Block diagram</h3>
-            <img src="images/week9/1.png" alt="" /><br /><br />
-            <p>In learning first thing i noticed it everything is connected to one single line or path called <a><b>8- bit Bus</b></a>. I am still not fulley aware of design here but i can say all the microcontroller controlling units means which
-              help
-              micro controller to synchronise on every <a>clock signal</a> are on right side of the 8 bit bus. On the left side of the bus <a><b>Processing unit</b></a> including <a>Memmory portion</a>, <a>Register</a>, <a>Logic unit(ALU)</a> is
-              placed.<br /><br />
-
-              i will write about this in clock signal part.But i can tell this clock works ccome to <a>Timer counter</a><br /><br />
-              Here <a>WATCHCHDOG TIMER</a> create automatically system reset when it hangs if main program neglets to periodically service it.<br /><br />
-              <a>INTERNAL Calibrated CLOCK</a> ia internal clock of micro-controller in microcontroller <a>ATtiny44</a> its maximum frequency is 8Mhz.
-
-            </p><br />
-            <h3>Clock</h3>
-            This section is trying to explain clock system of the <a><b>ATTiny44</b></a>.
-            <img src="images/week9/9.png" alt="" />
-            <br />
-            <p>
               <br /><br />
-              Clock signal or pulse is used in digital circuits of sequential circuits for differentiating output with time . As in sequential circuits output ks fed back to input and new output will be given after every clock pulse.<br /><br />
-              Applications <a href="https://en.wikipedia.org/wiki/Flip-flop_(electronics)"><b>flip flops</b></a>, <a href="https://en.wikipedia.org/wiki/555_timer_IC"><b>555 timer</b></a> etc <br /><br />
-              Clock is used in digital circuit for the following reasons:
+              This refresh process is the defining characteristic of dynamic random-access memory, in contrast to static random-access memory (SRAM) which does not require data to be
+              refreshed.</a> <br /><br />Unlike flash memory, DRAM is volatile memory (vs. non-volatile memory), since it loses its data quickly when power is removed. However, DRAM does exhibit limited data remanence.
+          </p><br />
+          <p class="step">Block diagram</p>
+          <p>In learning the first thing I noticed it everything is connected to one single line or path called <a><b>8-bit Bus</b></a>. I am still not fully aware of the design here but I can say all the microcontroller controlling units(which help
+            microcontroller to synchronize on every <a>clock signal</a>) are on the right side of the 8-bit bus. On the left side of the bus <a><b>Processing unit</b></a> including the <a>Memmory portion</a>, <a>Register</a>, <a>Logic unit(ALU)</a>
+            is
+            placed.<br /><br />
+
+            I will write about this in the clock signal part. But I can tell this clock works come to the <a><b>Timer Counter</b></a>.Here <a><b>WATCHDOG TIMER</b></a> creates automatically system reset when it hangs if the main program neglects to
+            periodically service it.<br /><br />
+            <a><b>INTERNAL Calibrated CLOCK</b></a> is an internal clock of micro-controller in microcontroller <a><b>ATtiny44</b></a> its maximum frequency is 8Mhz.
+          </p>
+          <img src="images/week9/1.png" alt="" /><br /><br />
+
+          <p class="step">Clock</p>
+          <p>
+            This section is trying to explain the clock system of the <a><b>ATTiny44</b></a>.
+
+            <br /><br />
+
+            A clock signal or pulse is used in digital circuits of sequential circuits for differentiating output with time. As in sequential circuits output, is fed back to the input, and new output will be given after every clock pulse.
+            <br /><br />
+            Applications <a href="https://en.wikipedia.org/wiki/Flip-flop_(electronics)"><b>flip flops</b></a>, <a href="https://en.wikipedia.org/wiki/555_timer_IC"><b>555 timer</b></a>, etc.</p><br />
+          <p>Clock is used in digital circuit for the following reasons:</p>
+          <div class="listp">
+            <ul>
               <li>
                 To synchroze the digital circuit.
               </li>
@@ -393,24 +426,27 @@
               <li>
                 To produce th delay and generating square wave.
               </li>
-              timing is everything in Digital Circuits. Without clocks digital circuits cannot run. Clocks control the input and output of the circuit and provide synchronisation for peripherals.Most integrated circuits (ICs) of sufficient complexity
-              use a clock signal in order to synchronize different parts of the circuit, cycling at a rate slower than the worst-case <a><b>internal propagation delays</b></a>.
+            </ul>
+          </div>
+          <p>
+            timing is everything in Digital Circuits. Without clocks, digital circuits cannot run. Clocks control the input and output of the circuit and provide synchronization for peripherals. Most integrated circuits (ICs) of sufficient complexity
+            use a clock signal in order to synchronize different parts of the circuit, cycling at a rate slower than the worst-case <a><b>internal propagation delays</b></a>.
 
-              <br /><br />
-              <a>Propagation delay</a>
-              In electronics, digital circuits and digital electronics, the propagation delay, or gate delay, is the length of time which starts when the input to a logic gate becomes stable and valid to change, to the time that the output of that
-              logic gate is stable and valid to change.
-              <br /><br />Often on manufacturers' datasheets this refers to the time required for the output to reach 50% of its final output level when the input changes to 50% of its final input level. Reducing gate delays in digital circuits
-              allows
-              them to process data at a faster rate and improve overall performance. The determination of the propagation delay of a combined circuit requires identifying the longest path of propagation delays from input to output and by adding each
-              tpd time along this path. <a><b>Clock signal</b></a> interval should always be more than the propogation delay.
+            <br /><br />
+            <a><b>Propagation delay</b></a>
+            In electronics, digital circuits, and digital electronics, the propagation delay, or gate delay, is the length of time which starts when the input to a logic gate becomes stable and valid to change, to the time that the output of that
+            logic gate is stable and valid to change.
 
 
-            </p><br />
+            <br /><br />Often on manufacturers' datasheets, this refers to the time required for the output to reach 50% of its final output level when the input changes to 50% of its final input level. Reducing gate delays in digital circuits allows
+            them to process data at a faster rate and improve overall performance. The determination of the propagation delay of a combined circuit requires identifying the longest path of propagation delays from input to output and by adding each
+            tpd time along this path. The <a><b>Clock signal</b></a> interval should always be more than the propagation delay.
+          </p>
+          <img src="images/week9/9.png" alt="" />
 
-            <h3>Pin configuration</h3>
-            <img src="images/week9/2.png" alt="" />
-            <p>
+          <p class="step">Pin configuration</p>
+          <div class="listp">
+            <ul>
               <li>
                 VCC- Voltage, common collector
               </li>
@@ -454,133 +490,142 @@
                 AIN- Analog Comparator
 
               </li>
-            </p>
-            <h3>Graphical pinout</h3>
-            <img src="images/week9/4.jpg" alt="" />
-            <p>
-              <a href="https://github.com/SpenceKonde/ATTinyCore"><b>Source</b></a>
-            </p>
-            <p>
-              Graphical pinout helps to use the microcontroller more effectively , when you are using it with different development softweres you will need to gice then specific pin number where you want to have some output or some input also, here
-              for
-              Arduino Development environment (<a href="https://www.arduino.cc/en/main/software"><b>IDE</b></a>) blue pins shown in picture is are arduino pins you can give specific inputs and output at pins in arduino <a><b>IDE</b></a> which we will
-              see soon in board programming. In <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7#pinout"><b>week 7</b></a> i already talk about Attiny 44 pinout and Some terms in Details.
-            </p><br />
-            <h3>Programming Board</h3>
-            <img src="images/week7/process/32.jpg" alt=""><br /><br />
-            <p>
-              I am going to program the <a><b>echo hello board</b></a>. there was a missing resister in echo hello in my design , i noticed it later , it was connected between vcc and reset pin , will not effect working anyway.
-            </p><bR /><br />
-            <h3>Programming in Arduino IDE</h3>
-            for programming Attiny 44 in arduino ide , one have to include board settings to the ide , one can do that by adding some perticular link in the <a><b>Preference</b></a> of file menu , see below !
-            <p class="step">
-              Arduino tiny core
-            </p>
-            <p>
-              you have to paste <a>"http://drazzy.com/package_drazzy.com_index.json"</a> on the additional board manager section
-            </p>
-            <img src="images/week7/process/34.png" alt="">
-            <p class="step">
-              settings in tools
-            </p>
-            <p>
-              Give this settings , you can visit <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#programming" target="_blank"><b>week 5</b></a> for settings
-            </p>
-            <img src="images/week9/10.png" alt="">
-            <p>
-              Burn the bootloader
-            </p>
-            <img src="images/week9/11.png" alt="">
-            <br /><br />
-            <h3>Blinking the Led</h3>
-            <p>
-              For see the Micro controllers action on the LED i Decided to make one relation between Switch and the LED.
-            </p>
-            <img src="images/week7/process/43.png" alt="">
+            </ul>
+          </div>
 
-            <img src="images/week7/process/27a.png" alt="">
-            <p class="step">
-              Code
-            </p>
-            <p>
-              Final code with the Switch. Since i put the Switch to the the PA3(<a><b>Arduino pin 3</b></a>) and LED to the PA2(<a><b>Arduino pin 2</b></a>)
-            </p>
-            <img src="images/week7/process/44.png" alt=""><br /><br />
-            <P>
-              in general i have written a code which tell the microcontroller to controll the led blinking when i am pushing the button. <a href="images/week7/process/blinkcode.ino" target="_blank" download><b>Code link</b></a>. here i am giving
-              power throught the <a><b>FTDI</b></a>.<br /><br />
-            </P>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WIw4ke2F9DI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br /><br />
-            <h3>embedded programming work</h3>
-            one can fing other embedded programming work on <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>, <a
+          <img src="images/week9/2.png" alt="" />
+
+          <p class="step">Graphical pinout</p>
+          <p>
+            Graphical pinout helps to use the microcontroller more effectively, when you are using it with different development software you will need to give then specific pin number where you want to have some output or some input also, here for
+            Arduino Development environment (<a href="https://www.arduino.cc/en/main/software" target="_blank"><b>IDE</b></a>) blue pins shown in picture is are Arduino pins you can give specific inputs and output at pins in Arduino <a><b>IDE</b></a>
+            which we will
+            see soon in board programming. In <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7#pinout"><b>week 7</b></a> I already talk about Attiny 44 pinout and Some terms in Details.
+          </p>
+          <img src="images/week9/4.jpg" alt="" />
+          <p>
+            <a href="https://github.com/SpenceKonde/ATTinyCore"><b>Source</b></a>
+          </p>
+
+          <p class="step">Programming Board</p>
+          <p>
+            I am going to program the <a><b>echo hello board</b></a>. there was a missing resister in echo hello in my design, I noticed it later, it was connected between Vcc and reset pin, will not affect working anyway.
+          </p>
+          <img src="images/week7/process/32.jpg" alt="">
+
+          <h1>Programming in Arduino IDE</h1>
+          <p>
+            For programming Attiny 44 in Arduino ide, one has to include board settings to the ide, one can do that by adding some particular link in the <a><b>Preference</b></a> of file menu, see below!
+          </p>
+          <p class="step">
+            Arduino tiny core
+          </p>
+          <p>
+            You have to paste <a><b>"http://drazzy.com/package_drazzy.com_index.json"</b></a> on the additional board manager section.
+          </p>
+          <img src="images/week7/process/34.png" alt="">
+          <p class="step">
+            settings in tools
+          </p>
+          <p>
+            Give this setting, you can visit <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#programming" target="_blank"><b>week 5</b></a> for settings. Burn the bootloader.
+          </p>
+          <img src="images/week9/10.png" alt="">
+          <img src="images/week9/11.png" alt="">
+          <br /><br />
+          <p class="step">Blinking the Led</p>
+          <p>
+            To see the Microcontroller's action on the LED I Decided to make one relation between the Switch and the LED.
+          </p>
+          <img src="images/week7/process/43.png" alt="">
+
+          <img src="images/week7/process/27a.png" alt="">
+          <p class="step">
+            Code
+          </p>
+          <p>
+            Final code with the Switch. Since I put the Switch to the PA3(<a><b>Arduino pin 3</b></a>) and LED to the PA2(<a><b>Arduino pin 2</b></a>)
+          </p>
+          <img src="images/week7/process/44.png" alt="">
+          <p class="step">
+            power from FTDI
+          </p>
+          <P>
+            in general, I have written a code that tells the microcontroller to control the led blinking when I am pushing the button. <a href="images/week7/process/blinkcode.ino" target="_blank" download><b>Code link</b></a>. here I am giving power
+            through the <a><b>FTDI</b></a>.
+          </P>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WIw4ke2F9DI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h1>embedded programming work</h1>
+          <p>
+            One can fing other embedded programming work on <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>, <a
               href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week12" target="_blank"><b>week 12</b></a>.
+          </p>
 
-            <h3>Group work</h3>
-            In <a><b>Embedded programming</b></a> our group work was to Compare the performance and development workflows for other architectures. we had stm32f103c8 Blue pill Development Board.
+          <h1>Group work</h1>
+          <p>
+            In <a><b>Embedded programming,</b></a> our group work was to compare the performance and development workflows for other architectures. we had stm32f103c8 Blue pill Development Board.
             <br /><br />
-            I generally know any other microcontrollers other that <a><b>ATtiny and Atmega</b></a> i was interested in Datasheet part !
-            <h3>Specifications</h3>
-            <li>
-              Name : stm32f103c8 Blue pill Development Board
-            </li>
-            <li>
-              72 MHz maximum frequency,1.25 DMIPS/MHz (Dhrystone 2.1) performance at 0 wait state memory access
-            </li>
-            <li>
-              64 or 128 Kbytes of Flash memory
-            </li>
-            <li>
-              4-to-16 MHz crystal oscillator
-            </li>
-            <li>
-              Internal 40 kHz RC
-            </li>
-            <li>
-              7 timers
-            </li>
-            <li>
-              Up to 9 communication interfaces : Up to 2 x I2C interfaces (SMBus/PMBus) , Up to 3 USARTs (ISO 7816 interface, LIN, IrDA capability, modem control), Up to 2 SPIs (18 Mbit/s)
-            </li>
-            <br /><br />
+            I generally know any other microcontrollers other that <a><b>ATtiny and Atmega</b></a> I was interested in the Datasheet part! </p>
+          <p class="step">Specifications</p>
+          <div class="listp">
+            <ul>
+              <li>
+                Name : stm32f103c8 Blue pill Development Board
+              </li>
+              <li>
+                72 MHz maximum frequency,1.25 DMIPS/MHz (Dhrystone 2.1) performance at 0 wait state memory access
+              </li>
+              <li>
+                64 or 128 Kbytes of Flash memory
+              </li>
+              <li>
+                4-to-16 MHz crystal oscillator
+              </li>
+              <li>
+                Internal 40 kHz RC
+              </li>
+              <li>
+                7 timers
+              </li>
+              <li>
+                Up to 9 communication interfaces : Up to 2 x I2C interfaces (SMBus/PMBus) , Up to 3 USARTs (ISO 7816 interface, LIN, IrDA capability, modem control), Up to 2 SPIs (18 Mbit/s).
+              </li>
+            </ul>
+          </div>
+          <p>
             visit <a href="http://fab.academany.org/2019/labs/cept/embeddedprogramming" target="_blank"><b>group website</b></a> for more imformation.
+          </p>
 
 
 
-
-
-
-
-
-            <h3>Conclusion</h3>
-            <p>
-              In three electronics weeks this week was first when i was getting something in mind about terminologies , i got time to explore about microcontroller though. i programmed simple code which Arduino IDE but i also interested in learning
-              other langauges too, in mean time i am going to try c programming to program my board.
-            </p>
-
-        </div>
-
-
-
-
-
+          <h1>Conclusion</h1>
+          <p>
+            In three electronics weeks, this week was the first when I was getting something in mind about terminologies, I got time to explore about microcontroller though. I programmed simple code which Arduino IDE but I am also interested in
+            learning other languages too, in meantime, I am going to try c programming to program my board.
+          </p>
       </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
-    <script src="jquery.localscroll.js" type="text/javascript"></script>
-    <script src="jquery.scrollTo.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#listj').localScroll({
-          duration: 800
-        });
-      });
-    </script>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span
-      xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd"
-      property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-      International License</a>.
-    <br /><br /><br /><br />
 </body>
+
+<footer>
+  <section class="footer-content">
+
+    <ul class="main-menu-blog-footer-tabs">
+      <li><a href="https://www.linkedin.com/in/dhruv-patel-485a53134/">Portfolio</a></li>
+      <li><a href="https://github.com/idesign0">Robotics</a></li>
+      <li><a href="../assignments">Fab Academy</a></li>
+      <li><a href="../about">About</a></li>
+      <li><a href="../contact">Contact</a></li>
+    </ul>
+    <!-- <h3 class=footer-h3>Social MEdia</h3> -->
+    <ul class="main-menu-blog-footer-sm">
+      <li><a href="https://www.instagram.com/classy_29/" target="_blank"><img src="images/sm/instagram.svg" alt="" /></a></li>
+      <li><a href="https://www.linkedin.com/in/dhruv-patel-485a53134/" target="_blank"><img src="images/sm/linkedin.svg" alt="" /></a></li>
+      <li><a href="https://github.com/idesign0" target="_blank"><img src="images/sm/github.svg" alt="" /></a></li>
+
+    </ul>
+  </section>
+
+</footer>
 
 </html>
