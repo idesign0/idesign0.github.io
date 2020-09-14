@@ -46,7 +46,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -58,7 +59,7 @@
 <body>
 
   <!-- HEADER -->
-  <header id="header">
+  <header id="header" style="padding-top: 100px; margin-top: -100px;">
     <!-- MOBILE MENU ICON -->
     <a href="#" class="mob-menu"><i class="fa fa-bars"></i></a>
     <!-- MENU -->
@@ -67,7 +68,7 @@
 
       <ul class="main-menu">
         <li><a href="..\index">Home</a></li>
-        <li>
+        <li class="fab-work">
           <a href="#">Fab work</a>
           <ul>
             <li><a href="#">Week 1 to 5</a>
@@ -113,12 +114,12 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="project-work">
           <a href="#">project</a>
           <ul>
             <li><a href="project">Final Project proposal</a></li>
             <li><a href="projectd">Project development</a></li>
-<li><a href="finalproject">Final Project</a></li>
+            <li><a href="finalproject">Final Project</a></li>
 
           </ul>
         </li>
@@ -129,18 +130,18 @@
       <h1>Input devices</h1>
     </nav>
   </header>
-    <div class="anchors" id="listj">
-      <h3>Original files for code</h3>
-      <ul>
-        <li>
-          <a href="images/week11/humidity/humidity.ino" target="_blank" download>Humidity code</a>
-        </li>
-        <li>
-          <a href="images/week11/joystick/joystick.ino" target="_blank" download>joystick code</a>
-        </li>
-        <li>
-          <a href="images/week11/ultrasonicsimple/ultrasonicsimple.ino" target="_blank" download>ultrasonicsimple code</a>
-        </li>
+  <!-- <div class="anchors" id="listj">
+    <h3>Original files for code</h3>
+    <ul>
+      <li>
+        <a href="images/week11/humidity/humidity.ino" target="_blank" download>Humidity code</a>
+      </li>
+      <li>
+        <a href="images/week11/joystick/joystick.ino" target="_blank" download>joystick code</a>
+      </li>
+      <li>
+        <a href="images/week11/ultrasonicsimple/ultrasonicsimple.ino" target="_blank" download>ultrasonicsimple code</a>
+      </li>
       <h3>Board Files</h3>
       <li>
         <a href="images/week11/finalboard/schematics.brd" target="_blank" download>Board diagram</a>
@@ -158,144 +159,145 @@
         <a href="images/week11/finalboard/drillholes.png" target="_blank" download>Drill file </a>
       </li>
 
-      </ul>
-    </div>
+    </ul>
+  </div> -->
 
 
-  <div class="week2">
+  <div class="projectconcept">
 
     <div class="week2p">
-      <h2>Week 11 : Assignment</h2>
-      <div>
-        <div>
+      <h2>Week 11 : Assignment</h2><br />
+      <div class="listp">
           <ul>
             <li>measure something: add a sensor to a microcontroller board
-      that you have designed and read it
+              that you have designed and read it
             </li>
           </ul>
-        </div>
       </div>
       <p>
-        So this week we are going to use input devices , input devices as name suggests used to take <a><b>Data from User</b></a> unlike output devices which will be used to <a><b>Give something in Action</b></a> to user.<br /><br />
+        So this week we are going to use input devices, input devices as the name suggests used to take <a><b>Data from the User</b></a>, unlike output devices which will be used to <a><b>Give something in Action</b></a> to the user.<br /><br />
         I tried 3 Sensors for Input device week.
-        <li>
-          Humidity sensor - to take measurement of Temperature and Humidity of surrounding
-        </li>
-        <li>
-          Ultrasonic Sensor - To take measurements of Distance
-        </li>
-        <li>
-          Joystick - for give input in X and Y position
-        </li>
       </p>
-      <p class="step">
+      <div class="listp">
+        <ul>
+          <li>
+            Humidity sensor - to take measurement of Temperature and Humidity of surrounding
+          </li>
+          <li>
+            Ultrasonic Sensor - To take measurements of Distance
+          </li>
+          <li>
+            Joystick - for give input in X and Y position
+          </li>
+        </ul>
+      </div>
+
+      <h1>
         Humidity sensor
+      </h1>
+      <p>
+        A <a><b>humidity sensor</b></a> (or hygrometer) senses, measures, and reports both moisture and air temperature. The <a><b>ratio of moisture</b></a> in the air to the highest amount of moisture at a particular air temperature is called relative humidity. Relative humidity becomes an important factor when looking for comfort.
+      <br /><br />
+        I try to work with a humidity sensor with my <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week 9</b></a> board. I have connected my echo hello board with the <a><b>FTDI serial port</b></a> and my humidity sensor is connected to <a><b>miso</b></a> pin of the header which is an analog pin of the microcontroller. I am sending data through FTDI cable using a <a
+          href="https://robu.in/product/pl2303-pl2303hx-usb-ttl-module-5-pin/?gclid=EAIaIQobChMIvYi3wMbA4QIVlIWPCh2p2AsUEAYYASABEgLrJPD_BwE" target="_blank"><b>TTL convertor</b></a>. <br /><br />First I program my board, I used header pins for that, initially, I used header pins to program my board and then I used them as <a><b>I/O pins</b></a>, (I used miso as i/o pin) <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/" target="_blank" <a><b>Analog
+            read command</b></a>. you can see the programming of echo hello board in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/Fab work/week9"><b>week 9</b></a>.
+      </p>
+      <img src="images/week11/1.jpg" alt="" />
+      <p class="step">
+        Code for humidity Sensor.
       </p>
       <p>
-        A <a><b>humidity sensor</b></a> (or hygrometer) senses, measures and reports both moisture and air temperature. The <a><b>ratio of moisture</b></a> in the air to the highest amount of moisture at a particular air temperature is called relative humidity. Relative humidity becomes an important factor, when looking for comfort.
-      </p>
+        <a href="images/week11/humidity.ino"><b> Click here</b></a> to get the original file. <a href="https://www.arduinolibraries.info/libraries/dht-sensor-library" target="_blank"><b>Click here</b></a> to get DHT library
+        Code is explained in the comments.
       <p>
-        i try to work with humidity sensor with my <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9"><b>week 9</b></a> board. i have connected my echo hello board with the <a><b>FTDI serial port</b></a> and  my humidity sensor is connected to <a><b>miso</b></a> pin of header which is analog pin of microcontroller. I am sending data through ftdi cable using <a href="https://robu.in/product/pl2303-pl2303hx-usb-ttl-module-5-pin/?gclid=EAIaIQobChMIvYi3wMbA4QIVlIWPCh2p2AsUEAYYASABEgLrJPD_BwE" target="_blank"><b>TTL convertor</b></a>. <br /><br />First i program my board , i used header pins for that , initially i used header pins to program my board and then i used them as <a><b>I/O pins</b></a>, (I used miso as i/o pin) <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/" target="_blank"
-         <a><b>Analog read command</b></a>. you can see the programming of echo hello board in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/Fab work/week9"><b>week 9</b></a>.
-        <br /><br />
-
-      </p>
-          <img src="images/week11/1.jpg" alt=""  />
-          <p class="step">
-           Code for humidity Sensor.
-          </p>
-          <p>
-             <a href="images/week11/humidity.ino"><b> Click here</b></a> to get original file. <a href="https://www.arduinolibraries.info/libraries/dht-sensor-library" target="_blank"><b>Click here</b></a> to get DHT library
-             Code is explained in comments
-             <p>
-
-             </p>
-            <pre>
-            <code>
-              /* this code will help you get the data of temperatures and humidity on serial monitor*/
+      <pre>
+<code>
+/* this code will help you get the data of temperatures and humidity on serial monitor*/
 
 
-              #include &ltdht.h&gt
+#include &ltdht.h&gt
 
-              // dht library for humidity sensor
+// dht library for humidity sensor
 
-              #define dht_apin A5 // Analog Pin sensor is connected to
+#define dht_apin A5 // Analog Pin sensor is connected to
 
-              dht DHT;
+dht DHT;
 
-              void setup(){
+void setup(){
 
-                Serial.begin(9600);
-                delay(500);//Delay to let system boot
-                Serial.println("DHT11 Humidity & temperature Sensor\n\n");
-                delay(1000);//Wait before accessing Sensor
+  Serial.begin(9600);
+  delay(500);//Delay to let system boot
+  Serial.println("DHT11 Humidity & temperature Sensor\n\n");
+  delay(1000);//Wait before accessing Sensor
 
-              }//end "setup()"
+}//end "setup()"
 
-              void loop(){
-                //Start of Program
+void loop(){
+  //Start of Program
 
-                  DHT.read11(dht_apin); // reading values from DHT sensor
+    DHT.read11(dht_apin); // reading values from DHT sensor
 
-                  Serial.print("Current humidity = ");
-                  Serial.print(DHT.humidity); // VALUES WILL BE PRINTED
-                  Serial.print("%  ");
-                  Serial.print("temperature = ");
-                  Serial.print(DHT.temperature);
-                  Serial.println("C  ");
+    Serial.print("Current humidity = ");
+    Serial.print(DHT.humidity); // VALUES WILL BE PRINTED
+    Serial.print("%  ");
+    Serial.print("temperature = ");
+    Serial.print(DHT.temperature);
+    Serial.println("C  ");
 
-                  delay(5000);//Wait 5 seconds before accessing sensor again.
+    delay(5000);//Wait 5 seconds before accessing sensor again.
 
-                  //Fastest should be once every two seconds.
+    //Fastest should be once every two seconds.
 
-              }// end loop
-            </code>
+}// end loop</code>
             </pre>
-          </p>
+      </p>
 
 
 
-          <img src="images/week11/2.png" alt=""  />
+      <img src="images/week11/2.png" alt="" />
 
-          <p class="step">
-            i used wet handkerchief to change humidity of sensor
-          </p>
-          <img src="images/week11/3.gif" alt=""  />
-          <p class="step">
-          Tempreture and humidity in Serial monitor
-          </p>
-          <p>
-            you can find serial monitor on tools <a><b>Tools</b></a> on menu bar of Arduino-<a><b>ide</b></a>. This feature can help us to find whether  <a><b>Board is able to communicate with pc or not and help us to keep track of data.</b></a> here i am using serial monitor to print the data on board , so i can get real time updates , but another good  <a><b>Feature</b></a> is Serial plotter , which represents the data in graphically , it helps to find out relative change between values in time intervals. you can find serial plotter on <a><b>tools menu</b></a>.
-          </p>
-          <img src="images/week11/4.gif" alt=""  />
-          <p class="step">
-            Tempreture and humidity in plotter
-          </p>
-          <p>
-            Here blue line is humidity line , which continuously changing when because we are surrounding it around wet handkerchief. but temperatures variations are not as quick as humidity.
-          </p>
-          <img src="images/week11/5.gif" alt=""  /><br /><br />
-
-      <h3>Ultrasonic sensor</h3>
+      <p class="step">
+        I used wet handkerchief to change humidity of sensor
+      </p>
+      <img src="images/week11/3.gif" alt="" />
+      <p class="step">
+        Tempreture and humidity in Serial monitor
+      </p>
       <p>
-        I tried ultrasonic sensor to use distance as a parameter. If something is <a><b>Under</b></a> 50 <a><b>cm </b></a> range led will start blinking. If one using ultrasonic sensor , they may have to download <a><b>library</b></a> for that. you can download library from <a href="https://github.com/ErickSimoes/Ultrasonic" target="_blank"><b>here</b></a>.
+        you can find serial monitor on tools <a><b>Tools</b></a> on the menu bar of Arduino-<a><b>ide</b></a>. This feature can help us to find whether the  <a><b>Board is able to communicate with pc or not and help us to keep track of data</b></a>. here I am using a serial monitor to print the data onboard, so I can get real-time updates, but another good <a><b>Feature</b></a> is a Serial plotter, which represents the data in graphically, it helps to find out the relative change between values in time intervals. you can find serial plotter on the <a><b>tools menu</b></a>.
+      </p>
+      <img src="images/week11/4.gif" alt="" />
+      <p class="step">
+        Tempreture and humidity in plotter
+      </p>
+      <p>
+
+Here the blue line is the humidity line, which continuously changing when because we are surrounding it around a wet handkerchief. but temperatures variations are not as quick as humidity.
+      </p>
+      <img src="images/week11/5.gif" alt="" />
+
+      <h1>Ultrasonic sensor</h1>
+      <p>
+        I tried ultrasonic sensor to use distance as a parameter. If something is <a><b>Under</b></a> 50 <a><b>cm </b></a> range led will start blinking. If one using ultrasonic sensor , they may have to download <a><b>library</b></a> for that. you
+        can download library from <a href="https://github.com/ErickSimoes/Ultrasonic" target="_blank"><b>here</b></a>.
         <br /><br />
-        download  in Zip file and then include it in <a><b>IDE</b></a>. you have to use these <a><b>library</b></a> to operate sensor properly. (my board was not detecting sensor until i include library)
-</p>
-        <img src="images/week11/5.jpg" alt=""  />
+        download in Zip file and then include it in <a><b>IDE</b></a>. you have to use these <a><b>library</b></a> to operate sensor properly. (my board was not detecting sensor until I include library)
+      </p>
+      <img src="images/week11/5.jpg" alt="" />
 
 
-        <p class="step">
-          Code
-        </p>
-        <p>
-         click  Here is the <a><b>code</b></a>. <a href="images/week11/ultrasonicsimple.ino" target="_blank" download><b>click</b></a> to get original files.
-         <br /><br />
-         Here i used  pin <a><b>(0,1) (Arduino pins)</b></a> or <A><b>PA1 and PA0</b></A> of echo hello board as communication pins ( <a><b>TX</b></a> , <a><b>RX</b></a> ) and <a><b>A5(5)</b></a> and <a><b>A4(4)</b></a> for trigger pin and echo pin of ultrasonic.
-        </p>
-        <img src="images/week11/6.png" alt=""  />
-<br /><br />
-<pre>
+      <p class="step">
+        Code
+      </p>
+      <p>
+        click Here is the <a><b>code</b></a>. <a href="images/week11/ultrasonicsimple.ino" target="_blank" download><b>click</b></a> to get original files.
+        <br /><br />
+        Here I used pin <a><b>(0,1) (Arduino pins)</b></a> or <A><b>PA1 and PA0</b></A> of echo hello board as communication pins ( <a><b>TX</b></a> , <a><b>RX</b></a> ) and <a><b>A5(5)</b></a> and <a><b>A4(4)</b></a> for trigger pin and echo pin of
+        ultrasonic.
+      </p>
+      <img src="images/week11/6.png" alt="" />
+      <br /><br />
+      <pre>
 <code>
   /* this code will help to print the distance from the data to serial monitor , readings will be taken by ultrasonic sensor*/
 
@@ -346,10 +348,12 @@
 
       <h3>Final project Board</h3>
       <p>
-        from this week i also started designing my final project board. i was going to use <a><b>ATmega328p microcontroller</b></a> for my final project. it is very <a><b>Powerful</b></a> microcontroller with 32 kb <a href="https://simple.wikipedia.org/wiki/Flash_memory" target="_blank"><b>Flash memory</b></v></a>, much more than <a><b>ATtiny44</b></a> which Constrains only 4 kb of <a><b>ISP Flash memory</b></a>. you can read about these terms in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week9</b></a>. besides of memory i found many things which bring my interest in ATmega328p.
+        from this week I also started designing my final project board. I was going to use <a><b>ATmega328p microcontroller</b></a> for my final project. it is very <a><b>Powerful</b></a> microcontroller with 32 kb <a
+          href="https://simple.wikipedia.org/wiki/Flash_memory" target="_blank"><b>Flash memory</b></v></a>, much more than <a><b>ATtiny44</b></a> which Constrains only 4 kb of <a><b>ISP Flash memory</b></a>. you can read about these terms in <a
+          href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week9</b></a>. besides of memory I found many things which bring my interest in ATmega328p.
 
-        <h4>Key points about ATmega328p</h3><br />
-<pre>
+      <h4>Key points about ATmega328p</h3><br />
+        <pre>
 <code>
 <li>Programming and communication flexibility:
 
@@ -362,28 +366,34 @@
 </pre>
 
 
-<p>
-  <a>Programming and communication flexibility :</a><br /><br />
-  key thing i want to shift to the <a><b>ATTin328p</b></a> is increasing programming flexibility of mine , back at <a><b>Attiny44</b></a> i used only serial interface with <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5" target="_blank"><b>FABtinyisp</b></a> which was pretty good but way i am understanding this things i think ,every time i have to carry fab isp when i am programming i will not have cable(UART) like <a href="https://store.arduino.cc/usa/arduino-uno-rev3" target="_blank"><b>Arduino Uno</b></a>
-   <br /><br />
-   I can have that type of flexibility with ATmega328p, reason i cant use this UART ports directly is ATTIny is not supporting UART Programming directly or built-in.
-   Attiny 44 need will need serial interface which can talk to the master or programme if user want  to program it with UART. but This microcontrollers do not have Hardware serial support , no (Tx,Rx) built in , <a href="https://www.arduino.cc/en/Reference/SoftwareSerial" target="_blank"><b>Software Serial</b></a> may help but in most of cases when i tried to use that on input week it was causing memory issue, One can Get the data from Attiny44 using <a href="https://en.wikipedia.org/wiki/Neil_Gershenfeld"><b>Neil's</b></a>bit banging code. <a href="http://academy.cba.mit.edu/classes/input_devices/index" track="_blank"><b>Click here for Code links</b></a><br /><br />
-   <a>thought this is based on my experience and people which help me to understand these things , may be some special methods can solve this problem</a><br /><br />
+        <p>
+          <a>Programming and communication flexibility :</a><br /><br />
+          key thing I want to shift to the <a><b>ATTin328p</b></a> is increasing programming flexibility of mine , back at <a><b>Attiny44</b></a> I used only serial interface with <a
+            href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5" target="_blank"><b>FABtinyisp</b></a> which was pretty good but way I am understanding this things I think ,every time I have to carry fab isp
+          when I am programming I will not have cable(UART) like <a href="https://store.arduino.cc/usa/arduino-uno-rev3" target="_blank"><b>Arduino Uno</b></a>
+          <br /><br />
+          I can have that type of flexibility with ATmega328p, reason I cant use this UART ports directly is ATTIny is not supporting UART Programming directly or built-in.
+          Attiny 44 need will need serial interface which can talk to the master or programme if user want to program it with UART. but This microcontrollers do not have Hardware serial support , no (Tx,Rx) built in , <a
+            href="https://www.arduino.cc/en/Reference/SoftwareSerial" target="_blank"><b>Software Serial</b></a> may help but in most of cases when I tried to use that on input week it was causing memory issue, One can Get the data from Attiny44
+          using <a href="https://en.wikipedia.org/wiki/Neil_Gershenfeld"><b>Neil's</b></a>bit banging code. <a href="http://academy.cba.mit.edu/classes/input_devices/index" track="_blank"><b>Click here for Code links</b></a><br /><br />
+          <a>thought this is based on my experience and people which help me to understand these things , may be some special methods can solve this problem</a><br /><br />
 
-<a>I/O ports - 32 general purpose pins(Working registers)</a><br /><br />
-  In final project i will probably use 3 or 4 <a><b>Input/output</b></a> sensor or may need to communicate with other boards, for these things 328p will be great.
+          <a>I/O ports - 32 general purpose pins(Working registers)</a><br /><br />
+          In final project I will probably use 3 or 4 <a><b>Input/output</b></a> sensor or may need to communicate with other boards, for these things 328p will be great.
 
-<a></a>
+          <a></a>
 
-<h3>Final Board DESIGN</h3>
-  <p>
-    Yet my final board mechanism was not sorted out i was confuse about servo and Dc motors which one i should use in final project. but we had many Dc motors at labs so i thought using dc for initial testing will be good idea , so i Decided to use <a href="http://www.ti.com/product/L293D" target="_blank"><b>L293d Drivers</b></a>. and prepared my schematic in <a href="https://www.autodesk.com/products/eagle/overview" target="_blank"><b>EAGLE</b></a>. you can see pcb making in details in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"><b>WEEk 7</b></a>.
-  </p>
-<h3>Schematic</h3>
-<div>
-  <img src="images/week11/finalboard/1.png" alt="" /><bR /><br />
-  <h4>Requirements</h4>
-<pre>
+        <h3>Final Board DESIGN</h3>
+        <p>
+          Yet my final board mechanism was not sorted out I was confuse about servo and Dc motors which one I should use in final project. but we had many Dc motors at labs so I thought using dc for initial testing will be good idea , so I Decided to
+          use <a href="http://www.ti.com/product/L293D" target="_blank"><b>L293d Drivers</b></a>. and prepared my schematic in <a href="https://www.autodesk.com/products/eagle/overview" target="_blank"><b>EAGLE</b></a>. you can see pcb making in
+          details in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"><b>WEEk 7</b></a>.
+        </p>
+        <h3>Schematic</h3>
+        <div>
+          <img src="images/week11/finalboard/1.png" alt="" /><bR /><br />
+          <h4>Requirements</h4>
+          <pre>
 <code>
 <li>one <a><b>10k</b></a> pullup resistors</li> - one at Reset and Vcc for keeping reset pin High<br />
 <li>three <a><b>100nf</b></a> Filter Capacitors</li> - two At pin number 4 an 5 (Vccs) of microcontroller and one between DTR(RTS) and Reset (of FTDI pins).<br />
@@ -393,65 +403,65 @@
 <li> <a><b>ISP</b></a> , <a><b>UART</b></a> , <a><b>i2c</b></a> header pins</li> - For programming and communication<br />
 </code>
 </pre>
-<h4>i/O pins</h4>
-<pre>
+          <h4>i/O pins</h4>
+          <pre>
 <code>
 <li>Ultrasonic sensor</li>
 <li>Motor Driver L2393D</li>
 <li>LCD Module Pins</li>
-<li>Extra pins</li> - i tried to use all the pins of microcontroller  in case if i needed extra ones
+<li>Extra pins</li> - I tried to use all the pins of microcontroller  in case if I needed extra ones
 </code>
 </pre>
-<h3>Board</h3>
-<img src="images/week11/finalboard/2.png" alt=""  />
+          <h3>Board</h3>
+          <img src="images/week11/finalboard/2.png" alt="" />
 
-<p class="step">
-  Milling And Soldering
-</p>
-<p>
-  One can know more about milling and soldering process in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5" target="_blank"><b>Week5</b></a>.
-</p>
-<img src="images/week11/finalboard/2b.jpg" alt=""  />
-<img src="images/week11/finalboard/2a.jpg" alt=""  />
-<img src="images/week11/finalboard/3.jpg" alt=""  />
-<img src="images/week11/finalboard/4.jpg" alt=""  /><br /><br />
-<h3>Programming</h3>
-<p>
-  <a>I kept L293D part unsolder for now ! it was not available at lab , i have to buy that.</a>
-</p>
-<img src="images/week11/finalboard/5.jpg" alt=""  /><br /><br />
-<p class="step">Joystick as input Device</p>
-<p>
-  In 328p board i tried to get data from the joystick module. i will get positions of <a><b>X - axis</b></a>, <a><b>Y - axis</b></a> and <a><b>Switch</b></a>
-</p>
-  <img src="images/week11/finalboard/6.jpg" alt=""  />
+          <p class="step">
+            Milling And Soldering
+          </p>
+          <p>
+            One can know more about milling and soldering process in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5" target="_blank"><b>Week5</b></a>.
+          </p>
+          <img src="images/week11/finalboard/2b.jpg" alt="" />
+          <img src="images/week11/finalboard/2a.jpg" alt="" />
+          <img src="images/week11/finalboard/3.jpg" alt="" />
+          <img src="images/week11/finalboard/4.jpg" alt="" /><br /><br />
+          <h3>Programming</h3>
+          <p>
+            <a>I kept L293D part unsolder for now ! it was not available at lab , I have to buy that.</a>
+          </p>
+          <img src="images/week11/finalboard/5.jpg" alt="" /><br /><br />
+          <p class="step">Joystick as input Device</p>
+          <p>
+            In 328p board I tried to get data from the joystick module. I will get positions of <a><b>X - axis</b></a>, <a><b>Y - axis</b></a> and <a><b>Switch</b></a>
+          </p>
+          <img src="images/week11/finalboard/6.jpg" alt="" />
 
-  <div>
-    <p class="step">
-      Connections
-    </p>
-    <p>
-      i connected the x and y axis pins to analog pins and switch to digital pins.
-    </p>
-      <li>
-        <a><b>Vrx : A0</b></a>
-      </li>
-      <li>
-        <a><b>VRy : A1</b></a>
-      </li>
-      <li>
-        <a><b>SW : 8</b></a>
-      </li>
-    <img src="images/week11/finalboard/8.jpg" alt=""  />
-    <p class="step">
-      Code
-    </p>
-    <P>
-      Below code will help to get the data from the joystick module of <a><b>X and Y</b></a> axis and <a><b>Switch</b></a>. with code require explanation is given.
-    </P>
-<pre>
+          <div>
+            <p class="step">
+              Connections
+            </p>
+            <p>
+              I connected the x and y axis pins to analog pins and switch to digital pins.
+            </p>
+            <li>
+              <a><b>Vrx : A0</b></a>
+            </li>
+            <li>
+              <a><b>VRy : A1</b></a>
+            </li>
+            <li>
+              <a><b>SW : 8</b></a>
+            </li>
+            <img src="images/week11/finalboard/8.jpg" alt="" />
+            <p class="step">
+              Code
+            </p>
+            <P>
+              Below code will help to get the data from the joystick module of <a><b>X and Y</b></a> axis and <a><b>Switch</b></a>. with code require explanation is given.
+            </P>
+            <pre>
 <code>
-  /* this code will help to get the x and y axis data from joystick , i have maped the readings in specific region
+  /* this code will help to get the x and y axis data from joystick , I have maped the readings in specific region
 
 
 
@@ -484,7 +494,7 @@
     SW_state = digitalRead(SW);
 
    // map function helps to change the analog read values in desirable way
-   // in default it will give values between 0 and 1023 , but for joystick i may prefer values between the (-512,512),
+   // in default it will give values between 0 and 1023 , but for joystick I may prefer values between the (-512,512),
    // it helps me to convert the range
 
   // example
@@ -508,40 +518,43 @@
   }
 </code>
 </pre>
-<p class="step">
-  In Arduino ide
-</p>
-<p>
-  Below is code i am going to run through <a><b>Arduino-ide</b></a>. you can check week9 to know how to program with arduino-ide.<br /><br />Visit <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7" target="_blank"><b>week 7</b></a> and <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#programming" target="_blank"><b>week 5</b></a> for more imformation about IDE.
-</p>
-<img src="images/week11/finalboard/7.png" alt=""  />
-</div><br />
-<h3>Reading the Data</h3><br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wn8KkTadzdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div><br /><br />
+            <p class="step">
+              In Arduino ide
+            </p>
+            <p>
+              Below is code I am going to run through <a><b>Arduino-ide</b></a>. you can check week9 to know how to program with arduino-ide.<br /><br />Visit <a
+                href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7" target="_blank"><b>week 7</b></a> and <a
+                href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#programming" target="_blank"><b>week 5</b></a> for more imformation about IDE.
+            </p>
+            <img src="images/week11/finalboard/7.png" alt="" />
+          </div><br />
+          <h3>Reading the Data</h3><br />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/wn8KkTadzdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div><br /><br />
 
 
-<h3>Group work</h3>
+        <h3>Group work</h3>
 
-our group work was to Probing Sensor Data with Oscilloscope , we tried Quadrature Encoders. In this group work there was not much to separate so we did it together.<bR /><br />
+        our group work was to Probing Sensor Data with Oscilloscope , we tried Quadrature Encoders. In this group work there was not much to separate so we did it together.<bR /><br />
 
-we tried to probe the Quadrature Encoders with Oscilloscope. so there are two channels in the Oscilloscope and bot connected with encodes output, encodes generates square pulses , in both of channels pulses will be generated and it can be see in display of Oscilloscope. <br /><br /><a href="http://fab.academany.org/2019/labs/cept/inputdevices" target="_blank"><b>click here</b></a> to redirect on group work.
-<bR /><br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7Scmh9DUa5Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        we tried to probe the Quadrature Encoders with Oscilloscope. so there are two channels in the Oscilloscope and bot connected with encodes output, encodes generates square pulses , in both of channels pulses will be generated and it can be see
+        in display of Oscilloscope. <br /><br /><a href="http://fab.academany.org/2019/labs/cept/inputdevices" target="_blank"><b>click here</b></a> to redirect on group work.
+        <bR /><br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7Scmh9DUa5Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h3>Conclusion</h3>
- This week all i do is exploring the different <a><b>sensors</b></a> and try to understand their working , i <a><b>milled</b></a> new 328p board , got to know more about communications in 328p board which i will explore more ahead !
+        <h3>Conclusion</h3>
+        This week all I do is exploring the different <a><b>sensors</b></a> and try to understand their working , I <a><b>milled</b></a> new 328p board , got to know more about communications in 328p board which I will explore more ahead !
 
 
-      </p>
-            </div>
+        </p>
     </div>
+  </div>
 
 
 
 
 
-    </div>
+  </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
   <script src="jquery.localscroll.js" type="text/javascript"></script>
@@ -553,7 +566,10 @@ we tried to probe the Quadrature Encoders with Oscilloscope. so there are two ch
       });
     });
   </script>
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd" property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span
+    xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd"
+    property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+    International License</a>.
   <br /><br /><br /><br />
 </body>
 

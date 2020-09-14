@@ -197,8 +197,10 @@
       <p>
         <a><b>Molding</b></a> is the process of manufacturing by shaping liquid or pliable raw material using a rigid frame called a mold or matrix. This itself may have been made using a pattern or model of the final object.<br /><br />
 
-        A mold or mold is a hollowed-out block that is filled with a liquid or pliable material like <a><b>plastic, glass, metal, or ceramic raw materials</b></a>. The liquid hardens or sets inside the mold, adopting its shape. Mold is the counterpart to a cast. The very common bi-valve molding process uses two molds, one for each half of the object. Piece-molding uses several different molds, each creating a section of a complicated object. This is generally only used for larger and more valuable objects.
-<br /><br />
+        A mold or mold is a hollowed-out block that is filled with a liquid or pliable material like <a><b>plastic, glass, metal, or ceramic raw materials</b></a>. The liquid hardens or sets inside the mold, adopting its shape. Mold is the
+        counterpart to a cast. The very common bi-valve molding process uses two molds, one for each half of the object. Piece-molding uses several different molds, each creating a section of a complicated object. This is generally only used for
+        larger and more valuable objects.
+        <br /><br />
 
         The manufacturer who makes the molds is called the mold-maker. A release agent is typically used to make removal of the hardened/set substance from the mold easier. Typical uses for molded plastics include molded furniture, molded household
         goods, molded cases, and structural materials.
@@ -225,7 +227,9 @@
       <h1>Casting</h1>
 
       <p>
-      Casting is a manufacturing process in which a liquid material is usually poured into a mold, which contains a hollow cavity of the desired shape, and then allowed to solidify. The solidified part is also known as a casting, which is ejected or broken out of the mold to complete the process. Casting materials are usually metals or various cold setting materials that cure after mixing two or more components; examples are epoxy, concrete, plaster, and clay. Casting is most often used for making complex shapes that would be otherwise difficult or uneconomical to make by other methods.
+        Casting is a manufacturing process in which a liquid material is usually poured into a mold, which contains a hollow cavity of the desired shape, and then allowed to solidify. The solidified part is also known as a casting, which is ejected
+        or broken out of the mold to complete the process. Casting materials are usually metals or various cold setting materials that cure after mixing two or more components; examples are epoxy, concrete, plaster, and clay. Casting is most often
+        used for making complex shapes that would be otherwise difficult or uneconomical to make by other methods.
       </p>
 
       <h1>Design of Master Pattern</h1>
@@ -355,7 +359,8 @@
         </p>
         <h1>partworks3d</h1>
         <p>
-          part works software can be used to generate 2d and 3d cut paths for the shopbot CNC machine. part works 3D is included with all new ShopBots and will take 3D models from programs such as Rhino or Vector/3D clip art and create Part Files (tool paths) ready for 3D machining on your ShopBot. partworks 3D allows adjusting tool paths, will create roughing passes and will machine parts from one, two, or four sides as well as insert bridging.
+          part works software can be used to generate 2d and 3d cut paths for the shopbot CNC machine. part works 3D is included with all new ShopBots and will take 3D models from programs such as Rhino or Vector/3D clip art and create Part Files
+          (tool paths) ready for 3D machining on your ShopBot. partworks 3D allows adjusting tool paths, will create roughing passes and will machine parts from one, two, or four sides as well as insert bridging.
         </p>
         <P class="step">
           Import <a><b>.stl</b></a> file
@@ -378,7 +383,9 @@
         <p>
           <a><b>Material size and margin</b></a> is an important section because you can ruin your design if you haven’t paid attention to directions.
           <br /><br />
-          Problem is that you have to know whether your <a><b>CNC machine</b></a> and <a><b>partworks</b></a> axis are the same or not, ours is not. So what happens here partworks generates a cut file based on the length and width orientation. here it will generate different types of cut operations in the longitudinal and transverse direction (<a><b>which is normal for rectangle cut files</b></a>).<br /><br />so even if you think the axis is the same their respective length and width are different and so you have to rotate the workpiece to align length and width.
+          Problem is that you have to know whether your <a><b>CNC machine</b></a> and <a><b>partworks</b></a> axis are the same or not, ours is not. So what happens here partworks generates a cut file based on the length and width orientation. here
+          it will generate different types of cut operations in the longitudinal and transverse direction (<a><b>which is normal for rectangle cut files</b></a>).<br /><br />so even if you think the axis is the same their respective length and width
+          are different and so you have to rotate the workpiece to align length and width.
           <br /><br />
           Here one has to change the <a><b>orientation</b></a> of the workpiece while putting it on the CNC machine you have to rotate it to 90 degrees anticlockwise.<br /><br /> place the origin on the <a><b>Top - left corner</b></a> in material
           size.<br /><br />on the CNC machine, you have to put zero at the bottom left since materialism rotated 90 degrees. see <a><b>CNC</b></a> images to understand better.
@@ -390,10 +397,10 @@
         </P>
         <p>
           I was going to use <a><b>1/8th end and ball nose mill for cut</b></a>.
-          <pre>spindle speed: 4000 rpm</pre>
-          <pre>Feed rate: 50 mm/s</pre>
-          <pre>Plunge rate: 20 mm/s</pre>
-          and then <a><b>calculate</b></a>. Blue lines are toolpath of cnc.
+        <pre>spindle speed: 4000 rpm</pre>
+        <pre>Feed rate: 50 mm/s</pre>
+        <pre>Plunge rate: 20 mm/s</pre>
+        and then <a><b>calculate</b></a>. Blue lines are toolpath of cnc.
         </p>
         <img src="images/week10/partworks/4.png" alt="" />
         <P class="step">
@@ -407,7 +414,7 @@
           I will recommend paying attention to step over parameters. it will the main parameter to define horizontal error and surface finish in final cutting.<br /><br />
           <a>
             I did one mistake here, in finishing if one increases the rpm-speed and decrease the feed rate will increase the surface finish, but I did inverse. I was a little concerned about wax melting though.
-</a>
+          </a>
           <br /><br />
           <a>Step over is the distance between two individual toolpaths, if your step over will be 100% (100% of the tool diameter), the next tool path will be 100% away from the adjacent one. and it will leave some uncut material in between.</a>
         </p>
@@ -504,7 +511,8 @@
           Mix it properly
         </p>
         <p>
-          After pouring the two parts, mix it properly, <a><b>Initially</b></a>, the mixture will be very thick and it will be difficult to mix in some case, but it is a sign that it is not mixed properly, but after some time, it will be very smooth and its color will be changed to light <a><b>blue</b></a>.
+          After pouring the two parts, mix it properly, <a><b>Initially</b></a>, the mixture will be very thick and it will be difficult to mix in some case, but it is a sign that it is not mixed properly, but after some time, it will be very smooth
+          and its color will be changed to light <a><b>blue</b></a>.
         </p>
 
         <img src="images/week10/mold/16.jpg" alt="" />
@@ -528,7 +536,7 @@
         </p>
         <p>
           <a>
-Though the mold surface was the very smooth thing I don’t like on omoo 30 is it is very soft and after some time I saw some lighter cracks on the mold (on outer walls).</a>
+            Though the mold surface was the very smooth thing I don’t like on omoo 30 is it is very soft and after some time I saw some lighter cracks on the mold (on outer walls).</a>
         </p>
         <img src="images/week10/replicas/2.jpg" alt="" />
         <img src="images/week10/replicas/2a.jpg" alt="" />
@@ -538,13 +546,14 @@ Though the mold surface was the very smooth thing I don’t like on omoo 30 is i
         </p>
         <p>
           The <a><b>Smooth-Cast® 300</b></a> Series of liquid plastics are <a><b>ultra-low viscosity casting resins</b></a> that yield castings that are bright white and virtually bubble-free.<br /><br />
-          Fully cured castings are tough, durable, machinable, and paintable. They resist moisture and mild solvents. Applications for Smooth-Cast® 300 Series Liquid Plastics include reproducing small to medium size sculptures, making prototype models, special effect props, and decorative jewelry.
+          Fully cured castings are tough, durable, machinable, and paintable. They resist moisture and mild solvents. Applications for Smooth-Cast® 300 Series Liquid Plastics include reproducing small to medium size sculptures, making prototype
+          models, special effect props, and decorative jewelry.
 
-          <pre>mixture ratio for weight is 100A: 90B.</pre>
-          <pre>Easy to measure and mix - 1:1 mix ratio by volume - no scale required</pre>
-          <pre>Low viscosity - captures excellent detail - no degassing necessary</pre>
-          <pre>Resin cures to a bright white finish</pre>
-          <a href="https://www.smooth-on.com/products/smooth-cast-300/" target="_blank"><b>Click here</b></a> to redirect on Material page.
+        <pre>mixture ratio for weight is 100A: 90B.</pre>
+        <pre>Easy to measure and mix - 1:1 mix ratio by volume - no scale required</pre>
+        <pre>Low viscosity - captures excellent detail - no degassing necessary</pre>
+        <pre>Resin cures to a bright white finish</pre>
+        <a href="https://www.smooth-on.com/products/smooth-cast-300/" target="_blank"><b>Click here</b></a> to redirect on Material page.
 
         </p>
 
@@ -561,11 +570,11 @@ Though the mold surface was the very smooth thing I don’t like on omoo 30 is i
         <p class="step">
           Material: smoothon cast 305
         </p>
-<pre>mixture ratio for weight is 100A: 90B.</pre>
-<pre>Easy to measure and mix - 1:1 mix ratio by volume - no scale required</pre>
-<pre>all liquid urethanes are moisture sensitive and will absorb atmospheric moisture.</pre>
-<pre>Smooth-Cast® 305 will cure in 30 - 40 minutes, (it cure faster in 20 min but it is relatively slower to smooth cast -300)</pre>
-<pre><a>It expands when it during setting</a></pre>
+        <pre>mixture ratio for weight is 100A: 90B.</pre>
+        <pre>Easy to measure and mix - 1:1 mix ratio by volume - no scale required</pre>
+        <pre>all liquid urethanes are moisture sensitive and will absorb atmospheric moisture.</pre>
+        <pre>Smooth-Cast® 305 will cure in 30 - 40 minutes, (it cure faster in 20 min but it is relatively slower to smooth cast -300)</pre>
+        <pre><a>It expands when it during setting</a></pre>
         <p>
           <a href="https://www.smooth-on.com/products/smooth-cast-305/" target="_blank"><b>click</b></a> here to direct material page.
         </p>
@@ -598,7 +607,9 @@ Though the mold surface was the very smooth thing I don’t like on omoo 30 is i
         </p>
         <h1>Conclusion</h1>
         <p>
-          This week bring something new for me, I learn how can I do <a><b>3d milling</b></a> what types of creative textures machine can do, parameters that should be taken care on the m3d milling, lately I realized I can do roughing and finishing only with one tool, by just setting stepover and feed rate. lower the step over, finer finishing will be.<br /><br />In the molding part, it was a very good experience, I got to know about different materials and parameters in the mold and I also want to explore it more in the future.
+          This week bring something new for me, I learn how can I do <a><b>3d milling</b></a> what types of creative textures machine can do, parameters that should be taken care on the m3d milling, lately I realized I can do roughing and finishing
+          only with one tool, by just setting stepover and feed rate. lower the step over, finer finishing will be.<br /><br />In the molding part, it was a very good experience, I got to know about different materials and parameters in the mold and
+          I also want to explore it more in the future.
         </p>
 
       </div>
@@ -625,4 +636,5 @@ Though the mold surface was the very smooth thing I don’t like on omoo 30 is i
   </section>
 
 </footer>
+
 </html>
