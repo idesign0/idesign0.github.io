@@ -46,7 +46,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -67,7 +68,7 @@
 
       <ul class="main-menu">
         <li><a href="..\index">Home</a></li>
-        <li>
+        <li class="fab-work">
           <a href="..\assignments">Fab work</a>
           <ul>
             <li><a href="#">Week 1 to 5</a>
@@ -113,7 +114,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="project-work">
           <a href="#">project</a>
           <ul>
             <li><a href="project">Final Project proposal</a></li>
@@ -131,7 +132,7 @@
       <h1>Output devices</h1>
     </nav>
   </header>
-  <div class="anchors" id="listj">
+  <!-- <div class="anchors" id="listj">
     <h3>Original files for code</h3>
     <ul>
       <li>
@@ -141,39 +142,43 @@
         <a href="images/week12/at/servondjoystick/servondjoystick.ino" target="_blank" download>Servo and Joystick code</a>
       </li>
       </ul>
-    </div>
+    </div> -->
 
 
-  <div class="week2">
+  <div class="projectconcept">
 
     <div class="week2p">
-      <h2>Week 12 : Assignment</h2>
-      <div>
-        <div>
+      <h2>Week 12 : Assignment</h2><bR />
+      <div class="listp">
           <ul>
             <li>
               add an output device to a microcontroller board you've designed,
         and program it to do something
             </li>
           </ul>
-        </div>
       </div>
 
       <p>
-        In week 12 assignment was to add output device in microcontroller and i have to program it to do something ! i thought it will be good idea to use input devices i used in <a href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>.
-        <li>
-          <a href="https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/" target="_blank"><b>OLED</b></a> - OLED with Humidity sensor
-        </li>
-        <li>
-          <a href="https://robu.in/product/towerpro-mg995-metal-gear-servo-motor/" target="_blank"><b>Servo</b></a> - Servo with joystick
-        </li>
+        In week 12 assignment was to add an output device in microcontroller and I have to program it to do something ! I thought it will be a good idea to use the input devices I used in <a href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>.
+
+        <br /><br />
+        All <a><b>Details</b></a> of 328p board is uploaded in <a href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>.<br /><br />
       </p>
 
-        All <a><b>Details</b></a> of 328p board is uploaded in <a href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>.
+      <div class="listp">
+        <ul>
+          <li>
+            <a href="https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/" target="_blank"><b>OLED</b></a> - OLED with Humidity sensor
+          </li>
+          <li>
+            <a href="https://robu.in/product/towerpro-mg995-metal-gear-servo-motor/" target="_blank"><b>Servo</b></a> - Servo with joystick
+          </li>
+        </ul>
+      </div>
 
-      <h3>Humidity sensor with OLED</h3>
+      <h1>Humidity sensor with OLED</h1>
       <p>
-        i  already used humidity sensor and print details on serial Monitor, i wanted to print them on my <a><b>OLED</b></a> now.
+        I already used the humidity sensor and print details on serial Monitor, I wanted to print them on my <a><b>OLED</b></a> now.
         <br /><br />
         <a><b>OLED (Organic Light-Emitting Diode)</b></a> is a self light-emitting technology composed of a thin, multi-layered organic film placed between an anode and cathode. In contrast to LCD technology, OLED does not require a backlight. OLED possesses high application potential for virtually all types of displays and is regarded as the ultimate technology for the next generation of flat-panel displays. <a href="https://randomnerdtutorials.com/" target="_blank"><b>my reference</b></a> for this code.
 
@@ -183,7 +188,7 @@
         setup
       </p>
       <p>
-        in setup i connected
+        in setup, I connected
        <li>
          <a><b>Humidity sensor</b></a> with the Digital <a><b>pin 4</b></a>
        </li>
@@ -191,7 +196,6 @@
          <a><b>Oled display</b></a> to i2c communication
        </li>
       </p>
-      <div>
 
       <img src="images/week12/at/1.jpg" alt="">
       <img src="images/week12/at/2.jpg" alt="">
@@ -200,273 +204,289 @@
       <p class="step">
         Code
       </p>
-      i got these code from <a href="https://randomnerdtutorials.com/complete-guide-for-dht11dht22-humidity-and-temperature-sensor-with-arduino" target="_blank"><b>Random Tutorials</b></a> and <a href="https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/#more-27343" target="_blank"><b> About OLED and DHT sensor</b></a>. i still needed to understand these code , i written in every comment what each line is doing , the way i understand..<br />
-      Below code will show <a><b>Humidity</b></a> and  <a><b>temperature</b></a>.<br /><br />
-      Don’t forget to include
-      <li>
-         <a href="https://www.arduino.cc/en/Reference/Wire" target="_blank"><b>wire library</b></a>
-      </li>
-      <li>
-        <a target="_blank" href="https://github.com/adafruit/Adafruit_Sensor"><b>Adafruit Unified Sensor</b></a>,
-      </li>
-      <li>
-        <a target="_blank" href="https://github.com/adafruit/Adafruit_SSD1306"><b>Adafruit SSD1306</b></a>
-      </li><bR /><br />
+      <p>
+        I got these codes from <a href="https://randomnerdtutorials.com/complete-guide-for-dht11dht22-humidity-and-temperature-sensor-with-arduino" target="_blank"><b>Random Tutorials</b></a> and <a href="https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/#more-27343" target="_blank"><b> About OLED and DHT sensor</b></a>. I still needed to understand this code, I wrote in every comment what each line is doing, the way I understand...The below code will show <a><b>Humidity</b></a> and  <a><b>temperature</b></a>.<br /><br />
+        Don’t forget to include
+      </p>
+      <div class="listp">
+        <ul>
+          <li>
+             <a href="https://www.arduino.cc/en/Reference/Wire" target="_blank"><b>wire library</b></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/adafruit/Adafruit_Sensor"><b>Adafruit Unified Sensor</b></a>,
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/adafruit/Adafruit_SSD1306"><b>Adafruit SSD1306</b></a>
+          </li>
+        </ul>
+      </div>
       <pre>
-      <code>
-        /*
-         * Random Nerd Tutorials - Rui Santos
-         * Complete Project Details https://randomnerdtutorials.com
-         */
-         // require libraries one will need to run the code
+  <code>/*
+  * Random Nerd Tutorials - Rui Santos
+  * Complete Project Details https://randomnerdtutorials.com
+  */
+  // require libraries one will need to run the code
 
-        #include &ltWire.h&gt // wire library for I2C communication
+  #include &ltWire.h&gt // wire library for I2C communication
 
-         // Adafruit library for the OLED printing
-        #include &ltAdafruit_GFX.h&gt
-        #include &ltAdafruit_SSD1306.h&gt
+  // Adafruit library for the OLED printing
+  #include &ltAdafruit_GFX.h&gt
+  #include &ltAdafruit_SSD1306.h&gt
 
-        #include &ltDHT.h&gt// library for Dht sensor
+  #include &ltDHT.h&gt// library for Dht sensor
 
-        #define DHTPIN 2 // digital pin is defined to humidity sensor
-        #define DHTTYPE DHT11 // defined reading
-        #define OLED_RESET 4 // OLED HAS TO DEFINE RESET IN EVEN IT IS NOT IN PINOUT
-        Adafruit_SSD1306 display(OLED_RESET); //FOR DISPLAY
+  #define DHTPIN 2 // digital pin is defined to humidity sensor
+  #define DHTTYPE DHT11 // defined reading
+  #define OLED_RESET 4 // OLED HAS TO DEFINE RESET IN EVEN IT IS NOT IN PINOUT
+  Adafruit_SSD1306 display(OLED_RESET); //FOR DISPLAY
 
-        // Initialize DHT sensor
-        DHT dht(DHTPIN, DHTTYPE);
+  // Initialize DHT sensor
+  DHT dht(DHTPIN, DHTTYPE);
 
-        void setup() {
-          Wire.begin();
-          dht.begin();
-          display.begin(SSD1306_SWITCHCAPVCC, 0x3C);// initialize with the I2C addr 0x3C
-        }
+  void setup() {
+  Wire.begin();
+  dht.begin();
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);// initialize with the I2C addr 0x3C
+  }
 
-        void displayTempHumid(){
-          delay(2000);
-          // Reading temperature or humidity takes about 250 milliseconds!
-          // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
-          float h = dht.readHumidity();
-          // Read temperature as Celsius
-          float t = dht.readTemperature();
-          // Read temperature as Fahrenheit
-          float f = dht.readTemperature(true);
+  void displayTempHumid(){
+  delay(2000);
+  // Reading temperature or humidity takes about 250 milliseconds!
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  float h = dht.readHumidity();
+  // Read temperature as Celsius
+  float t = dht.readTemperature();
+  // Read temperature as Fahrenheit
+  float f = dht.readTemperature(true);
 
-          // Check if any reads failed and exit early (to try again).
-          if (isnan(h) || isnan(t) || isnan(f)) {
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
 
-            // if sensor failed to received any of three data it will fullfill this condition , if readings are available it will skip this loop
+    // if sensor failed to received any of three data it will fullfill this condition, if readings are available it will skip this loop
 
-            display.clearDisplay(); // clearing the display
-            display.setTextColor(WHITE); //setting the color
-            display.setTextSize(1); //set the font size
-            display.setCursor(5,0); //set the cursor coordinates
-            display.print("Failed to read from DHT sensor!");
-            return; // it will return to start if condition fulfilled
-          }
+    display.clearDisplay(); // clearing the display
+    display.setTextColor(WHITE); //setting the color
+    display.setTextSize(1); //set the font size
+    display.setCursor(5,0); //set the cursor coordinates
+    display.print("Failed to read from DHT sensor!");
+    return; // it will return to start if condition fulfilled
+  }
 
 
-          display.clearDisplay();
-          display.setTextColor(WHITE);
-          display.setTextSize(1);
-          display.setCursor(0,10);
+  display.clearDisplay();
+  display.setTextColor(WHITE);
+  display.setTextSize(1);
+  display.setCursor(0,10);
 
-          // prints on display from below
+  // prints on display from below
 
-          display.print("Humidity: ");
-          display.print(h);
-          display.print(" %\t");
-          display.setCursor(0,20);
-          display.print("Temperature: ");
-          display.print(t);
-          display.print(" C");
+  display.print("Humidity: ");
+  display.print(h);
+  display.print(" %\t");
+  display.setCursor(0,20);
+  display.print("Temperature: ");
+  display.print(t);
+  display.print(" C");
 
-          // you can get tempreture values from below in fahrenheit
+  // you can get tempreture values from below in fahrenheit
 
-        //  display.setCursor(0,20);
-        //  display.print("Temperature: ");
-        //  display.print(f);
-        //  display.print(" F");
-        }
-        void loop() {
-          displayTempHumid();
-          display.display();
-        }
-      </code>
+  //  display.setCursor(0,20);
+  //  display.print("Temperature: ");
+  //  display.print(f);
+  //  display.print(" F");
+  }
+  void loop() {
+  displayTempHumid();
+  display.display();
+  }</code>
       </pre>
       <p class="step">
         Output
       </p>
       <p>
-        Below i am trying to increasing the humidity with wet Handkerchief, see Below in video !
-      </p><br />
+        Below I am trying to increase the humidity with a wet Handkerchief, see Below in video!
+      </p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/iF-k1UvPkCw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><bR /><br />
-      <h3>Servo motor with the Joystick</h3>
-      Then i tried to run <a href="https://www.adafruit.com/product/169" target="_blank"><b>Micro-servo</b></a> with joystick module!
+      <h1>Servo motor with the Joystick</h1>
+      Then I tried to run <a href="https://www.adafruit.com/product/169" target="_blank"><b>Micro-servo</b></a> with joystick module!
       <p class="step">
         Setup
-      </p><br />
-      <li>
-        Joystick connected to (<a><b>A1</b></a>,<a><b>A0</b></a>) // Vrx , Vry
-      </li>
-      <li>
-        servo pin <a><b>6</b></a>
-      </li>
-      <img src="images/week12/at/4.jpg" alt="" >
+      </p>
+        <pre>
+Joystick connected to (<a><b>A1</b></a>,<a><b>A0</b></a>) // Vrx, Vry</pre>
+        <pre>
+servo pin <a><b>6</b></a></pre>
+    <img src="images/week12/at/4.jpg" alt="" >
     <p class="step">
       Code
     </p>
     <p>
-      I explained code in comments , i thought it would be more efficient way , for simplicity copy code in Arduino and read , it will be more clear there.
+      II explained code in the comments, I thought it would be a more efficient way, for simplicity copy code in Arduino and read, it will be more clear there.
       <br /><br />
-      <a><b>Don’t forget to add library of servo below</b></a><br /><br />
+      <a><b>Don’t forget to add a library of servo below.</b></a><br /><br />
     </p>
       <pre>
       <code>
-        #include &ltServo.h&gt
+  #include &ltServo.h&gt
 
-        // including servo library
+  // including servo library
 
-        Servo servo1;
-        // define servo name
+  Servo servo1;
+  // define servo name
 
-        // initialize variables and define pins
-        int x_pos;
-        int y_pos;
+  // initialize variables and define pins
+  int x_pos;
+  int y_pos;
 
-        // Define pin for servo , define PWM pins
-        int servo1_pin = 6;
-        int initial_position = 90; // defined initial position , wanted to rotate both side
+  // Define pin for servo, define PWM pins
+  int servo1_pin = 6;
+  int initial_position = 90; // defined initial position, wanted to rotate both side
 
-        // set initial numbers
-        int xPosition = 0;
-        int yPosition = 0;
-        int SW_state = 0;
-        int mapX = 0;
-        int mapY = 0;
-        int VRx = A1;
-        int VRy = A0;
-        int SW = 8;
+  // set initial numbers
+  int xPosition = 0;
+  int yPosition = 0;
+  int SW_state = 0;
+  int mapX = 0;
+  int mapY = 0;
+  int VRx = A1;
+  int VRy = A0;
+  int SW = 8;
 
-        void setup ( ) {
-          Serial.begin (9600) ; // defining the input and output pins
-          servo1.attach (servo1_pin ) ;
-          servo1.write (initial_position);;
-          pinMode(VRx, INPUT);
-          pinMode(VRy, INPUT);
-          pinMode(SW, INPUT_PULLUP);
+  void setup ( ) {
+    Serial.begin (9600); // defining the input and output pins
+    servo1.attach (servo1_pin );
+    servo1.write (initial_position);;
+    pinMode(VRx, INPUT);
+    pinMode(VRy, INPUT);
+    pinMode(SW, INPUT_PULLUP);
+  }
+
+  void loop ( ) {
+    // cod is reading joystick x and y axis readings
+    xPosition = analogRead(VRx);
+    yPosition = analogRead(VRy);
+    SW_state = digitalRead(SW);
+
+
+    // printing on serial monitor
+    Serial.print("X: ");
+    Serial.print(mapX);
+    Serial.print(" | Y: ");
+    Serial.print(mapY);
+    Serial.print(" | Button: ");
+    Serial.println(SW_state);
+
+    delay(100);
+
+    x_pos = analogRead (xPosition);    // reading position for servo control
+
+      // below code dividing the values in two segments, (0,300) and (700,1023).
+
+      // first part, lets say it is for rotation servo anti-clockwise code
+
+      /* Below if position comes below 300 */
+      if (x_pos < 300){
+      if (initial_position < 10) {
+        } // first it will check it is below 10 or what, if it is it will do nothing and forward the loop
+      else{
+
+        /* else it will decrease the data by 10, and new servo position will be available, this position values
+          will be added or decrease depends on the readings
+        */
+
+        initial_position = initial_position - 10;
+            servo1.write ( initial_position );
+            delay (120); }
         }
 
-        void loop ( ) {
-          // cod is reading joystick x and y axis readings
-          xPosition = analogRead(VRx);
-          yPosition = analogRead(VRy);
-          SW_state = digitalRead(SW);
+      // second segment if values are greater then the 700, it will run servo to rotate oposite side
+
+      if (x_pos > 700){
+      if (initial_position > 980)
+      {
+      }
+      else{
+            initial_position = initial_position + 10; // it will just increase the values
+            servo1.write ( initial_position );
+            delay (120);
+          }
+       }
 
 
-          // printing on serial monitor
-          Serial.print("X: ");
-          Serial.print(mapX);
-          Serial.print(" | Y: ");
-          Serial.print(mapY);
-          Serial.print(" | Button: ");
-          Serial.println(SW_state);
+   // same things for y
 
-          delay(100);
-
-          x_pos = analogRead (xPosition) ;    // reading position for servo control
-
-            // below code dividing the values in two segments , (0,300) and (700,1023).
-
-            // first part , lets say it is for rotation servo anti-clockwise code
-
-            /* Below if position comes below 300 */
-            if (x_pos < 300){
-            if (initial_position < 10) {
-              } // first it will check it is below 10 or what , if it is it will do nothing and forward the loop
-            else{
-
-              /* else it will decrease the data by 10 , and new servo position will be available , this position values
-                will be added or decrease depends on the readings
-              */
-
-              initial_position = initial_position - 10;
-                  servo1.write ( initial_position ) ;
-                  delay (120) ; }
-              }
-
-            // second segment if values are greater then the 700 , it will run servo to rotate oposite side
-
-            if (x_pos > 700){
-            if (initial_position > 980)
-            {
-            }
-            else{
-                  initial_position = initial_position + 10; // it will just increase the values
-                  servo1.write ( initial_position ) ;
-                  delay (120) ;
-                }
-             }
-
-
-         // same things for y
-
-              if (y_pos < 300){
-            if (initial_position < 10) {
-              }
-            else{ initial_position = initial_position - 10;
-                  servo1.write ( initial_position ) ;
-                  delay (120) ; }
-              }
-            if (y_pos > 700){
-            if (initial_position > 180)
-            {
-            }
-            else{
-                  initial_position = initial_position + 10;
-                  servo1.write ( initial_position ) ;
-                  delay (120) ;
-                }
-             }
-
+        if (y_pos < 300){
+      if (initial_position < 10) {
         }
-      </code>
+      else{ initial_position = initial_position - 10;
+            servo1.write ( initial_position );
+            delay (120); }
+        }
+      if (y_pos > 700){
+      if (initial_position > 180)
+      {
+      }
+      else{
+            initial_position = initial_position + 10;
+            servo1.write ( initial_position );
+            delay (120);
+          }
+       }
+  }</code>
       </pre>
       <p class="step">
         video
-      </p><br />
+      </p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/UxDIAGTU2Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br /><br />
-      <h3>Group work</h3>
-      in group work we have to measure power consumption of any output component possible. we measured Power Consumption for a BLDC motor. In this group work we don’t need to divide specific task ! we did it together so.
 
-      <li>
-         For lower speed around 12 , power consumption was 2.54 w (0.212 A on 12 v )
-      </li>
-      <li>
-         For highest speed around 140 , power consumption was 8.412 w (0.701 A on 12v)
-      </li>
+      <h1>Group work</h1>
 
-      <br /><br />Check <a href="http://fab.academany.org/2019/labs/cept/outputdevices" target="_blank"><b>group website</b></a> for more information.
+      <p>
+        in group work, we have to measure the power consumption of any output component possible. we measured Power Consumption for a BLDC motor. In this group work, we don’t need to divide specific tasks! we did it together so.
+
+        <br /><br />Check <a href="http://fab.academany.org/2019/labs/cept/outputdevices" target="_blank"><b>group website</b></a> for more information.<br /><br />
+      </p>
+
+      <div class="listp">
+        <ul>
+          <li>
+             For lower speed around 12, power consumption was 2.54 w (0.212 A on 12 v )
+          </li>
+          <li>
+             For highest speed around 140, power consumption was 8.412 w (0.701 A on 12v)
+          </li>
+        </ul>
+      </div>
 
 
-      <h3>Conclusion</h3>
-      This week made input week complete, learned i could use input device to get different types of outputs.
-  </div>
+
+      <h1>Conclusion</h1>
+      <p>
+        This week made input week complete, learned I could use an input device to get different types of outputs.
+      </p>
 </div>
 </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
-  <script src="jquery.localscroll.js" type="text/javascript"></script>
-  <script src="jquery.scrollTo.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#listj').localScroll({
-        duration: 800
-      });
-    });
-  </script>
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd" property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-  <br /><br /><br /><br />
+
 </body>
+<footer>
+  <section class="footer-content">
 
+    <ul class="main-menu-blog-footer-tabs">
+      <li><a href="https://www.linkedin.com/in/dhruv-patel-485a53134/">Portfolio</a></li>
+      <li><a href="https://github.com/idesign0">Robotics</a></li>
+      <li><a href="../assignments">Fab Academy</a></li>
+      <li><a href="../about">About</a></li>
+      <li><a href="../contact">Contact</a></li>
+    </ul>
+    <!-- <h3 class=footer-h3>Social MEdia</h3> -->
+    <ul class="main-menu-blog-footer-sm">
+      <li><a href="https://www.instagram.com/classy_29/" target="_blank"><img src="images/sm/instagram.svg" alt="" /></a></li>
+      <li><a href="https://www.linkedin.com/in/dhruv-patel-485a53134/" target="_blank"><img src="images/sm/linkedin.svg" alt="" /></a></li>
+      <li><a href="https://github.com/idesign0" target="_blank"><img src="images/sm/github.svg" alt="" /></a></li>
+
+    </ul>
+  </section>
+
+</footer>
 </html>
