@@ -46,7 +46,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -67,7 +68,7 @@
 
       <ul class="main-menu">
         <li><a href="..\index">Home</a></li>
-        <li>
+        <li class="fab-work">
           <a href="..\assignments">Fab work</a>
           <ul>
             <li><a href="#">Week 1 to 5</a>
@@ -113,15 +114,12 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="project-work">
           <a href="#">project</a>
           <ul>
             <li><a href="project">Final Project proposal</a></li>
             <li><a href="projectd">Project development</a></li>
-<li><a href="finalproject">Final Project</a></li>
-
-
-
+            <li><a href="finalproject">Final Project</a></li>
           </ul>
         </li>
         <li>
@@ -157,271 +155,313 @@
     </div> -->
 
 
-  <div class="week2">
+  <div class="projectconcept">
 
     <div class="week2p">
 
-      <h2>Week 13 : Assignment</h2>
+      <h2>Week 13 : Assignment</h2><br />
       <div class="listp">
-        <div>
           <ul>
-      <li>
-        Propose a final project masterpiece that integrates the range of units covered
-        </li>
-      </ul>
+            <li>
+              Propose a final project masterpiece that integrates the range of units covered
+            </li>
+          </ul>
       </div>
-    </div><br />
-    <h3>Final project</h3>
-    <p>
-      My final project is to design <a><b>Interactive Dustbin system</b></a>. i devided this project in <a><b>two phases</b></a>.<br /><br /> in <a><b>Phase 1</b></a> dustbin System will be able to detect presence of individual, will be able to open and close by itself and try to manage the garbage by measuring its quantity inside. This part i am going to do in fab lab , if i will able to complete it earlier i will work on <a><b>Phase 2</b></a>, if not i will keep it as my final project.<br /><br />
-      In <a><b>Phase 2</b></a>, I want to make this system for commercial application in which dustbin will be owned by the <a><b>Shopkeepers</b></a> and <a><b>for trusts who manages Historical sites</b></a>. In that model i am thinking about point system which will give points after use, and those points will give help to give discounts in near by shops. <br /><br />
-      <h3>Why dividing in 2 phases ?</h3>
-       Initialls my idea was to make <a><b>One commercial model</b></a>. One can check the project model on <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week1" target="_blank"><b>Final projcet Concept</b></a>. There i described it on details.<br /><br /> <a><b>Reason</b></a> to devide in phases is i found i may have the problems regarding the <a><b>programming the system</b></a>. i know basics in <a><b>Arduino C</b></a> and <a><b>C programming</b></a> , but for programming the RFID module will need me more learning time , though i prepared my final board the way i can easily add the <a><b>RFID - module</b></a> so if some time left i can work on that also.
-    </p>
-    <h3>Who's done beforehand ?</h3>
-    <p>
-      Theree are many example where people tried to do automation in dustbin. in some projects they use <a><b>ultasonic sensor and the servo</b></a> to make the opening open or close by detecting disturbance. In one project one used <a><b>Mic with arduino</b></a> and servo, it will detect the sound and open the <a><b>Opening</b></a>. he is controlling servo with drivers.<br /><br />
+      <h1>Final project</h1>
+      <p>
+        My final project is to design an <a><b>Interactive Dustbin system</b></a>. I divided this project into <a><b>two phases</b></a>.
 
-       <a>One project is very similar to what i am thinking for  phase one</a>. it includes LCD module, Ultrasonic sensor, Infrared sensor with Arduino. They are using <a><b>Infrared sensor</b></a> to detect the objects and <a><b>Ultrasonic sensor</b></a> to measure the quantity.
-       <br /><br />
-       Links for all the ideas Are below :
-       <li>
-         <a href="https://youtu.be/_oUpaSkdh5s" target="_blank">Ultra Ultrasonic sensor and servo module With Urduino uno</a>
-       </li><br />
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/_oUpaSkdh5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
-       <li>
-         <a href="https://youtu.be/WVWEHSSZpps" target="_blank">Mic and amplifier with servo module with arduino uno</a>
-       </li><br />
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/WVWEHSSZpps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
-       <li>
-         <a href="https://youtu.be/B3nNkrQoTAM" target="_blank"> Infrared sensor, ultasonic sensor, LCD module and servo with Arduino</a>
-       </li><br />
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/B3nNkrQoTAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
+        <br /><br />
+        In <a><b>Phase 1</b></a> dustbin System will be able to detect the presence of the individual, will be able to open and close by itself and try to manage the garbage by measuring its quantity inside. This part I am going to do in a fab lab, if I will able to complete it earlier I will work on <a><b>Phase 2</b></a>, if not I will keep it as my final project.
+        project.
 
-       <p>
-         This projects were amazing i gain more clear perspective after watching this vedios, But these are personal projects and done for only short of demostration of system not for public use. <a><b>What i want to implement here </b></a>is i want to modify this system for Public use , People will not use/buy it if it is not looking good enough or <a><b>it not reliable</b></a> and manufacures will not manufacture if it not <a><b>convient for sell</b></a> or <a><b>convient for make</b></a>.
-       </p>
-       <h3>What will I design?</h3>
-       <p>
-         As i mentioned above i wanted to make one system which is complete or semi-Automated . For <a><b>phase one</b></a> i am making it complete Automated , i this Ultrasonic sensor will detect for disturbance or object continuously , <a><b>When it will detect objects in between some distance it will triger the Motor to open the dustbin.</b></a>.<br /><br />
-         For phase - 2 i will like to make it semi-automatic. i will not give power continuously to the Ultrasonic instead i will add one push button for the people so system can start , it is more convient udea for me for the commercial use.
+        <br /><br />
+        In <a><b>Phase 2</b></a>, I want to make this system for commercial application in which dustbin will be owned by the <a><b>Shopkeepers</b></a> and <a><b>for trusts who manages Historical sites</b></a>. In that model, I am thinking about a point system which will give points after use, and those points will give help to give discounts in nearby shops.
+        <br /><br />
+      <h1>Dividing in 2 phases</h1>
+      Initially, my idea was to make <a><b>One commercial model</b></a>. One can check the project model on the <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week1" target="_blank"><b>Final project
+          Concept</b></a>. There I described it in detail.
 
-         <h4>Initial designs For the Smart bin</h4>
-         <div>
-           <p class="step">
-             First Picture
-           </p>
-           <p>
-             Below image was first picture of what i wanted to make in final project. i wanted to make <a><b>wireless communication</b></a> between dustbin and main controller. if some one push the button dust bin will open , after throwing trash bin will give points using <a><b>RFID - mmodule</b></a>.
-             <br /><br /> Full description is <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week1#application" target="_blank"><b>here</b></a>.
-           </p>
-           <img src="images/week1/2.jpg">
-          <p class="step">
-            Flow chart
-          </p>
-          <p>
-            This is complete algorithmic description. I devided This in two Phase. Reason i added <a><b>Arduino</b></a> here because i didnt know i will able to make my one !. i made my new board which is able to be programmed like Arduino. board has <a><b>ATmega 328p microcontroller</b></a>. i have uploaded my board design after Cad part below.
-          </p>
-          <img src="images/week1/renders/1.jpg">
-          <img src="images/week1/renders/1a.jpg">
-          <p class="step">
-            Cad designs
-          </p>
-          <p>
-           For now i am working on my cad model which can be used in real world.
-           <li>
-             Material : MDF
-           </li>
-           <li>
-             Joints : Finger Joints
-           </li>
-           <li>
-             Actual Dimentions : 350 * 350 * 500 mm
-           </li>
-           <li>
-             Prototype Dimentions : 100 * 100 * 150 mm
-           </li>
-           <br /><br/>
-           <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761e6a5a4097558e5fda?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-           <p class="step">
-             parametric Design
-           </p>
-           <p>
-              One good thing in this model is it is based on <a href="https://en.wikipedia.org/wiki/Parametric_design" target="_blank"><b>Parametric design</b></a>. i have controll of every Dimentions here including dimentions of finger joints and it numbers. Below is vedio for demostration.
-           </p><br />
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/rsUw2X0P9jI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <p class="step">
-             Design challanges
-           </p>
-           <p>
-             My Design chnallenge is to make on mechanism which can Manage the opening and closing of the Dustbin <a><b>in controlled way</b></a>. For Real model opening will have some weight and i have to work against it for smooth opening. <br /><br />I need <a><b>high torque</b></a> and <a><b>effective mechanism</b></a> which can <a><b>transfer</b></a> torque and reduce load on motor. initial when i was new to all of this i thought servo will be good for my application , but i change my plans to DC motors , i will use Limiting switches for controlling power input in dc_motor.
-            <br /><br />Below is initial sketch of  design. It will not work though. Here ultasonic can detect whether dustbin is full or not.
-           </p>
-           <img src="images/week1/3a.jpg">
+      <br /><br />
 
-           <h4> Models i designed earlier</h4>
-           <p class="step">
-              Final project proposal model
-           </p><br />
-           <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761e52948d7294714759?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-          <p class="step">
-            WEEK 3 cad design model
-          </p><br />
-          <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761e9cf509d2c9fe1a0f?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-         </div>
-         <p class="step">
-           Electronics Design
-         </p>
-         <li>
-           In electronic part i have to triger the <a><b>DC input</b></a> with help of <a><b>Ultrasonic sensor</b></a>, Idea is to use Ultrasonic sensor for detection of any movement in range of <a><b>15 cm</b></a> , after that it will give signals to the dc driver and Dc motor open the Dustbin , since i am using the DC motor i have no angle precision on the programming like servos, so i am using <a><b>LIMIT SWITCHES</b></a> to controll the power input in Driver. <a><b>Click here</b></a> to see Final board design.
-         </li>
-         <p class="step">
-           Programming part
-         </p>
-         <li>
-           I am doing programming on the <a href="https://www.tutorialspoint.com/arduino/" target="_blank"><b>Arduino c</b></a> . In Programming part i have to set the relation between Driver, Ultrasonic and limiting Switch.
-         </li>
-         <h3>What materials and components will be used and?</h3>
-         <h4>Materials</h4>
-         <li>
-           MDF For Body
-         </li>
-         <li>
-           PLA/ABS for controll box
-         </li>
-         <li>
-           Hinges
-         </li>
-         <h4>Electronics</h4>
-         <li>
-           DC Motor
-         </li>
-         <li>
-           DC Driver - L293d
-         </li>
-         <li>
-           LCD
-         </li>
-         <li>
-           Ultrasonic sensor / infraredsensor (4)
-         </li><li>
-           RFID module
-         </li><br /><br />
-         <div>
-           <h3>Material cost</h3>
-           <table>
-             <tr>
-               <th>Material</th>
-               <th>Cost (Approx)</th>
-             </tr>
-             <tr>
-             <td>MDF</td>
-             <td>Rs.1000</td>
-             </tr>
-             <tr>
-             <td>RFID Module</td>
-             <td>Rs.355</td>
-             </tr>
-             <tr>
-             <td>Hinges (2)</td>
-             <td>Rs.40 per piece</td>
-             </tr>
-             <td>3d Printed parts</td>
-             <td>Rs.200 per piece</td>
-             </tr>
-             <td>DC Motor</td>
-             <td>Rs.170 per piece</td>
-             </tr>
-             <tr>
-               <td>Ultrasonic sensor (2)</td>
-               <td>Rs.100 per piece</td>
-             </tr>
-             <tr>
-               <td>LCD</td>
-               <td>Rs. 125</td>
-             </tr>
-             <tr>
-               <td>TOTAL</td>
-               <td>Rs 2000</td>
-             </tr>
-           </table>
-         </div><br  />
-         <h3>Parts And System will be made</h3>
-         <li>
-           Dustbin frame
-         </li>
-         <li>
-           Controller box for electronics components
-         </li>
-         <li>
-           Final board for System
-         </li>
-         <h3>Resources and their use</h3><br />
-         <div>
-           <div>
-             <table>
-               <tr>
-                 <th>Resources</th>
-                 <th>Use of resources</th>
-               </tr>
-               <tr>
-                 <td>Milling Machine</td>
-                 <td>Dustbin Design</td>
-               </tr>
-               <tr>
-                 <td>3D Printer</td>
-                 <td>Controller case & Dustbin</td>
-               </tr>
-               <tr>
-                 <td>PCB Milling machine</td>
-                 <td>Final board Design</td>
-               </tr>
-               <tr>
-                 <td>Arduino / Ultra sonic sensor / infrared sensor /<br>Transceiver circuitry / Micro controller-8051 or Atmega / LCD</td>
-                 <td>Circuit Design</td>
-               </tr>
-               <tr>
-                 <td>Vynyl Cutter</td>
-                 <td>Logo making</td>
-               </tr>
-             </table>
-           </div>
-         </div><br /><br />
-         <h3> What questions need to be answered ?</h3>
-         <li>
-           Is the system is able to work for public use ?
-         </li>
-         <li>
+      The <a><b>Reason</b></a> to divide into phases is I found I may have problems regarding the <a><b>programming the system</b></a>. I know the basics in <a><b>Arduino C</b></a> and <a><b>C programming</b></a>, but for programming, the RFID module will need me more learning time, though I prepared my final board the way I can easily add the <a><b>RFID - module</b></a> so if some time left I can work on that also.
+      </p>
+      <h1>Who has done beforehand ?</h1>
+      <p>
+        There are many examples where people tried to do automation in the dustbin. in some projects, they use the <a><b>ultrasonic sensor and the servo</b></a> to make the opening open or close by detecting a disturbance. In one project one used <a><b>Mic with
+            Arduino</b></a> and servo, it will detect the sound and open the <a><b>Opening</b></a>. he is controlling a servo with drivers.<br /><br />
+
+        One project is very similar to what I am thinking for phase one. it includes an LCD module, Ultrasonic sensor, Infrared sensor with Arduino. They are using an <a><b>Infrared sensor</b></a> to detect the objects and an <a><b>Ultrasonic
+            sensor</b></a> to measure the quantity.
+        <br /><br />
+        Links for all the ideas Are below :
+      </p>
+      <div class="listp">
+        <ul>
+          <li>
+            <a href="https://youtu.be/_oUpaSkdh5s" target="_blank">Ultra Ultrasonic sensor and servo module With Urduino uno</a>
+          </li>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_oUpaSkdh5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <bR /><br />
+          <li>
+            <a href="https://youtu.be/WVWEHSSZpps" target="_blank">Mic and amplifier with servo module with arduino uno</a>
+          </li>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WVWEHSSZpps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <bR /><br />
+          <li>
+            <a href="https://youtu.be/B3nNkrQoTAM" target="_blank"> Infrared sensor, ultasonic sensor, LCD module and servo with Arduino</a>
+          </li>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/B3nNkrQoTAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+      </div>
+      <p>
+        These projects were amazing I gain a more clear perspective after watching these videos, But these are personal projects and done for only a short demonstration of the system, not for public use. <a><b> What I want to implement here </b></a> is I want to modify this system for Public use, People will not use/buy it if it is not looking good enough or <a><b>it not reliable</b></a>, and manufacturers will not manufacture if it is not <a><b>convenient for sale or convenient for make</b></a>.
+      </p>
+      <h1>What will I design?</h1>
+      <p>
+        As I mentioned above I wanted to make one system that is complete or semi-Automated. For <a><b>phase one</b></a> I am making it complete Automated, this Ultrasonic sensor will detect for disturbance or object continuously, <a><b>When it will detect objects in between some distance it will trigger the Motor to open the dustbin.</b></a>.<br /><br />
+        For phase - 2 I will like to make it semi-automatic. I will not give power continuously to the Ultrasonic instead I will add one push button for the people so system can start, it is more convient udea for me for the commercial use.
+
+      <h1>Initial designs</h1>
+      <div>
+        <p class="step">
+          First Picture
+        </p>
+        <p>
+          The below image was the first picture of what I wanted to make in the final project. I wanted to make <a><b>wireless communication</b></a> between the dustbin and the main controller. if someone pushes the button dust bin will open, after throwing the trash bin will give points using the <a><b>RFID - mmodule</b></a>.
+          <br /><br /> Full description is <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week1#application" target="_blank"><b>here</b></a>.
+        </p>
+        <img src="images/week1/2.jpg">
+        <p class="step">
+          Flow chart
+        </p>
+        <p>
+          This is a complete algorithmic description. I divided This into two Phases. The reason I added <a><b>Arduino</b></a> here because I didn't know I will able to make my one! I made my new board which is able to be programmed like Arduino. the board has an <a><b>ATmega 328p microcontroller</b></a>. I have uploaded my board design after the Cad part below.
+
+        </p>
+        <img src="images/week1/renders/1.jpg">
+        <img src="images/week1/renders/1a.jpg">
+        <p class="step">
+          Cad designs
+        </p>
+        <p>
+          For now, I am working on my cad model which can be used in the real world.
+          <pre>Material : MDF</pre>
+          <pre>Joints : Finger Joints</pre>
+          <pre>Actual Dimentions : 350 * 350 * 500 mm</pre>
+          <pre>Prototype Dimentions : 100 * 100 * 150 mm</pre>
+          <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761e6a5a4097558e5fda?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+            frameborder="0"></iframe>
+        <p class="step">
+          parametric Design
+        </p>
+        <p>
+          One good thing in this model is it is based on <a href="https://en.wikipedia.org/wiki/Parametric_design" target="_blank"><b>Parametric design</b></a>. I have control of every dimension here including the dimensions of finger joints and its numbers. Below is a video for the demonstration.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rsUw2X0P9jI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="step">
+          Design challanges
+        </p>
+        <p>
+          My Design challenge is to make a mechanism that can manage the opening and closing of the Dustbin in a  <a><b> controlled way</b></a>. The real model opening will have some weight and I have to work against it for smooth opening.
+          <br /><br />I need <a><b>high torque</b></a> and an <a><b>effective mechanism</b></a> that can <a><b>transfer</b></a> torque and reduce the load on the motor. initial when I was new to all of this I thought servo will be good for my application, but I change my plans to DC motors, I will use Limiting switches for controlling power input in dc_motor.
+          <br /><br />Below is an initial sketch of the design. It will not work though. Here ultrasonic can detect whether a dustbin is full or not.
+        </p>
+        <img src="images/week1/3a.jpg">
+
+        <h1> Models I designed earlier</h1>
+        <p class="step">
+          Final project proposal model
+        </p>
+        <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761e52948d7294714759?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+          frameborder="0"></iframe>
+        <p class="step">
+          WEEK 3 cad design model
+        </p>
+        <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761e9cf509d2c9fe1a0f?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+          frameborder="0"></iframe>
+      </div>
+      <p class="step">
+        Electronics Design
+      </p>
+      <p>
+        In the electronic part, I have to trigger the <a><b>DC input</b></a> with help of an <a><b>Ultrasonic sensor</b></a>, Idea is to use an Ultrasonic sensor for detection of any movement in the range of <a><b>15 cm</b></a>, after that, it will give signals to the dc driver and Dc motor open the Dustbin since I am using the DC motor I have no angle precision on the programming like servos, so I am using <a><b>LIMIT SWITCHES</b></a> to control the power input in Driver.<br /><br /><a href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>Click here</b></a>
+        to see Final board design.
+      </p>
+      <p class="step">
+        Programming part
+      </p>
+      <p>
+        I am doing programming on the <a href="https://www.tutorialspoint.com/arduino/" target="_blank"><b>Arduino c</b></a>. In the Programming part, I have to set the relation between Driver, Ultrasonic, and limiting Switch.
+      </p>
+      <h1>materials and components</h1>
+      <p class="step">Materials</p>
+      <div class="listp">
+        <ul>
+          <li>
+            MDF For Body
+          </li>
+          <li>
+            PLA/ABS for controll box
+          </li>
+          <li>
+            Hinges
+          </li>
+        </ul>
+      </div>
+
+      <p class="step">Electronics</p>
+      <div class="listp">
+        <ul>
+          <li>
+            DC Motor
+          </li>
+          <li>
+            DC Driver - L293d
+          </li>
+          <li>
+            LCD
+          </li>
+          <li>
+            Ultrasonic sensor / infraredsensor (4)
+          </li>
+          <li>
+            RFID module
+          </li>
+        </ul>
+      </div>
+        <div class="uniq">
+          <div class="resources">
+        <h1>Material cost</h1>
+        <table>
+          <tr>
+            <th>Material</th>
+            <th>Cost (Approx)</th>
+          </tr>
+          <tr>
+            <td>MDF</td>
+            <td>Rs.1000</td>
+          </tr>
+          <tr>
+            <td>RFID Module</td>
+            <td>Rs.355</td>
+          </tr>
+          <tr>
+            <td>Hinges (2)</td>
+            <td>Rs.40 per piece</td>
+          </tr>
+          <td>3d Printed parts</td>
+          <td>Rs.200 per piece</td>
+          </tr>
+          <td>DC Motor</td>
+          <td>Rs.170 per piece</td>
+          </tr>
+          <tr>
+            <td>Ultrasonic sensor (2)</td>
+            <td>Rs.100 per piece</td>
+          </tr>
+          <tr>
+            <td>LCD</td>
+            <td>Rs. 125</td>
+          </tr>
+          <tr>
+            <td>TOTAL</td>
+            <td>Rs 2000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      <h1>Parts And System will be made</h1>
+      <div class="listp">
+        <ul>
+          <li>
+            Dustbin frame
+          </li>
+          <li>
+            Controller box for electronics components
+          </li>
+          <li>
+            Final board for System
+          </li>
+        </ul>
+      </div>
+
+      <h1>Resources and their use</h1>
+      <div class="uniq">
+        <div class="resources">
+          <table>
+            <tr>
+              <th>Resources</th>
+              <th>Use of resources</th>
+            </tr>
+            <tr>
+              <td>Milling Machine</td>
+              <td>Dustbin Design</td>
+            </tr>
+            <tr>
+              <td>3D Printer</td>
+              <td>Controller case & Dustbin</td>
+            </tr>
+            <tr>
+              <td>PCB Milling machine</td>
+              <td>Final board Design</td>
+            </tr>
+            <tr>
+              <td>Arduino / Ultra sonic sensor / infrared sensor /<br>Transceiver circuitry / Micro controller-8051 or Atmega / LCD</td>
+              <td>Circuit Design</td>
+            </tr>
+            <tr>
+              <td>Vynyl Cutter</td>
+              <td>Logo making</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <h1> What questions need to be answered ?</h1>
+      <div class="listp">
+        <ul>
+          <li>
+            Is the system is able to work for public use ?
+          </li>
+          <li>
             Is system is working properly as <a><b>Whole</b></a> ?
-         </li>
-         <li>
-           Is system is able to work for commercial usage ? (For <a><b>Phase 2</b></a>)
-         </li>
+          </li>
+          <li>
+            Is system is able to work for commercial usage ? (For <a><b>Phase 2</b></a>)
+          </li>
+        </ul>
+      </div>
 
-         <h3>How it will be evaluated ?</h3>
-         <p>
-           My project is done by many individual as i mentioned above , but what i wanter to achieve here is to make it available for the people. It should be evaluated on the basis of reliablity and its working, as i said i wanted to make it <a><b>Sensors</b></a> will handle the system. System is reliable, so that it can work for long time.
-         </p>
-       </p>
-    </p>
+
+      <h1>How it will be evaluated ?</h1>
+      <p>
+        My project is done by many individual as I mentioned above, but what I wanter to achieve here is to make it available for the people. It should be evaluated on the basis of reliablity and its working, as I said I wanted to make it <a><b>Sensors</b></a> will handle the system. The system is reliable so that it can work for a long time.
+      </p>
 
 
 
 
     </div>
   </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
-  <script src="jquery.localscroll.js" type="text/javascript"></script>
-  <script src="jquery.scrollTo.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#listj').localScroll({
-        duration: 800
-      });
-    });
-  </script>
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd" property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-  <br /><br /><br /><br />
 </body>
+<footer>
+  <section class="footer-content">
 
+    <ul class="main-menu-blog-footer-tabs">
+      <li><a href="https://www.linkedin.com/in/dhruv-patel-485a53134/">Portfolio</a></li>
+      <li><a href="https://github.com/idesign0">Robotics</a></li>
+      <li><a href="../assignments">Fab Academy</a></li>
+      <li><a href="../about">About</a></li>
+      <li><a href="../contact">Contact</a></li>
+    </ul>
+    <!-- <h3 class=footer-h3>Social MEdia</h3> -->
+    <ul class="main-menu-blog-footer-sm">
+      <li><a href="https://www.instagram.com/classy_29/" target="_blank"><img src="images/sm/instagram.svg" alt="" /></a></li>
+      <li><a href="https://www.linkedin.com/in/dhruv-patel-485a53134/" target="_blank"><img src="images/sm/linkedin.svg" alt="" /></a></li>
+      <li><a href="https://github.com/idesign0" target="_blank"><img src="images/sm/github.svg" alt="" /></a></li>
+
+    </ul>
+  </section>
+
+</footer>
 </html>

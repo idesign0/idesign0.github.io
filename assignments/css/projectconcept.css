@@ -1317,7 +1317,6 @@ pre {
 
 .uniq {
   width: 80%;
-  margin: 0 auto;
 }
 
 table {
@@ -1976,7 +1975,7 @@ footer .footer-h3 {
   }
 
   .uniq {
-    width: 90%;
+    width: 100%;
   }
 
   .uniq h1 {
