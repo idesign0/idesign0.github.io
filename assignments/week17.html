@@ -118,7 +118,7 @@
           <ul>
             <li><a href="project">Final Project proposal</a></li>
             <li><a href="projectd">Project development</a></li>
-<li><a href="finalproject">Final Project</a></li>
+            <li><a href="finalproject">Final Project</a></li>
 
 
 
@@ -160,65 +160,75 @@
     </div>
 
 
-  <div class="week2">
+    <div class="week2">
 
-    <div class="week2p">
+      <div class="week2p">
 
-      <h2>Week 15 : Assignment</h2>
+        <h2>Week 15 : Assignment</h2>
 
-      <p>
-        For mechanical design Week we want to make mechanism for the <a href="https://en.wikipedia.org/wiki/Labyrinth_(marble_game)" target="_blank"><b>Marble maze puzzle</b></a>.<br /><br />
+        <p>
+          For mechanical design Week we want to make mechanism for the <a href="https://en.wikipedia.org/wiki/Labyrinth_(marble_game)" target="_blank"><b>Marble maze puzzle</b></a>.<br /><br />
 
         <h3>Purpose</h3>
 
-          As i Mentioned above we wanted to have make something fun game in machine design we are going to make <a><b>Fun marble maze</b></a> and wanted to control the maze Rotation with servos below for now we started working on mechanical part. Visit <a href="http://fabacademy.org/2019/labs/cept/mechanicaldesign" target="_blank"><b>Group website</b></a>for more detail.
+        As i Mentioned above we wanted to have make something fun game in machine design we are going to make <a><b>Fun marble maze</b></a> and wanted to control the maze Rotation with servos below for now we started working on mechanical part. Visit
+        <a href="http://fabacademy.org/2019/labs/cept/mechanicaldesign" target="_blank"><b>Group website</b></a>for more detail.
 
         <h3>Inspiration</h3>
-         Our inspiration for the project was the <a href="http://fabacademy.org/archives/2015/as/students/levine.katie/final" target="_blank"><b>The [amazing] Maze</b></a> made by <a href="http://fabacademy.org/archives/2015/as/students/levine.katie/index" target="_blank"><b>Katie Levine</b></a> and our regional instructor <a href="http://fabacademy.org/archives/2012/students/meyuhas.ohad/index"><b>Ohad Meyuhas</b></a>.
+        Our inspiration for the project was the <a href="http://fabacademy.org/archives/2015/as/students/levine.katie/final" target="_blank"><b>The [amazing] Maze</b></a> made by <a
+          href="http://fabacademy.org/archives/2015/as/students/levine.katie/index" target="_blank"><b>Katie Levine</b></a> and our regional instructor <a href="http://fabacademy.org/archives/2012/students/meyuhas.ohad/index"><b>Ohad Meyuhas</b></a>.
         <div>
           <img src="images/week15/1.jpg" alt="">
 
         </div><br /><br />
         <h3>Input</h3>
-      Our main objective is to control <a><b>Marble maze</b></a> with Hand movement . So our input is <a><b>Hand gesture</b></a> which will control the Maze. we are using
-      <a><b>accelerometer sensor</b></a> for giving inputs. accelerometer will give relative value of x and y position and according to value <a><b>Servos will rotate for specific degree</b></a>.
+        Our main objective is to control <a><b>Marble maze</b></a> with Hand movement . So our input is <a><b>Hand gesture</b></a> which will control the Maze. we are using
+        <a><b>accelerometer sensor</b></a> for giving inputs. accelerometer will give relative value of x and y position and according to value <a><b>Servos will rotate for specific degree</b></a>.
 
-      <h3>output</h3>
-      Our Mechanical output is <a><b>Rotation of servo</b></a> limited to specific degree. we are planning to rotate the servo <a><b>20 degree</b></a>. It will rotate the maze around <a><b>40 degree</b></a>.
+        <h3>output</h3>
+        Our Mechanical output is <a><b>Rotation of servo</b></a> limited to specific degree. we are planning to rotate the servo <a><b>20 degree</b></a>. It will rotate the maze around <a><b>40 degree</b></a>.
 
-bR /><br />
+        bR /><br />
         <h3>My Role</h3>
         <p>
-        In Mechanical Design Me and <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/" target="_blank"><b>Dhruv thakker</b></a> took responsibility for making the mechanism of <a><b>Marble Maze</b></a>. Since Many marble maze has already been made , we wanted to try <a><b>different mechanism</b></a> for our maze.
-        <br /><br />
-        As a team we did all work Together and help each other when needed, but My special task was to make sure mechanism shall able to handle the <a><b>Load of maze</b></a> after Finalizing the design phase with <a><b>Dhruv thakker</b></a> i took responsibility for making <a><b>upper part</b></a> of mechanism and he will see the <a><b>Base part</b></a>.
+          In Mechanical Design Me and <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/" target="_blank"><b>Dhruv thakker</b></a> took responsibility for making the mechanism of <a><b>Marble Maze</b></a>. Since
+          Many marble maze has already been made , we wanted to try <a><b>different mechanism</b></a> for our maze.
+          <br /><br />
+          As a team we did all work Together and help each other when needed, but My special task was to make sure mechanism shall able to handle the <a><b>Load of maze</b></a> after Finalizing the design phase with <a><b>Dhruv thakker</b></a> i took
+          responsibility for making <a><b>upper part</b></a> of mechanism and he will see the <a><b>Base part</b></a>.
 
         <H3>Design phase</H3>
-        in initial designing process we started with reverse engineering <a href="http://fabacademy.org/archives/2015/as/students/levine.katie/index"><b>Katie levine</b></a>. instead of using four servo We though we may able to use Two Servos with long arms which will rotate the Maze as we want !
+        in initial designing process we started with reverse engineering <a href="http://fabacademy.org/archives/2015/as/students/levine.katie/index"><b>Katie levine</b></a>. instead of using four servo We though we may able to use Two Servos with
+        long arms which will rotate the Maze as we want !
         <br /><br />
         We came to conclusion that we will place these servo in center of the maze.
-        But challenge was how can we place the servo which will be able to move maze and X and Y axis which center point will lie only on One <a><b>Z axis</b></a>. If we don’t design base correctly it will tilt on side by the time and create moment on servo which will <a><b>Tear off</b></a> the servo and mechanism will fail.
+        But challenge was how can we place the servo which will be able to move maze and X and Y axis which center point will lie only on One <a><b>Z axis</b></a>. If we don’t design base correctly it will tilt on side by the time and create moment
+        on servo which will <a><b>Tear off</b></a> the servo and mechanism will fail.
         </p>
         <h3>initial Base design</h3>
 
-          <p>
-            In initial design <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/" target="_blank"><b>Dhruv</b></a> came off with below idea. Idea was good and our <a><b>Objective</b></a> of same Z axis was fulfilling. But there was little concern about load it was not advisable to put <a><b>Load</b></a> directly on the servo Shaft. We are going to use <a href="https://www.google.com/search?q=mg995+servo+motor&rlz=1C1CHBF_enIN838IN838&oq=mg+995+servo&aqs=chrome.1.69i57j0l5.4882j0j4&sourceid=chrome&ie=UTF-8" target="_blank"<b>MG995 servos - tower pro</b></a> for our mechanism. This base idea is for getting initial idea, later he designed stronger servo mounting base.
-          </p>
-          <a>Reasons why not :</a>
-          <li>
+        <p>
+          In initial design <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/" target="_blank"><b>Dhruv</b></a> came off with below idea. Idea was good and our <a><b>Objective</b></a> of same Z axis was
+          fulfilling. But there was little concern about load it was not advisable to put <a><b>Load</b></a> directly on the servo Shaft. We are going to use <a
+            href="https://www.google.com/search?q=mg995+servo+motor&rlz=1C1CHBF_enIN838IN838&oq=mg+995+servo&aqs=chrome.1.69i57j0l5.4882j0j4&sourceid=chrome&ie=UTF-8" target="_blank" <b>MG995 servos - tower pro</b></a> for our mechanism. This base
+          idea is for getting initial idea, later he designed stronger servo mounting base.
+        </p>
+        <a>Reasons why not :</a>
+        <li>
           1.5 or 2 kg load directly will be on shaft in static condition
-          </li>
-          <li>
-            When mechanism will move it will create extra moment on servo shaft adding load
-          </li><div>
-          <img src="images/week15/2.png" alt=""</div><br /><br />
-          </div>
-          <h3>solution</h3>
-          so We found these problem very necessary to be solved, one way it could be solve it to make one <a><b>Gear Drive</b></a> Designed for the taking the load and <a><b>Applying the Torque</b></a> given by Servo to Maze.
-          <bR /><br />
-          I started making Gear drive according to requirement. i estimated total load around <a><b>3800 kg</b></a>
-          <h4>Gear Specifications :</h4><br />
-<pre>
+        </li>
+        <li>
+          When mechanism will move it will create extra moment on servo shaft adding load
+        </li>
+        <div>
+          <img src="images/week15/2.png" alt="" </div><br /><br />
+        </div>
+        <h3>solution</h3>
+        so We found these problem very necessary to be solved, one way it could be solve it to make one <a><b>Gear Drive</b></a> Designed for the taking the load and <a><b>Applying the Torque</b></a> given by Servo to Maze.
+        <bR /><br />
+        I started making Gear drive according to requirement. i estimated total load around <a><b>3800 kg</b></a>
+        <h4>Gear Specifications :</h4><br />
+        <pre>
 <code>
 <li>Module : 2  : <a>Lower module for High torque Conversion</a>
 </li>
@@ -228,60 +238,65 @@ bR /><br />
 </li>
 </code>
 </pre>
-<p>
-  I designed gears on fusion 360 with the help of <a href="https://apps.autodesk.com/FUSION/en/Detail/Index?id=6294804001663532834&appLang=en&os=Win64" target="_blank"><b>FM gear script</b></a>. check <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week8" target="_blank"><b>week 8</b></a> for more details.
-</p>
-<div>
-<img src="images/week15/4.png" alt="" />
-<p class="step">
-Possible Gear SERVO Assembly
-</p>
-<img src="images/week15/3.png" alt="" />
-</div>
+        <p>
+          I designed gears on fusion 360 with the help of <a href="https://apps.autodesk.com/FUSION/en/Detail/Index?id=6294804001663532834&appLang=en&os=Win64" target="_blank"><b>FM gear script</b></a>. check <a
+            href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week8" target="_blank"><b>week 8</b></a> for more details.
+        </p>
+        <div>
+          <img src="images/week15/4.png" alt="" />
+          <p class="step">
+            Possible Gear SERVO Assembly
+          </p>
+          <img src="images/week15/3.png" alt="" />
+        </div>
         <P class="Step">
           mechanism
         </P>
-        <p>In mechanism i started working on the cad model, as we finalized the base i designed the base according to that , my scale was <a><b>0.5</b></a>. our objective for making cad is to test the mechanism joints and to know which type of joint assembly will fulfill our purpose.<br /><br />
-        We used two type of <a><b>Joints</b></a>
-<pre>
+        <p>In mechanism i started working on the cad model, as we finalized the base i designed the base according to that , my scale was <a><b>0.5</b></a>. our objective for making cad is to test the mechanism joints and to know which type of joint
+          assembly will fulfill our purpose.<br /><br />
+          We used two type of <a><b>Joints</b></a>
+        <pre>
 <code>
 <li><a href="https://en.wikipedia.org/wiki/Ball_joint" target="_blank"><b>Ball Socket Joints</b></a> on top
 </li>
 <li><a href="https://en.wikipedia.org/wiki/Pivot_joint" target="_blank"><b>Pivot joints</b></a> bottom
 </li>
 </code>
-</pre></p>
-        <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761ef6329e77635dde80?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe><br /><br />
+</pre>
+        </p>
+        <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761ef6329e77635dde80?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+          frameborder="0"></iframe><br /><br />
         <h3>Ball socket Joint</h3>
         <p>
-         I started designing the ball sockets then , we wanted <a><b>40 degree</b></a> of inclination in Maze. For that i started designing joints which will have <a><b>40 degree</b></a> of movement. below is first design i tried !
+          I started designing the ball sockets then , we wanted <a><b>40 degree</b></a> of inclination in Maze. For that i started designing joints which will have <a><b>40 degree</b></a> of movement. below is first design i tried !
           <bR /><br />
-            </P>
-            <div>
-              <p class="step">
-              in Fusion 360
-              </p>
-              <p>
-                Visit <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week3" target="_blank"><b>week 3</b></a> for modeling in fusion 360.
-              </p>
-              <img src="images/week15/7.png" alt="" />
-              <p class="step">
-                Clearance
-              </p>
-              <p>
-                I gave clearance Of <a><b>1 mm</b></a>
-              </p>
-              <img src="images/week15/8.png" alt="" /><bR /><br />
+        </P>
+        <div>
+          <p class="step">
+            in Fusion 360
+          </p>
+          <p>
+            Visit <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week3" target="_blank"><b>week 3</b></a> for modeling in fusion 360.
+          </p>
+          <img src="images/week15/7.png" alt="" />
+          <p class="step">
+            Clearance
+          </p>
+          <p>
+            I gave clearance Of <a><b>1 mm</b></a>
+          </p>
+          <img src="images/week15/8.png" alt="" /><bR /><br />
 
-        <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761ea620f9fa584f7d48?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+          <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761ea620f9fa584f7d48?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+            frameborder="0"></iframe>
 
-              <p class="step">
-                Cura softwere
-              </p>
-              <p>
-                visit <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week6" target="_blank"><b>week 6</b></a> for know parameters in Cura.
-              </p>
-<pre>
+          <p class="step">
+            Cura softwere
+          </p>
+          <p>
+            visit <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week6" target="_blank"><b>week 6</b></a> for know parameters in Cura.
+          </p>
+          <pre>
 <code>
 <li>Layer height : 2  :
 </li>
@@ -293,15 +308,16 @@ Possible Gear SERVO Assembly
 </li>
 </code>
 </pre>
-              <img src="images/week15/6.png" alt="" />
-                  <img src="images/week15/bs1.jpg" alt="">
-                  <img src="images/week15/11.jpg" alt="" />
-            </div>
-          <p class="step">
+          <img src="images/week15/6.png" alt="" />
+          <img src="images/week15/bs1.jpg" alt="">
+          <img src="images/week15/11.jpg" alt="" />
+        </div>
+        <p class="step">
           parametric file of Arms
         </p><br />
-        Parameters i have given , check <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week4#lasercutting" target="_blank"><b>week 4</b></a> and <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week8" target="_blank" ><b>week 8</b></a> for more parametric work !<br /><br />
-<pre>
+        Parameters i have given , check <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week4#lasercutting" target="_blank"><b>week 4</b></a> and <a
+          href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week8" target="_blank"><b>week 8</b></a> for more parametric work !<br /><br />
+        <pre>
 <code>
 <li>Arm length : ball socket vertical arm length
 </li>
@@ -320,16 +336,17 @@ Possible Gear SERVO Assembly
 </code>
 </pre>
         <div>
-          <img src="images/week15/5.png" alt=""  />
-          <img src="images/week15/9.png" alt=""  />
+          <img src="images/week15/5.png" alt="" />
+          <img src="images/week15/9.png" alt="" />
         </div>
         <p class="step">
-            Self Locking mechanism
+          Self Locking mechanism
         </p>
         <p>
           I wanted to try Self locking mechanism on mechanism , it will eliminate the use of mechanical fasteners there. i have to did some iterations to get perfect dimensions so it can give require compressive force on joints.
           <br /><br />
-          For clamping or Fitting the Arms in ball socket i was thinking to make One self-Fitting mechanism , so i 3d print some rectangle slots which inner dimensions are lesser then outer of socket arms when it spreads , it will create compressive force and assembly will stick in.
+          For clamping or Fitting the Arms in ball socket i was thinking to make One self-Fitting mechanism , so i 3d print some rectangle slots which inner dimensions are lesser then outer of socket arms when it spreads , it will create compressive
+          force and assembly will stick in.
         </p>
 
         <img src="images/week15/12.jpg" alt="" />
@@ -342,7 +359,8 @@ Possible Gear SERVO Assembly
           Coupler
         </p>
         <p>
-          We also made one 3d printed Coupler which will hold the Pinion gears to servo with the help of friction . we just wanted to make it for demonstration purpose so we can know Everything will be good in bigger scale , for bigger scale we intended to use Coupler comes with servo and mount it with center screw which will sufficient to transfer large amount of torque.
+          We also made one 3d printed Coupler which will hold the Pinion gears to servo with the help of friction . we just wanted to make it for demonstration purpose so we can know Everything will be good in bigger scale , for bigger scale we
+          intended to use Coupler comes with servo and mount it with center screw which will sufficient to transfer large amount of torque.
 
 
           <br /><br />
@@ -361,120 +379,124 @@ Possible Gear SERVO Assembly
           In assembly we just started joining our <a><b>Top</b></a> and <a><b>Bottom</b></a> assembly. Dhruv made great base for Servo and gear assembly we just fix them and check as it can work or not. <br /><br />
           In prototype mechanism is working <a><b>perfectly Fine</b></a> now only thing we have to deal with is load capacity of the mechanism. </p>
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/2qODMYm-riA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifram>
-<p class="step">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2qODMYm-riA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifram>
+          <p class="step">
             Printing
           </p><br />
           <iframe width="560" height="315" src="https://www.youtube.com/embed/uTIVBmC-ras" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-                  <p class="step">
-                    Final version
-                  </p>
-                  <p>
-                    For final mechanism <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/" target="_blank"><b>Dhruv</b></a> started designing bigger base and did some improvement we found in smaller scale , i also start working to make bigger ball sockets and arms. for final design our maze will be approx. <a><b>20 inch</b></a> wide so i decided to make it <a><b>16 inch wide : 400 mm</b></a>
-                  </p>
-                  <p class="step">
-                    AutoCAD
-                  </p>
-                  <p>
-                    check out <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week4" target="_blank"><b>Week 4</b></a> to know laser cut inn details.
-                  </p>
-                  <div>
-                    <img src="images/week15/10.jpg" alt="">
-                    <img src="images/week15/15.jpg" alt="">
-                  </div>
+          <p class="step">
+            Final version
+          </p>
+          <p>
+            For final mechanism <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/" target="_blank"><b>Dhruv</b></a> started designing bigger base and did some improvement we found in smaller scale , i also
+            start working to make bigger ball sockets and arms. for final design our maze will be approx. <a><b>20 inch</b></a> wide so i decided to make it <a><b>16 inch wide : 400 mm</b></a>
+          </p>
+          <p class="step">
+            AutoCAD
+          </p>
+          <p>
+            check out <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week4" target="_blank"><b>Week 4</b></a> to know laser cut inn details.
+          </p>
+          <div>
+            <img src="images/week15/10.jpg" alt="">
+            <img src="images/week15/15.jpg" alt="">
+          </div>
 
-                  <p class="step">
-                    Ball sockets
-                  </p>
-                  <p>
-                    For bigger model i had to designs ball sockets which can be capable to handle large shear. I increased Arm length with thickness</b></a>, if i kept sphere dimensions same i will not able to get degree of freedom i wanted in design , so i had to increase sphere size , it will increase printing time , but it was only way to maintain strength.
-                  </p>
-                  <p class="step">
-                    First version
-                  </p><br />
-                    <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761ea620f9fa584f7d48?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                  <p class="step">
-                  Second Version
-                  </p>
-                  <p>
-                    i made second version in which i increase fillet on slot so it can be more safe in <a><b>Action</b></a>
-                  </p>
-                  <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761e6a6ca3795d053daf?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                    <br /><br />
-              <p class="step">
-                Self locking mechanism
-              </p>
-              <img src="images/week15/12b.jpg" alt="" />
-              <img src="images/week15/18.jpg" alt="" />
-              <p class="step">
-                Gears
-              </p>
-              <p>
-                We Doubled <a><b>Gear</b></a> and <a><b>Pinion</b></a> size , that was only modification in gear
-              </p>
-              <p class="step">
-                All the components
-              </p>
-              <div>
-                <img src="images/week15/17.jpg" alt="" />
-              </div>
-              <p class="step">
-                Final Assembly of mechanical parts
-              </p>
-              <p>
-                <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/"><b>Dhruv thakker</b></a> worked on base and the we combine our works. below is some of pictures of it.
-              </p>
-              <img src="images/week15/18a.jpg" alt="" />
+          <p class="step">
+            Ball sockets
+          </p>
+          <p>
+            For bigger model i had to designs ball sockets which can be capable to handle large shear. I increased Arm length with thickness</b></a>, if i kept sphere dimensions same i will not able to get degree of freedom i wanted in design , so i
+            had to increase sphere size , it will increase printing time , but it was only way to maintain strength.
+          </p>
+          <p class="step">
+            First version
+          </p><br />
+          <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761ea620f9fa584f7d48?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+            frameborder="0"></iframe>
+          <p class="step">
+            Second Version
+          </p>
+          <p>
+            i made second version in which i increase fillet on slot so it can be more safe in <a><b>Action</b></a>
+          </p>
+          <iframe src="https://myhub.autodesk360.com/ue2876de7/shares/public/SH7f1edQT22b515c761e6a6ca3795d053daf?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+            frameborder="0"></iframe>
+          <br /><br />
+          <p class="step">
+            Self locking mechanism
+          </p>
+          <img src="images/week15/12b.jpg" alt="" />
+          <img src="images/week15/18.jpg" alt="" />
+          <p class="step">
+            Gears
+          </p>
+          <p>
+            We Doubled <a><b>Gear</b></a> and <a><b>Pinion</b></a> size , that was only modification in gear
+          </p>
+          <p class="step">
+            All the components
+          </p>
+          <div>
+            <img src="images/week15/17.jpg" alt="" />
+          </div>
+          <p class="step">
+            Final Assembly of mechanical parts
+          </p>
+          <p>
+            <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/"><b>Dhruv thakker</b></a> worked on base and the we combine our works. below is some of pictures of it.
+          </p>
+          <img src="images/week15/18a.jpg" alt="" />
 
-              <img src="images/week15/19.jpg" alt="" /><br /><br /><br />
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/D6zBvk6XzeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/AjaB4eSybi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <img src="images/week15/19.jpg" alt="" /><br /><br /><br />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/D6zBvk6XzeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AjaB4eSybi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-              <p class="step">
-                Final Assembly of Whole Machine
-              </p>
-              <li>
-                Me and <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/" target="_blank"><b>Dhruv</b></a> Design mechanism
-              </li>
-              <li>
-                <a href="http://fabacademy.org/2019/labs/cept/students/samiul-hoque/" target="_blank"><b>Samiul</b></a> Designed Electronics
-              </li>
-              <li>
-                <a href="http://fabacademy.org/2019/labs/cept/students/karan-tanna/" target="_blank"><b>Karan tanna</b></a> Designed Maze
-              </li>
-              <li>
-                <a href="http://fabacademy.org/2019/labs/cept/students/maharshi-solanki/" target="_blank"><b>Maharshi</b></a> Documented all process
-              </li>
-              <img src="images/week15/20.jpg" alt="" />
-              <p class="step">
-                Final video
-              </p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/dkcbh-n-D5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p class="step">
-                Slide
-              </p>
-              <img src="images/week15/21.jpg" alt="" />
+          <p class="step">
+            Final Assembly of Whole Machine
+          </p>
+          <li>
+            Me and <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-thakker/#assignments/week15/" target="_blank"><b>Dhruv</b></a> Design mechanism
+          </li>
+          <li>
+            <a href="http://fabacademy.org/2019/labs/cept/students/samiul-hoque/" target="_blank"><b>Samiul</b></a> Designed Electronics
+          </li>
+          <li>
+            <a href="http://fabacademy.org/2019/labs/cept/students/karan-tanna/" target="_blank"><b>Karan tanna</b></a> Designed Maze
+          </li>
+          <li>
+            <a href="http://fabacademy.org/2019/labs/cept/students/maharshi-solanki/" target="_blank"><b>Maharshi</b></a> Documented all process
+          </li>
+          <img src="images/week15/20.jpg" alt="" />
+          <p class="step">
+            Final video
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dkcbh-n-D5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="step">
+            Slide
+          </p>
+          <img src="images/week15/21.jpg" alt="" />
 
           </p><br /><br />
           <h3>Group work</h3>
           <p>
-              Visit Group website for more information. <a href="http://fabacademy.org/2019/labs/cept/mechanicaldesign" target="_blank"><b>Click here</b></a>.
-            </p>
+            Visit Group website for more information. <a href="http://fabacademy.org/2019/labs/cept/mechanicaldesign" target="_blank"><b>Click here</b></a>.
+          </p>
 
-        <h3>conclusion</h3>
+          <h3>conclusion</h3>
 
-        We applied our all our major in in this two weeks ! get to learn more on that also , whatching machine working gave us great sense of Happiness.
+          We applied our all our major in in this two weeks ! get to learn more on that also , whatching machine working gave us great sense of Happiness.
 
 
       </div>
-</div>
-        </p>
-
-
-
     </div>
+    </p>
+
+
+
+  </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
   <script src="jquery.localscroll.js" type="text/javascript"></script>
@@ -486,7 +508,10 @@ Possible Gear SERVO Assembly
       });
     });
   </script>
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd" property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span
+    xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd"
+    property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+    International License</a>.
   <br /><br /><br /><br />
 </body>
 
