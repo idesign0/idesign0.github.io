@@ -154,7 +154,7 @@
       <div class="listp">
         <ul>
           <li>
-            design, build, and connect wired or wireless node(s)
+            design, build and connect wired or wireless node(s)
             with network or bus addresses
           </li>
         </ul>
@@ -177,104 +177,85 @@
       </div>
       <p class="step">Analog</p>
       <p>
-        Simple sensors do not implement the conversion and communication logic, and the output is just the analogue signal – voltage level depending on the value of the parameter that is measured. It needs to be further converted into a digital
-        representation; this process can be made by analogue to digital converters (ADC) implemented as the internal part of a microcontroller or separate integrated circuit. Examples of the sensors with analogue output are a photoresistor, thermistor,
-        potentiometer, resistive touchscreen. One can learn more about these terms in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week 9</b></a> and <a
+        Simple sensors do not implement the conversion and communication logic, and the output is just the analog signal – voltage level depending on the value of the parameter that is measured. It needs to be further converted into a digital representation; this process can be made by analog to digital converters (ADC) implemented as the internal part of a microcontroller or separate integrated circuit. Examples of the sensors with analog output are a photoresistor, thermistor, potentiometer, resistive touchscreen. One can learn more about these terms in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week 9</b></a> and <a
           href="https://en.wikipedia.org/wiki/Analog-to-digital_converter" target="_blank"><b>Wiki</b></a>
 
       </p>
       <p class="step">Digital</p>
       <p>
-        Dummy, true/false information can be processed via digital I/O. Most devices use positive logic, where, i.e. +5 V (TTL) or +3.3 V (those are the most popular, yet there do exist other voltage standards) presents a logical one, while 0V presents
-        logical zero. In real systems this bounding is fuzzy and brings some tolerance, simplifying, i.e. communication from 3.3 V output to 5 V input, without a need of the conversion (note, the reverse conversion is usually not so straightforward, as
-        3.3 V inputs driven by 5V output may burn easily). A sample of the sensor providing binary data is a button (On/Off).<a href="https://en.wikipedia.org/wiki/Digital_signal" target="_blank"><b>Wiki</b></a>
+        Dummy, true/false information can be processed via digital I/O. Most devices use positive logic, where, i.e. +5 V (TTL) or +3.3 V (those are the most popular, yet there do exist other voltage standards) presents a logical one, while 0V presents logical zero. In real systems this bounding is fuzzy and brings some tolerance, simplifying, i.e. communication from 3.3 V output to 5 V input, without a need of the conversion (note, the reverse conversion is usually not so straightforward, as 3.3 V inputs driven by 5V output may burn easily). A sample of the sensor providing binary data is a button (On/Off).<a href="https://en.wikipedia.org/wiki/Digital_signal" target="_blank"><b>Wiki</b></a>
 
       <br /><br />
             <a href="https://techdifferences.com/difference-between-analog-and-digital-signal" target="_blank"><b>Click here</b></a> to know the difference between Analog and Digital signals !
 
       </p>
-
-
-      <h3>SPI</h3>
-      One of the most popular interfaces to connect the sensor is SPI (Serial Peripheral Interface). It is a synchronous serial interface and protocol that can transmit data with speed up to 20 Mbps. SPI is used to communicate microcontrollers with
-      one or more peripheral devices over short distances – usually internally in the device. In SPI connection there is always one master device, in most cases the microcontroller (μC) that controls the transmission, and one or more slave devices –
-      peripherals. To communicate SPI uses three lines common to all of the connected devices, and one enabling line for every slave element. One can learn more about these terms in <a
-        href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week 9</b></a> and <a
-        href="https://www.xeltek.com/resources/technical-articles/in-system-programming/serial-peripheral-interface-spi-programming-of-eeprom-flash-mcu-using-superpro-is01/" target="_blank"><b>Wiki</b></a>
-      <br /><br />
-      <h3>TWI</h3>
-      TWI (Two Wire Interface) is one of the most popular communication protocol used in embedded systems. It has been designed by Philips as I2C (Inter-Integrated Circuit) for using in the audio-video appliances controlled by the microprocessor. One
-      can learn more about these terms in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week 9</b></a> and <a
-        href="https://www.xeltek.com/resources/technical-articles/in-system-programming/serial-peripheral-interface-spi-programming-of-eeprom-flash-mcu-using-superpro-is01/" target="_blank"><b>Wiki</b></a>
-      <br /><br />
-      Source of Above Content : <a href="http://home.roboticlab.eu/en/iot-open/introduction/introduction_to_iot_communication_and_protocols" target="_blank"><b>Roboticlab</b></a>
-      <br /><br />
-      <a>Since i was using SPI interface from week 5 , i wanted to try new communication protocol and i found I2C is most popular for the embedded communications. so i choose i2c.</a> Below is more detail about i2c Communications.
-
-
-      <br /><br />
-      <h3>How it works !</h3>
-
-      <a>Data recognition part</a> : The data is sent using frames of bytes. Every frame begins with the sequence of signals that is called the start condition. This sequence is detected by slaves and causes them to collect the next eight bits that
-      form the address byte – unique for every circuit on the bus. If one of the slaves recognizes its address remains active until the end of the communication frame, others become inactive.<br /><br />
-      <a>Sending Response signal</a> : To inform the master that some unit has been appropriately addressed slave responses with the acknowledge bit – it generates one bit of low level on the SDA line (the master generates clock pulse). After sending
-      the proper address, data bytes are sent. The direction of the data bytes is controlled by the last bit of the address, for 0 data is transmitted by the master (Write), for 1 data is sent by the slave (Read). The receiving unit must acknowledge
-      every full byte (eight bits).
-      <br /><br />
-
-      <div>
+      <p class="step">SPI</p>
+      <p>
+        One of the most popular interfaces to connect the sensor is SPI (Serial Peripheral Interface). It is a synchronous serial interface and protocol that can transmit data with speed up to 20 Mbps. SPI is used to communicate microcontrollers with one or more peripheral devices over short distances – usually internally in the device. In SPI connection there is always one master device, in most cases, the microcontroller (μC) controls the transmission, and one or more slave devices – peripherals. To communicate SPI uses three lines common to all of the connected devices, and one enabling line for every slave element. One can learn more about these terms in <a
+          href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week 9</b></a> and <a
+          href="https://www.xeltek.com/resources/technical-articles/in-system-programming/serial-peripheral-interface-spi-programming-of-eeprom-flash-mcu-using-superpro-is01/" target="_blank"><b>Wiki</b></a>.
+      </p>
+      <p class="step">TWI</p>
+      <p>
+        TWI (Two Wire Interface) is one of the most popular communication protocols used in embedded systems. It has been designed by Philips as I2C (Inter-Integrated Circuit) for using in the audio-video appliances controlled by the microprocessor. One can learn more about these terms in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week 9</b></a> and <a
+          href="https://www.xeltek.com/resources/technical-articles/in-system-programming/serial-peripheral-interface-spi-programming-of-eeprom-flash-mcu-using-superpro-is01/" target="_blank"><b>Wiki</b></a>
+        <br /><br />
+        Source of Above Content : <a href="http://home.roboticlab.eu/en/iot-open/introduction/introduction_to_iot_communication_and_protocols" target="_blank"><b>Roboticlab</b></a>
+        <br /><br />
+        Since I was using the SPI interface from week 5, I wanted to try a new communication protocol and I found I2C is most popular for embedded communications. so I choose i2c. Below is more detail about i2c Communications.
+      </p>
+      <h1>Working of I2C</h1>
+      <p>
+        <a><b>Data recognition part</b></a>: The data is sent using frames of bytes. Every frame begins with the sequence of signals that is called the start condition. This sequence is detected by slaves and causes them to collect the next eight bits that
+        form the address byte – unique for every circuit on the bus. If one of the slaves recognizes its address remains active until the end of the communication frame, others become inactive.<br /><br />
+        <a><b>Sending Response signal</b></a>: To inform the master that some unit has been appropriately addressed slave responses with the acknowledge bit – it generates one bit of low level on the SDA line (the master generates clock pulse). After sending
+        the proper address, data bytes are sent. The direction of the data bytes is controlled by the last bit of the address, for 0 data is transmitted by the master (Write), for 1 data is sent by the slave (Read). The receiving unit must acknowledge
+        every full byte (eight bits).
+      </p>
         <img src="images/week13/1.jpg" alt="">
-      </div>
-      <br /><br />
-      <li>
-        <a><b>Start Condition</b></a> : The SDA line switches from a high voltage level to a low voltage level before the SCL line switches from high to low.
-      </li>
-      <li>
-        <a><b>Stop Condition</b></a> : The SDA line switches from a low voltage level to a high voltage level after the SCL line switches from low to high.
-      </li>
-      <li>
-        <a><b>Address Frame</b></a> : 7 or 10 bit sequence unique to each slave that identifies the slave when the master wants to talk to it.
-      </li>
-      <li>
-        <a><b>Read/Write Bit</b></a>: A single bit specifying whether the master is sending data to the slave (low voltage level) or requesting data from it (high voltage level).
-      </li>
-      <li>
-        <a><b>ACK/NACK Bit</b></a> : Each frame in a message is followed by an acknowledge/no-acknowledge bit. If an address frame or data frame was successfully received, an ACK bit is returned to the sender from the receiving device.
-      </li>
-      <h3>ADDRESSING</h3>
-      I2C doesn’t have slave select lines like SPI, so it needs another way to let the slave know that data is being sent to it, and not another slave. It does this by addressing. The address frame is always the first frame after the start bit in a
-      new message.
+      <p>
+        <pre><a><b>Start Condition</b></a> : The SDA line switches from a high voltage level to a low voltage level before the SCL line switches from high to low.</pre>
+        <pre><a><b>Stop Condition</b></a> : The SDA line switches from a low voltage level to a high voltage level after the SCL line switches from low to high.</pre>
+        <pre><a><b>Address Frame</b></a> : 7 or 10 bit sequence unique to each slave that identifies the slave when the master wants to talk to it.</pre>
+        <pre><a><b>Read/Write Bit</b></a>: A single bit specifying whether the master is sending data to the slave (low voltage level) or requesting data from it (high voltage level).</pre>
+        <pre><a><b>ACK/NACK Bit</b></a> : Each frame in a message is followed by an acknowledge/no-acknowledge bit. If an address frame or data frame was successfully received, an ACK bit is returned to the sender from the receiving device.</pre>
+      </p>
 
-      The master sends the address of the slave it wants to communicate with to every slave connected to it. Each slave then compares the address sent from the master to its own address. If the address matches, it sends a low voltage ACK bit back to
-      the master. If the address doesn’t match, the slave does nothing and the SDA line remains high.
-
-      <h3>READ/WRITE BIT</h3>
-      The address frame includes a single bit at the end that informs the slave whether the master wants to write data to it or receive data from it. If the master wants to send data to the slave, the read/write bit is a low voltage level. If the
-      master is requesting data from the slave, the bit is a high voltage level.
-
-      <h3>THE DATA FRAME</h3>
-      After the master detects the ACK bit from the slave, the first data frame is ready to be sent.
-
-      The data frame is always 8 bits long, and sent with the most significant bit first. Each data frame is immediately followed by an ACK/NACK bit to verify that the frame has been received successfully. The ACK bit must be received by either the
-      master or the slave (depending on who is sending the data) before the next data frame can be sent.
-
-      After all of the data frames have been sent, the master can send a stop condition to the slave to halt the transmission. The stop condition is a voltage transition from low to high on the SDA line after a low to high transition on the SCL line,
-      with the SCL line remaining high.
-
-      <br /><br />
-
-      <a href="http://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/" target="_blank"><b></b>Click here</a> to know basics of I2C communication.
+      <p class="step">ADDRESSING</p>
+      <p>
+        I2C doesn’t have slave select lines like SPI, so it needs another way to let the slave know that data is being sent to it, and not another slave. It does this by addressing. The address frame is always the first frame after the start bit in a
+        new message.
+<br /><br />
+        The master sends the address of the slave it wants to communicate with every slave connected to it. Each slave then compares the address sent from the master to its address. If the address matches, it sends a low voltage ACK bit back to the master. If the address doesn’t match, the slave does nothing and the SDA line remains high.
+      </p>
 
 
-      <br /><br />
-      <h3>Process</h3>
+      <p class="step">READ/WRITE BIT</p>
+      <p>
+        The address frame includes a single bit at the end that informs the slave whether the master wants to write data to it or receive data from it. If the master wants to send data to the slave, the read/write bit is a low voltage level. If the
+        master is requesting data from the slave, the bit is a high voltage level.
+      </p>
+
+      <p class="step">THE DATA FRAME</p>
+      <p>
+        After the master detects the ACK bit from the slave, the first data frame is ready to be sent.
+        <br /><br />
+        The data frame is always 8 bits long and sent with the most significant bit first. Each data frame is immediately followed by an ACK/NACK bit to verify that the frame has been received successfully. The ACK bit must be received by either the master or the slave (depending on who is sending the data) before the next data frame can be sent.
+  <br /><br />
+        After all of the data, frames have been sent, the master can send a stop condition to the slave to halt the transmission. The stop condition is a voltage transition from low to high on the SDA line after a low to high transition on the SCL line, with the SCL line remaining high.
+        <br /><br />
+
+        <a href="http://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/" target="_blank"><b>Click here</b></a> to know the basics of I2C communication.
+      </p>
+
+
+      <h1>Process</h1>
       <div>
         <p class="step">
           Networking Boards
         </p>
         <p>
-          I designed new <a><b>Networking boards</b></a> for this week , this boards contains <a><b>UART</b></a>, <a><b>SPI</b></a> and <a><b>I2C</b></a> header pins. it has Some analog and Digital pins two , i gave two extra <a><b>PWM pins</b></a>
-          additions to mosi and miso for running micro servos. one can see <a><b>Eagle and PCB design</b></a> In detail in <a target="_blank" href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"><b>week
+          I designed new <a><b>Networking boards</b></a> for this week, this boards contain <a><b>UART</b></a>, <a><b>SPI</b></a> and <a><b>I2C</b></a> header pins. it has Some analog and Digital pins two, I gave two extra <a><b>PWM pins</b></a> additions to most and miso for running micro servos. one can see <a><b>Eagle and PCB design</b></a> In detail in <a target="_blank" href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"><b>week
               7</b></a>.
         </p>
         <img src="images/week14/1.jpg" alt="" />
@@ -282,7 +263,7 @@
           Exporting monochrome files
         </p>
         <p>
-          Then i exported <a><b>Monochrome files of my board</b></a>. below is Trace and Cut files of it. one can see this processes in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"
+          Then I exported <a><b>Monochrome files of my board</b></a>. below is Trace and Cut files of it. one can see these processes in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"
             target="_blank"><b>Week 7</b></a>
         </p>
         <img src="images/week14/2.jpg" alt="" />
@@ -293,12 +274,8 @@
           Input and output
         </p>
         <p>
-          <li>
-            Input : My input is Touch Sensor which is connected to <a><b>Analog pin A0</b></a>
-          </li>
-          <li>
-            Output : My output is Micro servo , I connected micro servo to <a><b>PWM pin - 5</b></a>
-          </li>
+          <pre>Input : My input is Touch Sensor which is connected to <a><b>Analog pin A0</b></a></pre>
+          <pre>Output : My output is Micro servo, I connected micro servo to <a><b>PWM pin - 5</b></a></pre>
         </p>
         <img src="images/week14/4.jpg" alt="" />
 
@@ -306,103 +283,96 @@
           Code explanation
         </p>
         <p>
-          code explanation i have given in comments if possible see it on <a href="https://www.arduino.cc/en/Main/Software" target="_blank"><b>Arduino IDE</b></a> to avoid confusion
+          code explanation I have given in the comments if possible see it on <a href="https://www.arduino.cc/en/Main/Software" target="_blank"><b>Arduino IDE</b></a> to avoid confusion.
         </p>
 
         <pre>
-          <code>
-            //master code:
+<code>//master code:
 
-            #include &ltWire.h&gt // for i2c include wire library
-              int touch = A0;
+#include &ltWire.h&gt // for i2c include wire library
+int touch = A0;
 
-              void setup() { // setting up board rate and I/Os
-                Serial.begin(9600);
-                pinMode(touch,INPUT);
-                pinMode(13,OUTPUT);
-                Wire.begin(); // for i2c
-              }
+void setup() { // setting up board rate and I/Os
+  Serial.begin(9600);
+  pinMode(touch,INPUT);
+  pinMode(13,OUTPUT);
+  Wire.begin(); // for i2c
+}
 
-              void loop()
-              {
-                int a = analogRead(touch); // reading values
-                Serial.println(a); // for getting idea in serial monitor
-                if ( a >=500) // if condition , if i touch the sensor , its analog value will be greagter then 500
-                {
-                  digitalWrite(13,HIGH); // another signal of working of touch sensor
-                  Wire.beginTransmission(9); //slace number 8 // transmitting Address '9' though SDA  to slave
-                  Wire.write(1); // will give message of '1'
-                  Wire.endTransmission(); // end the transmition
-                  delay(200);
-                }
-                else
-                {digitalWrite(13,LOW);
-                  Wire.beginTransmission(9);
-                  Wire.write(0); // if condition is not satisfy it will give '0' on message
-                  Wire.endTransmission();
-                  //delay(200);
-                }
+void loop()
+{
+  int a = analogRead(touch); // reading values
+  Serial.println(a); // for getting idea in serial monitor
+  if ( a >=500) // if condition, if I touch the sensor, its analog value will be greagter then 500
+  {
+    digitalWrite(13,HIGH); // another signal of working of touch sensor
+    Wire.beginTransmission(9); //slace number 8 // transmitting Address '9' though SDA  to slave
+    Wire.write(1); // will give message of '1'
+    Wire.endTransmission(); // end the transmition
+    delay(200);
+  }
+  else
+  {digitalWrite(13,LOW);
+    Wire.beginTransmission(9);
+    Wire.write(0); // if condition is not satisfy it will give '0' on message
+    Wire.endTransmission();
+    //delay(200);
+  }
 
 
-              }
-            </code>
-          </pre>
+}</code></pre>
         <p class="step">
           Slave
         </p>
-        <br /><br />
         <pre>
-          <code>
-            // slave code
-            #include <Wire.h> // wire library
-            #include <Servo.h> // servo library
+<code>// slave code
+#include <Wire.h> // wire library
+#include <Servo.h> // servo library
 
-            int d1=0; // initialize d1
-            Servo myservo;
+int d1=0; // initialize d1
+Servo myservo;
 
-            void setup() {
-              pinMode(13,OUTPUT);
-              myservo.attach(5);
-              Serial.begin(9600);
-              Wire.begin(9);     //address of the slave
-              Wire.onReceive(recieveEvent); // will create recieve event
-            }
+void setup() {
+  pinMode(13,OUTPUT);
+  myservo.attach(5);
+  Serial.begin(9600);
+  Wire.begin(9);     //address of the slave
+  Wire.onReceive(recieveEvent); // will create recieve event
+}
 
-            void loop() {
+void loop() {
 
-              if (d1 == 1) // if touch sensor is detecting something , master will write '1' and it will be sent to slave , see recieveevent below
-                {
-                  digitalWrite(13, HIGH);
-                  myservo.write(180); // servo will go to 180
-                } else if (d1 == 0)
-                {
-                  digitalWrite(13, LOW);
-                  myservo.write(0); // if not it will go to 0
-                } else
-                {
+  if (d1 == 1) // if touch sensor is detecting something, master will write '1' and it will be sent to slave, see recieveevent below
+    {
+      digitalWrite(13, HIGH);
+      myservo.write(180); // servo will go to 180
+    } else if (d1 == 0)
+    {
+      digitalWrite(13, LOW);
+      myservo.write(0); // if not it will go to 0
+    } else
+    {
 
-                }
+    }
 
 
-              delay(200);
-            }
+  delay(200);
+}
 
-            // recieveevent : it will define d1's value
-            void recieveEvent(int howMany)
-            {
-              while (Wire.available()) // if so0methoing is available
-              {
-                d1 = Wire.read(); // d1 will be equal to '1' or '0' depends on data written on slave by master
-              }
-            }
-          </code>
-          </pre>
+// recieveevent : it will define d1's value
+void recieveEvent(int howMany)
+{
+  while (Wire.available()) // if so0methoing is available
+  {
+    d1 = Wire.read(); // d1 will be equal to '1' or '0' depends on data written on slave by master
+  }
+}</code></pre>
         <p class="step">
           Final video
         </p>
         <p>
-          Below you can see by touching the sensor servo will rotate at <a><b>180 degree</b></a>.
-        </p><br />
+          Below you can see by touching the sensor servo will rotate at <a><b>180 degrees</b></a>.
+        </p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YcAPKDJCalI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       </div>
@@ -410,38 +380,38 @@
       </p>
       </p>
 
-      <h3>Group Work</h3>
+      <h1>Group Work</h1>
       <p>
-        In group work we created an i2C and talk to multiple slaves through one master ! In group work Master board is receiving the message through the serial and sending it to slaves to which we have given some address. in networking group work as
-        a contribution we all use our board to make one I2C bus.
-        <br /><br />
-        Below is Video and for more information visit <a href="http://fabacademy.org/2019/labs/cept/networkingcommunication" target="_blank"><b>group website</b></a>.<br /><br />
+        In group work, we created an i2C and talk to multiple slaves through one master! In group work Master board is receiving the message through the serial and sending it to slaves to which we have given some address. in networking group work as a contribution we all use our board to make one I2C bus.
+<bR /><br />
+Below is Video and for more information visit the <a href="http://fabacademy.org/2019/labs/cept/networkingcommunication" target="_blank"><b>group website</b></a>.
       </p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/k5150Hn4lZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
-      <h3>Conclusion</h3>
+      <h1>Conclusion</h1>
       <p>
-        This week was different with input and output week for me , one good thing was i don’t have to have one big board which have all the facilities for I/O sensors , one can use small modular boards which can do this tasks precisely , they will
-        interrupt on each other less.
-
-        Overall i gathered good amount of information in I2C</p>
+        This week was different with input and output week for me, one good thing was I don’t have to have one big board which have all the facilities for I/O sensors, one can use small modular boards which can do this tasks precisely, they will interrupt on each other less. Overall I gathered a good amount of information in I2C.</p>
 
     </div>
   </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
-  <script src="jquery.localscroll.js" type="text/javascript"></script>
-  <script src="jquery.scrollTo.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#listj').localScroll({
-        duration: 800
-      });
-    });
-  </script>
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span
-    xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Smart Bin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/projectd"
-    property="cc:attributionName" rel="cc:attributionURL">Dhruv Prakashbhai Patel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-    International License</a>.
-  <br /><br /><br /><br />
 </body>
+<footer>
+  <section class="footer-content">
 
+    <ul class="main-menu-blog-footer-tabs">
+      <li><a href="https://www.linkedin.com/in/dhruv-patel-485a53134/">Portfolio</a></li>
+      <li><a href="https://github.com/idesign0">Robotics</a></li>
+      <li><a href="../assignments">Fab Academy</a></li>
+      <li><a href="../about">About</a></li>
+      <li><a href="../contact">Contact</a></li>
+    </ul>
+    <!-- <h3 class=footer-h3>Social MEdia</h3> -->
+    <ul class="main-menu-blog-footer-sm">
+      <li><a href="https://www.instagram.com/classy_29/" target="_blank"><img src="images/sm/instagram.svg" alt="" /></a></li>
+      <li><a href="https://www.linkedin.com/in/dhruv-patel-485a53134/" target="_blank"><img src="images/sm/linkedin.svg" alt="" /></a></li>
+      <li><a href="https://github.com/idesign0" target="_blank"><img src="images/sm/github.svg" alt="" /></a></li>
+
+    </ul>
+  </section>
+
+</footer>
 </html>
