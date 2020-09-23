@@ -69,7 +69,7 @@
       <ul class="main-menu">
         <li><a href="..\index">Home</a></li>
         <li class="fab-work">
-          <a href="#">Fab work</a>
+        <a href="#">Fab work</a>
           <ul>
             <li><a href="#">Week 1 to 5</a>
               <ul>
@@ -119,7 +119,7 @@
           <ul>
             <li><a href="project">Final Project proposal</a></li>
             <li><a href="projectd">Project development</a></li>
-<li><a href="finalproject">Final Project</a></li>
+            <li><a href="finalproject">Final Project</a></li>
 
 
 
@@ -150,16 +150,17 @@
     <div class="week2p">
       <h2>Week 12 : Assignment</h2><bR />
       <div class="listp">
-          <ul>
-            <li>
-              add an output device to a microcontroller board you've designed,
-        and program it to do something
-            </li>
-          </ul>
+        <ul>
+          <li>
+            add an output device to a microcontroller board you've designed,
+            and program it to do something
+          </li>
+        </ul>
       </div>
 
       <p>
-        In week 12 assignment was to add an output device in microcontroller and I have to program it to do something ! I thought it will be a good idea to use the input devices I used in <a href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>.
+        In week 12 assignment was to add an output device in microcontroller and I have to program it to do something ! I thought it will be a good idea to use the input devices I used in <a
+          href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>.
 
         <br /><br />
         All <a><b>Details</b></a> of 328p board is uploaded in <a href="http://fab.academany.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week11" target="_blank"><b>week 11</b></a>.<br /><br />
@@ -180,7 +181,9 @@
       <p>
         I already used the humidity sensor and print details on serial Monitor, I wanted to print them on my <a><b>OLED</b></a> now.
         <br /><br />
-        <a><b>OLED (Organic Light-Emitting Diode)</b></a> is a self light-emitting technology composed of a thin, multi-layered organic film placed between an anode and cathode. In contrast to LCD technology, OLED does not require a backlight. OLED possesses high application potential for virtually all types of displays and is regarded as the ultimate technology for the next generation of flat-panel displays. <a href="https://randomnerdtutorials.com/" target="_blank"><b>my reference</b></a> for this code.
+        <a><b>OLED (Organic Light-Emitting Diode)</b></a> is a self light-emitting technology composed of a thin, multi-layered organic film placed between an anode and cathode. In contrast to LCD technology, OLED does not require a backlight. OLED
+        possesses high application potential for virtually all types of displays and is regarded as the ultimate technology for the next generation of flat-panel displays. <a href="https://randomnerdtutorials.com/" target="_blank"><b>my
+            reference</b></a> for this code.
 
         <a href="https://www.rhydolabz.com/displays-c-88/096-oled-display-module-spii2c-128x64-7-pin-blue-p-2079" target="_blank"><b>Click here</b></a> to know more.
       </p>
@@ -189,12 +192,12 @@
       </p>
       <p>
         in setup, I connected
-       <li>
-         <a><b>Humidity sensor</b></a> with the Digital <a><b>pin 4</b></a>
-       </li>
-       <li>
-         <a><b>Oled display</b></a> to i2c communication
-       </li>
+        <li>
+          <a><b>Humidity sensor</b></a> with the Digital <a><b>pin 4</b></a>
+        </li>
+        <li>
+          <a><b>Oled display</b></a> to i2c communication
+        </li>
       </p>
 
       <img src="images/week12/at/1.jpg" alt="">
@@ -205,13 +208,15 @@
         Code
       </p>
       <p>
-        I got these codes from <a href="https://randomnerdtutorials.com/complete-guide-for-dht11dht22-humidity-and-temperature-sensor-with-arduino" target="_blank"><b>Random Tutorials</b></a> and <a href="https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/#more-27343" target="_blank"><b> About OLED and DHT sensor</b></a>. I still needed to understand this code, I wrote in every comment what each line is doing, the way I understand...The below code will show <a><b>Humidity</b></a> and  <a><b>temperature</b></a>.<br /><br />
+        I got these codes from <a href="https://randomnerdtutorials.com/complete-guide-for-dht11dht22-humidity-and-temperature-sensor-with-arduino" target="_blank"><b>Random Tutorials</b></a> and <a
+          href="https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/#more-27343" target="_blank"><b> About OLED and DHT sensor</b></a>. I still needed to understand this code, I wrote in every comment what each line is doing, the way
+        I understand...The below code will show <a><b>Humidity</b></a> and <a><b>temperature</b></a>.<br /><br />
         Don’t forget to include
       </p>
       <div class="listp">
         <ul>
           <li>
-             <a href="https://www.arduino.cc/en/Reference/Wire" target="_blank"><b>wire library</b></a>
+            <a href="https://www.arduino.cc/en/Reference/Wire" target="_blank"><b>wire library</b></a>
           </li>
           <li>
             <a target="_blank" href="https://github.com/adafruit/Adafruit_Sensor"><b>Adafruit Unified Sensor</b></a>,
@@ -313,19 +318,19 @@
       <p class="step">
         Setup
       </p>
-        <pre>
+      <pre>
 Joystick connected to (<a><b>A1</b></a>,<a><b>A0</b></a>) // Vrx, Vry</pre>
-        <pre>
+      <pre>
 servo pin <a><b>6</b></a></pre>
-    <img src="images/week12/at/4.jpg" alt="" >
-    <p class="step">
-      Code
-    </p>
-    <p>
-      II explained code in the comments, I thought it would be a more efficient way, for simplicity copy code in Arduino and read, it will be more clear there.
-      <br /><br />
-      <a><b>Don’t forget to add a library of servo below.</b></a><br /><br />
-    </p>
+      <img src="images/week12/at/4.jpg" alt="">
+      <p class="step">
+        Code
+      </p>
+      <p>
+        II explained code in the comments, I thought it would be a more efficient way, for simplicity copy code in Arduino and read, it will be more clear there.
+        <br /><br />
+        <a><b>Don’t forget to add a library of servo below.</b></a><br /><br />
+      </p>
       <pre>
       <code>
   #include &ltServo.h&gt
@@ -451,10 +456,10 @@ servo pin <a><b>6</b></a></pre>
       <div class="listp">
         <ul>
           <li>
-             For lower speed around 12, power consumption was 2.54 w (0.212 A on 12 v )
+            For lower speed around 12, power consumption was 2.54 w (0.212 A on 12 v )
           </li>
           <li>
-             For highest speed around 140, power consumption was 8.412 w (0.701 A on 12v)
+            For highest speed around 140, power consumption was 8.412 w (0.701 A on 12v)
           </li>
         </ul>
       </div>
@@ -465,8 +470,8 @@ servo pin <a><b>6</b></a></pre>
       <p>
         This week made input week complete, learned I could use an input device to get different types of outputs.
       </p>
-</div>
-</div>
+    </div>
+  </div>
 
 </body>
 <footer>
@@ -489,4 +494,5 @@ servo pin <a><b>6</b></a></pre>
   </section>
 
 </footer>
+
 </html>

@@ -297,7 +297,8 @@ void loop(){
       <p>
         Click Here is the <a><b>code</b></a>. <a href="images/week11/ultrasonicsimple.ino" target="_blank" download><b>Click</b></a> to get original files.
         <br /><br />
-        Here I used pin <a><b>(0,1) (Arduino pins)</b></a> or <A><b>PA1 and PA0</b></A> of echo hello board as communication pins ( <a><b>TX</b></a>, <a><b>RX</b></a> ) and <a><b>A5(5)</b></a> and <a><b>A4(4)</b></a> for the trigger pin and echo pin of ultrasonic.
+        Here I used pin <a><b>(0,1) (Arduino pins)</b></a> or <A><b>PA1 and PA0</b></A> of echo hello board as communication pins ( <a><b>TX</b></a>, <a><b>RX</b></a> ) and <a><b>A5(5)</b></a> and <a><b>A4(4)</b></a> for the trigger pin and echo pin
+        of ultrasonic.
       </p>
       <img src="images/week11/6.png" alt="" />
       <br /><br />
@@ -353,7 +354,7 @@ void loop(){
           href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week9" target="_blank"><b>week9</b></a>. besides memory, I found many things that bring my interest in ATmega328p.
       </p><br />
       <p><a><b>Key points about ATmega328p</b></a></p>
-        <pre>
+      <pre>
 <code>
 <li>Programming and communication flexibility:
 
@@ -363,30 +364,35 @@ void loop(){
 <li>CPU speed - 20 MIPS</li>
 <li>PWM pins - 6</li></code>
 </pre>
-          <p class="step">Programming and communication flexibility :</p>
-          <p>
-          the key thing I want to shift to the <a><b>ATTin328p</b></a> is increasing programming flexibility of mine, back at <a><b>Attiny44</b></a> I used only serial interface with <a
-            href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5" target="_blank"><b>FABtinyisp</b></a> which was pretty good but the way I am understanding this thing I think, every time I have to carry fab isp when I am programming I will not have cable(UART) like <a href="https://store.arduino.cc/usa/arduino-uno-rev3" target="_blank"><b>Arduino Uno</b></a>
-          <br /><br />
-          I can have that type of flexibility with ATmega328p, reason I can't use this UART ports directly is ATTIny is not supporting UART Programming directly or built-in. Attiny 44 needs will need a serial interface that can talk to the master or program if the user wants to program it with UART. but These microcontrollers do not have Hardware serial support, no (Tx, Rx) built-in, <a
-            href="https://www.arduino.cc/en/Reference/SoftwareSerial" target="_blank"><b>Software Serial</b></a> may help but in most of the cases when I tried to use that on input week it was causing memory issue, One can get the data from Attiny44 using <a href="https://en.wikipedia.org/wiki/Neil_Gershenfeld"><b>Neil's </b></a>bit banging code. <a href="http://academy.cba.mit.edu/classes/input_devices/index" track="_blank"><b>Click here for Code links</b></a><br /><br />
-          <a>thought this is based on my experience and people which help me to understand these things, maybe some special methods that can solve this problem</a><br /><br />
-        </p>
-          <p class="step">I/O ports - 32 general purpose pins(Working registers)</p>
-          <p>
-          In the final project, I will probably use 3 or 4 <a><b>Input/output</b></a> sensors or may need to communicate with other boards, for these things 328p will be great.
-          </p>
+      <p class="step">Programming and communication flexibility :</p>
+      <p>
+        the key thing I want to shift to the <a><b>ATTin328p</b></a> is increasing programming flexibility of mine, back at <a><b>Attiny44</b></a> I used only serial interface with <a
+          href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5" target="_blank"><b>FABtinyisp</b></a> which was pretty good but the way I am understanding this thing I think, every time I have to carry fab isp
+        when I am programming I will not have cable(UART) like <a href="https://store.arduino.cc/usa/arduino-uno-rev3" target="_blank"><b>Arduino Uno</b></a>
+        <br /><br />
+        I can have that type of flexibility with ATmega328p, reason I can't use this UART ports directly is ATTIny is not supporting UART Programming directly or built-in. Attiny 44 needs will need a serial interface that can talk to the master or
+        program if the user wants to program it with UART. but These microcontrollers do not have Hardware serial support, no (Tx, Rx) built-in, <a href="https://www.arduino.cc/en/Reference/SoftwareSerial" target="_blank"><b>Software Serial</b></a>
+        may help but in most of the cases when I tried to use that on input week it was causing memory issue, One can get the data from Attiny44 using <a href="https://en.wikipedia.org/wiki/Neil_Gershenfeld"><b>Neil's </b></a>bit banging code. <a
+          href="http://academy.cba.mit.edu/classes/input_devices/index" track="_blank"><b>Click here for Code links</b></a><br /><br />
+        <a>thought this is based on my experience and people which help me to understand these things, maybe some special methods that can solve this problem</a><br /><br />
+      </p>
+      <p class="step">I/O ports - 32 general purpose pins(Working registers)</p>
+      <p>
+        In the final project, I will probably use 3 or 4 <a><b>Input/output</b></a> sensors or may need to communicate with other boards, for these things 328p will be great.
+      </p>
 
 
 
-        <h1>Final Board Design</h1>
-        <p>
-          Yet my final board mechanism was not sorted out I was confused about servo and Dc motors which one I should use in the final project. but we had many Dc motors at labs so I thought using dc for initial testing will be a good idea, so I decided to use <a href="http://www.ti.com/product/L293D" target="_blank"><b>L293d Drivers</b></a>. and prepared my schematic in <a href="https://www.autodesk.com/products/eagle/overview" target="_blank"><b>EAGLE</b></a>. you can see PCB making in detail in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"><b>WEEk 7</b></a>.
-        </p>
-        <p class="step">Schematic</p>
-          <img src="images/week11/finalboard/1.png" alt="" /><bR /><br />
-          <p class="step">Requirements</p>
-          <pre>
+      <h1>Final Board Design</h1>
+      <p>
+        Yet my final board mechanism was not sorted out I was confused about servo and Dc motors which one I should use in the final project. but we had many Dc motors at labs so I thought using dc for initial testing will be a good idea, so I
+        decided to use <a href="http://www.ti.com/product/L293D" target="_blank"><b>L293d Drivers</b></a>. and prepared my schematic in <a href="https://www.autodesk.com/products/eagle/overview" target="_blank"><b>EAGLE</b></a>. you can see PCB
+        making in detail in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"><b>WEEk 7</b></a>.
+      </p>
+      <p class="step">Schematic</p>
+      <img src="images/week11/finalboard/1.png" alt="" /><bR /><br />
+      <p class="step">Requirements</p>
+      <pre>
 <code>
 <li>one <a><b>10k</b></a> pullup resistors</li> - one at Reset and Vcc for keeping reset pin High<br />
 <li>three <a><b>100nf</b></a> Filter Capacitors</li> - two At pin number 4 an 5 (Vccs) of microcontroller and one between DTR(RTS) and Reset (of FTDI pins).<br />
@@ -395,8 +401,8 @@ void loop(){
 <li> two <a><b>499</b></a> resistor</li> - for leds (Power,SCk)<br />
 <li> <a><b>ISP</b></a>, <a><b>UART</b></a>, <a><b>i2c</b></a> header pins</li> - For programming and communication<br /></code>
 </pre>
-          <p class="step">i/O pins</p>
-          <pre>
+      <p class="step">i/O pins</p>
+      <pre>
 <code>
 <li>Ultrasonic sensor</li>
 <li>Motor Driver L2393D</li>
@@ -404,48 +410,48 @@ void loop(){
 <li>Extra pins</li> - I tried to use all the pins of microcontroller  in case if I needed extra ones
 </code>
 </pre>
-          <p class="step">Board</p>
-          <img src="images/week11/finalboard/2.png" alt="" />
+      <p class="step">Board</p>
+      <img src="images/week11/finalboard/2.png" alt="" />
 
-          <p class="step">
-            Milling And Soldering
-          </p>
-          <p>
-            One can know more about the milling and soldering process in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5" target="_blank"><b>Week5</b></a>.
-          </p>
-          <img src="images/week11/finalboard/2b.jpg" alt="" />
-          <img src="images/week11/finalboard/2a.jpg" alt="" />
-          <img src="images/week11/finalboard/3.jpg" alt="" />
-          <img src="images/week11/finalboard/4.jpg" alt="" /><br /><br />
-          <h1>Programming</h1>
-          <p>
-            <a>I kept the L293D part unsolder for now! it was not available at the lab, I have to buy that.</a>
-          </p>
-          <img src="images/week11/finalboard/5.jpg" alt="" /><br /><br />
-          <p class="step">Joystick as input Device</p>
-          <p>
-            In the 328p board, I tried to get data from the joystick module. I will get positions on the X-axis, Y-axis, and Switch.
-          </p>
-          <img src="images/week11/finalboard/6.jpg" alt="" />
+      <p class="step">
+        Milling And Soldering
+      </p>
+      <p>
+        One can know more about the milling and soldering process in <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5" target="_blank"><b>Week5</b></a>.
+      </p>
+      <img src="images/week11/finalboard/2b.jpg" alt="" />
+      <img src="images/week11/finalboard/2a.jpg" alt="" />
+      <img src="images/week11/finalboard/3.jpg" alt="" />
+      <img src="images/week11/finalboard/4.jpg" alt="" /><br /><br />
+      <h1>Programming</h1>
+      <p>
+        <a>I kept the L293D part unsolder for now! it was not available at the lab, I have to buy that.</a>
+      </p>
+      <img src="images/week11/finalboard/5.jpg" alt="" /><br /><br />
+      <p class="step">Joystick as input Device</p>
+      <p>
+        In the 328p board, I tried to get data from the joystick module. I will get positions on the X-axis, Y-axis, and Switch.
+      </p>
+      <img src="images/week11/finalboard/6.jpg" alt="" />
 
 
-            <p class="step">
-              Connections
-            </p>
-            <p>
-              I connected the x and y-axis pins to analog pins and switch to digital pins.
-            </p>
-            <pre><a><b>Vrx : A0</b></a></pre>
-            <pre><a><b>VRy : A1</b></a></pre>
-            <pre><a><b>SW : 8</b></a></pre>
-            <img src="images/week11/finalboard/8.jpg" alt="" />
-            <p class="step">
-              Code
-            </p>
-            <P>
-              The below code will help to get the data from the joystick module of the <a><b>X and Y</b></a> axis and <a><b>Switch</b></a>. with code require explanation is given.
-            </P>
-            <pre>
+      <p class="step">
+        Connections
+      </p>
+      <p>
+        I connected the x and y-axis pins to analog pins and switch to digital pins.
+      </p>
+      <pre><a><b>Vrx : A0</b></a></pre>
+      <pre><a><b>VRy : A1</b></a></pre>
+      <pre><a><b>SW : 8</b></a></pre>
+      <img src="images/week11/finalboard/8.jpg" alt="" />
+      <p class="step">
+        Code
+      </p>
+      <P>
+        The below code will help to get the data from the joystick module of the <a><b>X and Y</b></a> axis and <a><b>Switch</b></a>. with code require explanation is given.
+      </P>
+      <pre>
 <code>
   /* this code will help to get the x and y axis data from joystick, I have maped the readings in specific region
 
@@ -504,35 +510,35 @@ void loop(){
   }
 </code>
 </pre>
-            <p class="step">
-              In Arduino ide
-            </p>
-            <p>
-              Below is code I am going to run through <a><b>Arduino-ide</b></a>. you can check week9 to know how to program with arduino-ide.<br /><br />Visit <a
-                href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7" target="_blank"><b>week 7</b></a> and <a
-                href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#programming" target="_blank"><b>week 5</b></a> for more information about IDE.
-            </p>
-            <img src="images/week11/finalboard/7.png" alt="" />
-          <h1>Reading the Data</h1>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/wn8KkTadzdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="step">
+        In Arduino ide
+      </p>
+      <p>
+        Below is code I am going to run through <a><b>Arduino-ide</b></a>. you can check week9 to know how to program with arduino-ide.<br /><br />Visit <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week7"
+          target="_blank"><b>week 7</b></a> and <a href="http://fabacademy.org/2019/labs/cept/students/dhruv-prakashbhaipatel/assignments/week5#programming" target="_blank"><b>week 5</b></a> for more information about IDE.
+      </p>
+      <img src="images/week11/finalboard/7.png" alt="" />
+      <h1>Reading the Data</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wn8KkTadzdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
-        <h1>Group work</h1>
-        <p>
-          our group work was to Probing Sensor Data with an Oscilloscope, we tried Quadrature Encoders. In this group work, there was not much to separate so we did it together.<bR /><br />
+      <h1>Group work</h1>
+      <p>
+        our group work was to Probing Sensor Data with an Oscilloscope, we tried Quadrature Encoders. In this group work, there was not much to separate so we did it together.<bR /><br />
 
-          we tried to probe the Quadrature Encoders with Oscilloscope. so there are two channels in the Oscilloscope and bot connected with encodes output, encodes generates square pulses, in both channels pulses will be generated and it can be seen in the display of Oscilloscope.
-          <br /><br />
-          <a href="http://fab.academany.org/2019/labs/cept/inputdevices" target="_blank"><b>Click here</b></a> to redirect on group work.
-        </p>
+        we tried to probe the Quadrature Encoders with Oscilloscope. so there are two channels in the Oscilloscope and bot connected with encodes output, encodes generates square pulses, in both channels pulses will be generated and it can be seen in
+        the display of Oscilloscope.
+        <br /><br />
+        <a href="http://fab.academany.org/2019/labs/cept/inputdevices" target="_blank"><b>Click here</b></a> to redirect on group work.
+      </p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7Scmh9DUa5Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7Scmh9DUa5Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <h1>Conclusion</h1>
-        <p>
+      <h1>Conclusion</h1>
+      <p>
         This week all I do is exploring the different <a><b>sensors</b></a> and try to understand their working, I <a><b>milled</b></a> a new 328p board, got to know more about communications in 328p board which I will explore more ahead!
-        </p>
+      </p>
     </div>
   </div>
 
@@ -557,4 +563,5 @@ void loop(){
   </section>
 
 </footer>
+
 </html>

@@ -141,68 +141,74 @@
     </div> -->
 
 
-    <div class="projectconcept">
+  <div class="projectconcept">
 
-      <div class="week2p">
-          <h2>Week 16 : Assignment</h2><br />
-          <div class="listp">
-              <ul>
-                <li>
-                  write an application that interfaces a user with an
-                  input &/or output device that you made
-                </li>
-              </ul>
-          </div>
-          <h1>Arduino Ide with Processing</h1>
-          <p>
-          For Interface and Application programming week I wanted to use <a href="http://download.processing.org/processing-3.5.3-windows64.zip" target="_blank"><b>Processing</b></a> and <a><b>Arduino IDE</b></a>. I am familiar with Arduino ide now, I have been using it since week 7, but <a href="http://download.processing.org/processing-3.5.3-windows64.zip"><b>Processign</b></a> is new from, it Creates a small interface which can help users to get something from the Sensors in a visual way or can be used to give something like a command via the serial interface.
+    <div class="week2p">
+      <h2>Week 16 : Assignment</h2><br />
+      <div class="listp">
+        <ul>
+          <li>
+            write an application that interfaces a user with an
+            input &/or output device that you made
+          </li>
+        </ul>
+      </div>
+      <h1>Arduino Ide with Processing</h1>
+      <p>
+        For Interface and Application programming week I wanted to use <a href="http://download.processing.org/processing-3.5.3-windows64.zip" target="_blank"><b>Processing</b></a> and <a><b>Arduino IDE</b></a>. I am familiar with Arduino ide now, I
+        have been using it since week 7, but <a href="http://download.processing.org/processing-3.5.3-windows64.zip"><b>Processign</b></a> is new from, it Creates a small interface which can help users to get something from the Sensors in a visual
+        way or can be used to give something like a command via the serial interface.
 
-          <br /><br />
-          The <a><b>Processing Interface</b></a> and board communicate with each other with a serial interface. whichever command is given in processing will be converted into characters and sent to the board via serial port and the command will be executed.
-        </p>
-          <h1>Two Servos with processing</h1>
-          <p>
-            I was experimenting with servos from week 11 and I am also thinking to use them in my final project. I wanted to give it try so I modified my final board. I changed Dc motor Drive to servo pins. I also wanted to check how much torque mg995 can give and what is its load-carrying capacity for my flapper mechanism.
-          </p>
+        <br /><br />
+        The <a><b>Processing Interface</b></a> and board communicate with each other with a serial interface. whichever command is given in processing will be converted into characters and sent to the board via serial port and the command will be
+        executed.
+      </p>
+      <h1>Two Servos with processing</h1>
+      <p>
+        I was experimenting with servos from week 11 and I am also thinking to use them in my final project. I wanted to give it try so I modified my final board. I changed Dc motor Drive to servo pins. I also wanted to check how much torque mg995
+        can give and what is its load-carrying capacity for my flapper mechanism.
+      </p>
 
-          <p class="step">
-            Modification in board
-          </p>
-          <p>
-            In the modification of my board, I replaced the L293d dc motor driver with servo pins and capacitors. I am going to use <a
-              href="https://robu.in/product/towerpro-mg995-metal-gear-servo-motor/?gclid=EAIaIQobChMIsuz66tj74gIVzSMrCh0lZAndEAQYASABEgLskPD_BwE" target="_blank"><b>Tower pro metal gear Mg995 servos</b></a>.
-            it s specifications and requirements are below :
-            <pre>Model : mg995</pre>
-            <pre>Operating Voltage : 4.8- 7.2v</pre>
-            <pre>Stall Torque @4.8V : 10 kg-cm //, break down torque, max torque</pre>
-            <pre>current : <a><b>1.5 amp</b></a></pre>
-          <p>
-            AS you can see above current drawn by the servos is very high relative to typical MCU (500 mA), it will burn my microcontroller if I directly connect it to the board, I could use a regulator but I to keep it separate, and the reason these servos need high capacitors with them is they <a><b>need</b></a> higher Voltage values when they are starting or changing positions at the instance, capacitors used as a <a><b>quick supply</b></a> of current and voltage for servos. usually, <a><b>470
-                uf capacitors</b></a>are preferred, but 100 uf is good enough.
-          </p>
+      <p class="step">
+        Modification in board
+      </p>
+      <p>
+        In the modification of my board, I replaced the L293d dc motor driver with servo pins and capacitors. I am going to use <a
+          href="https://robu.in/product/towerpro-mg995-metal-gear-servo-motor/?gclid=EAIaIQobChMIsuz66tj74gIVzSMrCh0lZAndEAQYASABEgLskPD_BwE" target="_blank"><b>Tower pro metal gear Mg995 servos</b></a>.
+        it s specifications and requirements are below :
+      <pre>Model : mg995</pre>
+      <pre>Operating Voltage : 4.8- 7.2v</pre>
+      <pre>Stall Torque @4.8V : 10 kg-cm //, break down torque, max torque</pre>
+      <pre>current : <a><b>1.5 amp</b></a></pre>
+      <p>
+        AS you can see above current drawn by the servos is very high relative to typical MCU (500 mA), it will burn my microcontroller if I directly connect it to the board, I could use a regulator but I to keep it separate, and the reason these
+        servos need high capacitors with them is they <a><b>need</b></a> higher Voltage values when they are starting or changing positions at the instance, capacitors used as a <a><b>quick supply</b></a> of current and voltage for servos. usually,
+        <a><b>470
+            uf capacitors</b></a>are preferred, but 100 uf is good enough.
+      </p>
 
-          <img src="images/week16/2.png" alt="" />
-          <img src="images/week16/1.jpg" alt="" />
-          </p>
-          <p class="step">
-            Code Explanation
-          </p>
-          <div class="listp">
-            <ul>
-              <li>
-                first select comport and upload Arduino code.
-              </li>
-              <li>
-                then Run Processign code with same COM port.
-              </li>
-              <li>
-                <a>If Arduino's serial port is open, processing interface will not run, remember</a>
-              </li>
-            </ul>
-          </div>
+      <img src="images/week16/2.png" alt="" />
+      <img src="images/week16/1.jpg" alt="" />
+      </p>
+      <p class="step">
+        Code Explanation
+      </p>
+      <div class="listp">
+        <ul>
+          <li>
+            first select comport and upload Arduino code.
+          </li>
+          <li>
+            then Run Processign code with same COM port.
+          </li>
+          <li>
+            <a>If Arduino's serial port is open, processing interface will not run, remember</a>
+          </li>
+        </ul>
+      </div>
 
-          <p class="step">Arduino code</p>
-          <pre>
+      <p class="step">Arduino code</p>
+      <pre>
 <code>
 //Arduino code:
 #include &ltServo.h&gt // include servo library
@@ -271,10 +277,10 @@ void loop() {
 }
 </code>
 </pre>
-          <p class="step">
-            Processign Code
-          </p>
-          <pre>
+      <p class="step">
+        Processign Code
+      </p>
+      <pre>
 <code>
   //Processing code:
   import processing.serial.*;       // processign serial library
@@ -316,56 +322,57 @@ void loop() {
   }
 </code>
 </pre>
-          <p class="step">
-            Final video
-          </p>
-          <p>
-            <pre>X axis servo to <a><b>PWM pin 9</b></a></pre>
-            <pre>Y axis Servo Two <a><b>PWM pin 10</b></a></pre>
-            You can see in the video, by moving the x-axis servo will rotate accordingly, in 360 servos it will just change the direction of rotation when the slider comes to <a><b>-y</b></a>.
-          </p>
-          <img src="images/week16/3a.jpg" alt="" />
-          <img src="images/week16/3.jpg" alt="" /><br /><br /><br />
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/wvxJ_GR3tRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="step">
-            Little bit fun with Karab
-          </p>
-          <p>
-            In Extra I had little bit fun with Avishek Das'sm final project <a target="_blank" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/184/final-project"><b>KRAB</b></a>
-          </p>
-          <p>
-            I use servo which takes the entire weight of the arm to know its capacity in weight lifting, weight newbie this was the only way I can confirm my what for servos, and the results are good, the servo was good enough to lift 3 mm flapper. see below
-          </p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/S8vkKU3SZpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="step">
+        Final video
+      </p>
+      <p>
+      <pre>X axis servo to <a><b>PWM pin 9</b></a></pre>
+      <pre>Y axis Servo Two <a><b>PWM pin 10</b></a></pre>
+      You can see in the video, by moving the x-axis servo will rotate accordingly, in 360 servos it will just change the direction of rotation when the slider comes to <a><b>-y</b></a>.
+      </p>
+      <img src="images/week16/3a.jpg" alt="" />
+      <img src="images/week16/3.jpg" alt="" /><br /><br /><br />
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wvxJ_GR3tRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="step">
+        Little bit fun with Karab
+      </p>
+      <p>
+        In Extra I had little bit fun with Avishek Das'sm final project <a target="_blank" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/184/final-project"><b>KRAB</b></a>
+      </p>
+      <p>
+        I use servo which takes the entire weight of the arm to know its capacity in weight lifting, weight newbie this was the only way I can confirm my what for servos, and the results are good, the servo was good enough to lift 3 mm flapper. see
+        below
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/S8vkKU3SZpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <h1>group work</h1>
-        <p>Group assignment was to compare tools which create different interface and applications, as I worked on the processing I helped to write things which I found good in processing. <a
-            href="http://fabacademy.org/2019/labs/cept/interfaceapplicationdesign" target="_blank"><b>link</b></a>.<br /><br />
-            <a><b>Features I found good are</b></a>
-        </p>
-          <div class="listp">
-            <ul>
-              <li>
-                free and open source
-              </li>
-              <li>
-                interactive and Fast
-              </li>
-              <li>
-                For GNU/Linux, Mac OS X, Windows, Android, and ARM
-              </li>
-            </ul>
-          </div>
-        </p>
-        <h1>Conclusion</h1>
-        <p>
-          The week was Amazing! I enjoyed this week the most in all Electronics weeks.
-        </p>
-        </p>
-
-
+      <h1>group work</h1>
+      <p>Group assignment was to compare tools which create different interface and applications, as I worked on the processing I helped to write things which I found good in processing. <a
+          href="http://fabacademy.org/2019/labs/cept/interfaceapplicationdesign" target="_blank"><b>link</b></a>.<br /><br />
+        <a><b>Features I found good are</b></a>
+      </p>
+      <div class="listp">
+        <ul>
+          <li>
+            free and open source
+          </li>
+          <li>
+            interactive and Fast
+          </li>
+          <li>
+            For GNU/Linux, Mac OS X, Windows, Android, and ARM
+          </li>
+        </ul>
       </div>
+      </p>
+      <h1>Conclusion</h1>
+      <p>
+        The week was Amazing! I enjoyed this week the most in all Electronics weeks.
+      </p>
+      </p>
+
+
     </div>
+  </div>
 
 </body>
 <footer>
@@ -388,4 +395,5 @@ void loop() {
   </section>
 
 </footer>
+
 </html>
