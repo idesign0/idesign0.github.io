@@ -1563,6 +1563,10 @@ nav h1 {
   text-decoration: #000;
 }
 
+.list-flex{
+  display: flex;
+  flex-flow: row wrap;
+}
 /*footer*/
 footer {
   width: 100%;
